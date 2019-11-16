@@ -1,0 +1,27 @@
+@import "../scss/remarkability.scss";
+
+$padding: 3rem;
+
+html {
+  margin: 0 auto;
+  padding: $padding $padding;
+  background-color: #fff;
+
+  @media (min-width: 900px) {
+    padding: $padding 5rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding: $padding 13rem;
+  }
+
+  @media (min-width: 1800px) {
+    padding: $padding 18rem;
+  }
+}
+
+body {
+  padding: $padding;
+  border: 2px solid #eee;
+  background-color: #fdfdfd;
+}

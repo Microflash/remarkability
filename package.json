@@ -1,0 +1,36 @@
+{
+  "name": "@microflash/remarkability",
+  "version": "0.6.0",
+  "description": "Baseline CSS for Markdown content",
+  "scripts": {
+    "build": "npm-run-all dist:*",
+    "dist:rm": "rimraf dist/*",
+    "dist:build": "node-sass scss/remarkability.scss dist/remarkability.css --output-style expanded --source-map true --source-map-contents true --precision 6",
+    "dist:prefix": "postcss --config postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
+    "dist:minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.min.css dist/remarkability.css",
+    "dev": "npm-run-all dev:*",
+    "dev:rm": "rimraf src/index.html && rimraf src/index.min.css",
+    "dev:md": "node src/index.js < src/index.md > src/index.html",
+    "dev:theme": "node-sass src/index.scss src/index.min.css --output-style=compressed"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.1",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.0",
+    "postcss-cli": "^6.1.3"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rehype-document": "^3.1.0",
+    "rehype-format": "^3.0.0",
+    "rehype-stringify": "^6.0.1",
+    "remark-parse": "^7.0.2",
+    "remark-rehype": "^5.0.0",
+    "rimraf": "^3.0.0",
+    "unified": "^8.4.2",
+    "unified-stream": "^1.0.5"
+  },
+  "repository": "https://github.com/Microflash/remarkability.git",
+  "author": "Naiyer Asif",
+  "license": "MIT"
+}
