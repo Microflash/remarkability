@@ -1,0 +1,60 @@
+// Colours
+$color-link: hsl(209, 100%, 42%) !default;
+$color-monospace: hsl(344, 69%, 43%) !default;
+$color-visited-link: hsl(293, 100%, 30%) !default;
+
+$color-text-light: hsl(0, 0%, 50%) !default;
+$color-default: hsl(0, 0%, 20%) !default;
+$color-emphasis: hsl(0, 0%, 10%) !default;
+
+$background-monospace: hsl(0, 0%, 95%) !default;
+$background-insert: hsl(137, 75%, 67%) !default;
+$background-mark: hsl(42, 99%, 70%) !default;
+$background-table: hsl(0, 0%, 100%) !default;
+$background-table-even: hsl(0, 0%, 98%) !default;
+$background-table-hover: hsl(0, 0%, 96%) !default;
+$border: hsl(0, 0%, 90%) !default;
+$radius: 3px !default;
+
+$text: $color-default !default;
+$text-code: $color-monospace !default;
+$text-strong: $color-emphasis !default;
+$text-light: $color-text-light !default;
+$text-headings: $color-emphasis !default;
+$text-blockquote: $color-text-light !default;
+
+$link: $color-link !default;
+$link-hover: $color-link !default;
+$link-visited: $color-visited-link !default;
+
+$background-code: $background-monospace !default;
+$background-ins: $background-insert !default;
+$background-mark: $background-mark !default;
+
+$table-thead: $color-emphasis !default;
+
+// Spacing
+$line-height: 1.6 !default;
+$margin: 1.4rem !default;
+
+// Typography
+$family-remarkability: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  "Helvetica", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$family-code: "Roboto Mono", "Menlo", "Monaco", "Consolas",
+  "Liberation Mono", "Courier New", monospace !default;
+
+$weight-strong: 700 !default;
+$weight-headings: 700 !default;
+
+// Options
+$closer-lists: false !default;
+$custom-colors: false !default;
+$custom-fonts: false !default;
+$font-smoothing: false !default;
+$heading-borders: false !default;
+$show-underline: false !default;
+$table-hover: false !default;
+$table-striped: false !default;
+$visited-links: false !default;

@@ -1,27 +1,103 @@
+@import "reset";
+@import "variables";
 @import "../scss/remarkability.scss";
 
-$padding: 3rem;
+$padding: 1.5rem;
 
-html {
-  margin: 0 auto;
-  padding: $padding $padding;
-  background-color: #fff;
-
+@mixin tablet {
   @media (min-width: 900px) {
-    padding: $padding 5rem;
+    @content;
   }
+}
 
+@mixin desktop-mdpi {
   @media (min-width: 1200px) {
-    padding: $padding 13rem;
+    @content;
   }
+}
 
+@mixin desktop-hdpi {
   @media (min-width: 1800px) {
-    padding: $padding 18rem;
+    @content;
   }
 }
 
 body {
+  margin: 0 auto;
   padding: $padding;
-  border: 2px solid #eee;
-  background-color: #fdfdfd;
+  color: hsl(0, 0, 100%);
+  background-color: hsl(244, 59%, 15%);
+  background-image: linear-gradient(to top, hsl(344, 69%, 43%) 0%, hsl(244, 59%, 15%) 100%);
+
+  @include tablet() {
+    padding: 5rem;
+    max-width: 90vw;
+  }
+
+  @include desktop-mdpi() {
+    padding: 5rem;
+    max-width: 65vw;
+  }
+
+  @include desktop-hdpi() {
+    padding: 7rem;
+    max-width: 60vw;
+  }
+}
+
+header, footer {
+  text-align: center;
+  padding: $padding;
+}
+
+header {
+  p {
+    padding: $padding;
+    font-size: 1.5rem;
+
+    @include tablet() {
+      padding: $padding 4rem $padding;
+    }
+
+    @include desktop-mdpi() {
+      padding: $padding 5rem $padding;
+    }
+
+    @include desktop-hdpi() {
+      padding: $padding 7rem $padding;
+    }
+  }
+}
+
+footer {
+  font-size: 0.75rem;
+
+  a {
+    font-weight: 500;
+    text-decoration: none;
+    color: hsl(42, 99%, 70%);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+main {
+  padding: $padding;
+
+  @include tablet() {
+    padding: 5rem;
+  }
+
+  @include desktop-mdpi() {
+    padding: 5rem;
+  }
+
+  @include desktop-hdpi() {
+    padding: 7rem;
+  }
+
+  border: 1px solid hsl(0, 0%, 75%);
+  background-color: hsl(0, 0, 100%);
 }
