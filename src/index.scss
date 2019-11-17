@@ -4,6 +4,10 @@
 
 $padding: 1.5rem;
 
+@mixin phone-only {
+  @media (max-width: 599px) { @content; }
+}
+
 @mixin tablet {
   @media (min-width: 900px) {
     @content;
@@ -28,6 +32,10 @@ body {
   color: hsl(0, 0, 100%);
   background-color: hsl(244, 59%, 15%);
   background-image: linear-gradient(to top, hsl(344, 69%, 43%) 0%, hsl(244, 59%, 15%) 100%);
+
+  @include phone-only() {
+    padding: 0;
+  }
 
   @include tablet() {
     padding: 5rem;
