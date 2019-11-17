@@ -1,4 +1,4 @@
-/*! remarkability.css v0.6.0 | MIT License | https://github.com/Microflash/remarkability */
+/*! remarkability.css v0.6.1 | MIT License | https://github.com/Microflash/remarkability */
 @import "variables";
 @import "mixins";
 
@@ -40,6 +40,10 @@
         text-decoration: underline;
       }
     }
+
+    &:active, &:hover {
+      outline-width: 0;
+    }
   }
 
   abbr {
@@ -78,6 +82,27 @@
 
   mark {
     background-color: $background-mark;
+  }
+
+  summary {
+    display: list-item;
+  }
+
+  details {
+    display: block;
+
+    summary {
+      cursor: pointer;
+    }
+
+    p {
+      padding-left: 1.1em;
+
+      &:first-of-type {
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+      }
+    }
   }
 
   small {

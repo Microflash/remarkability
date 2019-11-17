@@ -27,13 +27,13 @@ By default, `remarkability` inherits colors and typography but you can customize
 
 The content you're reading is styled using `remarkability` with [default](https://github.com/Microflash/remarkability/tree/master/src/_variables.scss) configuration.
 
-You may have a paragraph with *emphasized* or **important** text, [links](#), `code snippets`, <abbr title="abbreviations">abbr</abbr>, <q>short quote</q>, <cite>citations</cite>, <mark>highlighted text</mark>, <kbd>keyboard inputs</kbd>, <s>strikethrough</s>, ~~deleted~~ or <ins>inserted</ins> elements, <samp>sample text</samp>, <small>small text</small>, <sub>subscript</sub> or <sup>superscript</sup> text.
+You can have a paragraph with *emphasized* or **important** text, [links](#), `code snippets`, <abbr title="abbreviations">abbr</abbr>, <q>short quote</q>, <cite>citations</cite>, <mark>highlighted text</mark>, <kbd>keyboard inputs</kbd>, <s>strikethrough</s>, ~~deleted~~ or <ins>inserted</ins> elements, <samp>sample text</samp>, <small>small text</small>, <sub>subscript</sub> or <sup>superscript</sup> text.
 
-You may have a horizontal rule.
+You can have a horizontal rule.
 
 ---
 
-You may have **unordered lists** with multiple levels of nesting:
+You can have **unordered lists** with multiple levels of nesting:
 - A simple list
   - with nested items
     - with different bullet point
@@ -82,19 +82,19 @@ And even **definition lists**:
   <dd>Somewhere in Amazon forests</dd>
 </dl>
 
-> You may also put some quotes in a `blockquote`.
+> You can also put some quotes in a `blockquote`.
 >
 > It can span multiple paragraphs.
-> > And can have nested `blockquote`s as well.
+> > Multiple `blockquote`s can be nested as well.
 >
-> And even lists
+> You can add lists
 > 
 > - like
 > - this
 > 
 > with some footer text at the end.
 
-You may also use **figure** and *figcaption* for images.
+You can also use **figure** and *figcaption* for images.
 
 <figure>
   <a href="https://mflash.dev">
@@ -132,6 +132,14 @@ public class Factorial {
   }
 }
 ```
+
+You can also use **details** with *summary*.
+
+<details>
+  <summary>Copyright &copy; 2019 - &infin;</summary>
+  <p>&mdash; by <a target="_blank" rel="noopener noreferrer" href="https://mflash.dev">Microflash</a>. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of Microflash.</p>
+</details>
 
 ## Customization
 

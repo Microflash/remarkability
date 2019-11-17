@@ -2,7 +2,7 @@
 
 > Baseline CSS for Markdown content
 
-`remarkability` is based on [wysiwyg.css](https://github.com/jgthms/wysiwyg.css) by [Jeremy Thomas](https://github.com/jgthms) and [github-markdown-css](https://github.com/sindresorhus/github-markdown-css) by [Sindre Sorhus](https://github.com/sindresorhus) with some modifications.
+`remarkability` is a stylesheet for Markdown generated content with a single CSS class.
 
 ## Install
 
@@ -37,3 +37,7 @@ For more details and to see how it looks, check out the [docs](https://microflas
 ## License
 
 Licensed under [MIT](./LICENSE.md).
+
+## Notes
+
+`remarkability` is based on [wysiwyg.css](https://github.com/jgthms/wysiwyg.css) by [Jeremy Thomas](https://github.com/jgthms) and [github-markdown-css](https://github.com/sindresorhus/github-markdown-css) by [Sindre Sorhus](https://github.com/sindresorhus) with some modifications.

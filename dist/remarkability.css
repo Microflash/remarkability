@@ -1,4 +1,4 @@
-/*! remarkability.css v0.6.0 | MIT License | https://github.com/Microflash/remarkability */
+/*! remarkability.css v0.6.1 | MIT License | https://github.com/Microflash/remarkability */
 .remarkability {
   line-height: 1.6;
 }
@@ -9,6 +9,10 @@
 
 .remarkability a:hover {
   text-decoration: underline;
+}
+
+.remarkability a:active, .remarkability a:hover {
+  outline-width: 0;
 }
 
 .remarkability abbr {
@@ -48,6 +52,27 @@
 
 .remarkability mark {
   background-color: #fed167;
+}
+
+.remarkability summary {
+  display: list-item;
+}
+
+.remarkability details {
+  display: block;
+}
+
+.remarkability details summary {
+  cursor: pointer;
+}
+
+.remarkability details p {
+  padding-left: 1.1em;
+}
+
+.remarkability details p:first-of-type {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
 }
 
 .remarkability small {
