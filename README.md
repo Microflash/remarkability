@@ -2,6 +2,12 @@
 
 > Baseline CSS for Markdown content
 
+[![npm (scoped)](https://img.shields.io/npm/v/@microflash/remarkability)](https://www.npmjs.com/package/@microflash/remarkability)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Microflash/remarkability)](https://github.com/Microflash/remarkability/releases/latest)
+[![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@microflash/remarkability)](https://bundlephobia.com/result?p=@microflash/remarkability)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Microflash/remarkability)](https://github.com/Microflash/remarkability/commits/master)
+[![GitHub](https://img.shields.io/github/license/Microflash/remarkability)](https://github.com/Microflash/remarkability/blob/master/LICENSE.md)
+
 `remarkability` is a stylesheet for Markdown generated content with a single CSS class.
 
 ## Install
@@ -13,7 +19,7 @@ npm install @microflash/remarkability
 yarn add @microflash/remarkability
 ```
 
-Or download it [manually](https://github.com/Microflash/remarkability/releases).
+Or download it [manually](https://github.com/Microflash/remarkability/releases/latest).
 
 ## Usage
 
