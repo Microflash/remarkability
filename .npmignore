@@ -1,6 +1,8 @@
 .cache/
+docs/
 node_modules/
 src/
 .gitignore
+copy.sh
 postcss.config.js
 yarn.lock
