@@ -6,9 +6,10 @@
 
 ## Development
 
+`bash` is required for development.
+
 1.  Edit the SCSS files in [scss](./scss) directory.
-2.  Execute `yarn dev` to build the assets.
-3.  Execute `source copy.sh` to build the docs. (Requires `bash`)
+2.  Execute `source build.sh` to build the assets and docs.
 
 ## License
 
