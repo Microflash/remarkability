@@ -3,6 +3,6 @@ docs/
 node_modules/
 src/
 .gitignore
-copy.sh
+build.sh
 postcss.config.js
 yarn.lock

@@ -1,5 +1,16 @@
 `remarkability` is a baseline css for HTML generated from markdown. It strives to be accessible with balanced contrast, font sizes and spacing.
 
+## Install
+
+Add to your project with NPM/Yarn.
+
+```sh
+npm install @microflash/remarkability
+yarn add @microflash/remarkability
+```
+
+Or download it [manually](https://github.com/Microflash/remarkability/releases).
+
 ## Usage
 
 You just need to add `.remarkability` class to your container to style the elements within.
