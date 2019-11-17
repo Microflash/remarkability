@@ -5,6 +5,7 @@
 // Styles
 .remarkability {
   line-height: $line-height;
+  font-size: $font-size;
 
   @if $custom-colors {
     color: $text;
