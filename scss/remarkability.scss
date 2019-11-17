@@ -7,6 +7,10 @@
   line-height: $line-height;
   font-size: $font-size;
 
+  @if $text-adjusting {
+    text-size-adjust: $text-size-adjust;
+  }
+
   @if $custom-colors {
     color: $text;
   }

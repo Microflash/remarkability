@@ -153,17 +153,18 @@ Variables control the values of the properties of elements.
 
 Options toggle the following features. By **default**, all options are set to `false`.
 
-| Option             | When set to `true`                                                                                         |
-| ------------------ | ---------------------------------------------------------------------------------------------------------- |
-| `$closer-lists`    | Brings **lists** closer to the **paragraph** they *immediately* follow                                     |
-| `$custom-colors`   | Applies the **color** variables to the content                                                             |
-| `$custom-fonts`    | Applies the **font-family** variables to the content                                                       |
-| `$font-smoothing`  | Applies [font smoothing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth) to non-code content |
-| `$heading-borders` | Adds bottom borders to `h1` and `h2`                                                                       |
-| `$show-underline`  | **Underlines** links                                                                                       |
-| `$table-hover`     | Adds hover background to **table rows**                                                                    |
-| `$table-striped`   | Adds striped rows to **tables**                                                                            |
-| `$visited-links`   | Applies the `$link-visited` color to **visited links**                                                     |
+| Option             | When set to `true`                                                                                                         |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| `$closer-lists`    | Brings **lists** closer to the **paragraph** they *immediately* follow                                                     |
+| `$custom-colors`   | Applies the **color** variables to the content                                                                             |
+| `$custom-fonts`    | Applies the **font-family** variables to the content                                                                       |
+| `$font-smoothing`  | Applies [font smoothing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth) to non-code content                 |
+| `$text-adjusting`  | Applies the [text size adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust) variables to the content |
+| `$heading-borders` | Adds bottom borders to `h1` and `h2`                                                                                       |
+| `$show-underline`  | **Underlines** links                                                                                                       |
+| `$table-hover`     | Adds hover background to **table rows**                                                                                    |
+| `$table-striped`   | Adds striped rows to **tables**                                                                                            |
+| `$visited-links`   | Applies the `$link-visited` color to **visited links**                                                                     |
 
 ## Notes
 

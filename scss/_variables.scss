@@ -49,12 +49,14 @@ $weight-strong: 700 !default;
 $weight-headings: 700 !default;
 
 $font-size: 1rem !default;
+$text-size-adjust: 100% !default;
 
 // Options
 $closer-lists: false !default;
 $custom-colors: false !default;
 $custom-fonts: false !default;
 $font-smoothing: false !default;
+$text-adjusting: false !default;
 $heading-borders: false !default;
 $show-underline: false !default;
 $table-hover: false !default;
