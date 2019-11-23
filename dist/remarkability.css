@@ -270,6 +270,7 @@
   padding: 0;
   font-size: 1em;
   line-height: 1em;
+  white-space: pre;
 }
 
 .remarkability figure {
@@ -291,11 +292,17 @@
 }
 
 .remarkability table {
+  border-collapse: collapse;
+  border-spacing: 0;
   width: 100%;
 }
 
 .remarkability table pre {
   white-space: pre-wrap;
+}
+
+.remarkability table code {
+  white-space: pre;
 }
 
 .remarkability th,

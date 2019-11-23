@@ -1,5 +1,9 @@
 @import "reset";
 @import "variables";
+
+$family-code: "IBM Plex Mono", "Roboto Mono", "Menlo", "Monaco", "Consolas",
+  "Liberation Mono", "Courier New", monospace !default;
+
 @import "../scss/remarkability.scss";
 
 $padding: 1.5rem;

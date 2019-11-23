@@ -7,8 +7,8 @@ $color-text-light: hsl(0, 0%, 50%) !default;
 $color-default: hsl(0, 0%, 20%) !default;
 $color-emphasis: hsl(0, 0%, 10%) !default;
 
-$background-monospace: hsl(0, 0%, 95%) !default;
-$background-insert: hsl(137, 75%, 67%) !default;
+$background-code: hsl(0, 0%, 95%) !default;
+$background-ins: hsl(137, 75%, 67%) !default;
 $background-mark: hsl(42, 99%, 70%) !default;
 $background-table: hsl(0, 0%, 100%) !default;
 $background-table-even: hsl(0, 0%, 98%) !default;
@@ -26,10 +26,6 @@ $text-blockquote: $color-text-light !default;
 $link: $color-link !default;
 $link-hover: $color-link !default;
 $link-visited: $color-visited-link !default;
-
-$background-code: $background-monospace !default;
-$background-ins: $background-insert !default;
-$background-mark: $background-mark !default;
 
 $table-thead: $color-emphasis !default;
 

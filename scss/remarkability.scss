@@ -46,7 +46,8 @@
       }
     }
 
-    &:active, &:hover {
+    &:active,
+    &:hover {
       outline-width: 0;
     }
   }
@@ -320,6 +321,7 @@
       padding: 0;
       font-size: 1em;
       line-height: 1em;
+      white-space: pre;
     }
   }
 
@@ -348,10 +350,16 @@
 
   // Table
   table {
+    border-collapse: collapse;
+    border-spacing: 0;
     width: 100%;
 
     pre {
       white-space: pre-wrap;
+    }
+
+    code {
+      white-space: pre;
     }
   }
 

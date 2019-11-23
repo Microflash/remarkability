@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Remarkability</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.min.css">
 </head>
 
@@ -42,7 +42,7 @@ yarn add @microflash/remarkability
 </code></pre>
 <p>By default, <code>remarkability</code> inherits colors and typography but you can customize them with <a href="https://github.com/Microflash/remarkability/tree/master/scss" target="_blank" rel="noopener noreferrer">Sass</a>.</p>
 <h2>Example</h2>
-<p>The content you're reading is styled using <code>remarkability</code> with <a href="https://github.com/Microflash/remarkability/tree/master/src/_variables.scss" target="_blank" rel="noopener noreferrer">default</a> configuration.</p>
+<p>The content you're reading is styled using <code>remarkability</code> with a <a href="https://github.com/Microflash/remarkability/tree/master/src/_variables.scss" target="_blank" rel="noopener noreferrer">recommended</a> configuration.</p>
 <p>You can have a paragraph with <em>emphasized</em> or <strong>important</strong> text, <a href="#">links</a>, <code>code snippets</code>, <abbr title="abbreviations">abbr</abbr>, <q>short quote</q>, <cite>citations</cite>, <mark>highlighted text</mark>, <kbd>keyboard inputs</kbd>, <s>strikethrough</s>, <del>deleted</del> or <ins>inserted</ins> elements, <samp>sample text</samp>, <small>small text</small>, <sub>subscript</sub> or <sup>superscript</sup> text.</p>
 <p>You can have a horizontal rule.</p>
 <hr>
@@ -113,7 +113,10 @@ yarn add @microflash/remarkability
   <p>You can also put some quotes in a <code>blockquote</code>.</p>
   <p>It can span multiple paragraphs.</p>
   <blockquote>
-    <p>Multiple <code>blockquote</code>s can be nested as well.</p>
+    <p>Multiple <code>blockquote</code>s</p>
+    <blockquote>
+      <p>can be nested as well.</p>
+    </blockquote>
   </blockquote>
   <p>You can add lists</p>
   <ul>
@@ -185,6 +188,148 @@ public class Factorial {
 <p>You can easily customize <code>remarkability</code> with <a href="https://github.com/Microflash/remarkability/tree/master/scss" target="_blank" rel="noopener noreferrer">Sass</a>, using <strong>variables</strong> and <strong>options</strong>.</p>
 <h3>Variables</h3>
 <p>Variables control the values of the properties of elements.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Default value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>$color-link</code></td>
+      <td><code>hsl(209, 100%, 42%)</code></td>
+    </tr>
+    <tr>
+      <td><code>$color-monospace</code></td>
+      <td><code>hsl(344, 69%, 43%)</code></td>
+    </tr>
+    <tr>
+      <td><code>$color-visited-link</code></td>
+      <td><code>hsl(293, 100%, 30%)</code></td>
+    </tr>
+    <tr>
+      <td><code>$color-text-light</code></td>
+      <td><code>hsl(0, 0%, 50%)</code></td>
+    </tr>
+    <tr>
+      <td><code>$color-default</code></td>
+      <td><code>hsl(0, 0%, 20%)</code></td>
+    </tr>
+    <tr>
+      <td><code>$color-emphasis</code></td>
+      <td><code>hsl(0, 0%, 10%)</code></td>
+    </tr>
+    <tr>
+      <td><code>$background-code</code></td>
+      <td><code>hsl(0, 0%, 95%)</code></td>
+    </tr>
+    <tr>
+      <td><code>$background-ins</code></td>
+      <td><code>hsl(137, 75%, 67%)</code></td>
+    </tr>
+    <tr>
+      <td><code>$background-mark</code></td>
+      <td><code>hsl(42, 99%, 70%)</code></td>
+    </tr>
+    <tr>
+      <td><code>$background-table</code></td>
+      <td><code>hsl(0, 0%, 100%)</code></td>
+    </tr>
+    <tr>
+      <td><code>$background-table-even</code></td>
+      <td><code>hsl(0, 0%, 98%)</code></td>
+    </tr>
+    <tr>
+      <td><code>$background-table-hover</code></td>
+      <td><code>hsl(0, 0%, 96%)</code></td>
+    </tr>
+    <tr>
+      <td><code>$border</code></td>
+      <td><code>hsl(0, 0%, 90%)</code></td>
+    </tr>
+    <tr>
+      <td><code>$radius</code></td>
+      <td><code>3px</code></td>
+    </tr>
+    <tr>
+      <td><code>$text</code></td>
+      <td><code>$color-default</code></td>
+    </tr>
+    <tr>
+      <td><code>$text-code</code></td>
+      <td><code>$color-monospace</code></td>
+    </tr>
+    <tr>
+      <td><code>$text-strong</code></td>
+      <td><code>$color-emphasis</code></td>
+    </tr>
+    <tr>
+      <td><code>$text-light</code></td>
+      <td><code>$color-text-light</code></td>
+    </tr>
+    <tr>
+      <td><code>$text-headings</code></td>
+      <td><code>$color-emphasis</code></td>
+    </tr>
+    <tr>
+      <td><code>$text-blockquote</code></td>
+      <td><code>$color-text-light</code></td>
+    </tr>
+    <tr>
+      <td><code>$link</code></td>
+      <td><code>$color-link</code></td>
+    </tr>
+    <tr>
+      <td><code>$link-hover</code></td>
+      <td><code>$color-link</code></td>
+    </tr>
+    <tr>
+      <td><code>$link-visited</code></td>
+      <td><code>$color-visited-link</code></td>
+    </tr>
+    <tr>
+      <td><code>$table-thead</code></td>
+      <td><code>$color-emphasis</code></td>
+    </tr>
+    <tr>
+      <td><code>$line-height</code></td>
+      <td><code>1.6</code></td>
+    </tr>
+    <tr>
+      <td><code>$margin</code></td>
+      <td><code>1.4rem</code></td>
+    </tr>
+    <tr>
+      <td><code>$family-remarkability</code></td>
+      <td>
+        <pre>-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</pre>
+      </td>
+    </tr>
+    <tr>
+      <td><code>$family-code</code></td>
+      <td>
+        <pre>"Roboto Mono", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace</pre>
+      </td>
+    </tr>
+    <tr>
+      <td><code>$weight-strong</code></td>
+      <td><code>700</code></td>
+    </tr>
+    <tr>
+      <td><code>$weight-headings</code></td>
+      <td><code>700</code></td>
+    </tr>
+    <tr>
+      <td><code>$font-size</code></td>
+      <td><code>1rem</code></td>
+    </tr>
+    <tr>
+      <td><code>$text-size-adjust</code></td>
+      <td><code>100%</code></td>
+    </tr>
+  </tbody>
+</table>
 <h3>Options</h3>
 <p>Options toggle the following features. By <strong>default</strong>, all options are set to <code>false</code>.</p>
 <table>

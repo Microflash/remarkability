@@ -31,7 +31,7 @@ By default, `remarkability` inherits colors and typography but you can customize
 
 ## Example
 
-The content you're reading is styled using `remarkability` with [default](https://github.com/Microflash/remarkability/tree/master/src/_variables.scss) configuration.
+The content you're reading is styled using `remarkability` with a [recommended](https://github.com/Microflash/remarkability/tree/master/src/_variables.scss) configuration.
 
 You can have a paragraph with *emphasized* or **important** text, [links](#), `code snippets`, <abbr title="abbreviations">abbr</abbr>, <q>short quote</q>, <cite>citations</cite>, <mark>highlighted text</mark>, <kbd>keyboard inputs</kbd>, <s>strikethrough</s>, ~~deleted~~ or <ins>inserted</ins> elements, <samp>sample text</samp>, <small>small text</small>, <sub>subscript</sub> or <sup>superscript</sup> text.
 
@@ -91,7 +91,8 @@ And even **definition lists**:
 > You can also put some quotes in a `blockquote`.
 >
 > It can span multiple paragraphs.
-> > Multiple `blockquote`s can be nested as well.
+> > Multiple `blockquote`s 
+> > > can be nested as well.
 >
 > You can add lists
 > 
@@ -155,22 +156,57 @@ You can easily customize `remarkability` with [Sass](https://github.com/Microfla
 
 Variables control the values of the properties of elements.
 
+| Variable | Default value |
+| -------- | ------------- |
+| `$color-link` | `hsl(209, 100%, 42%)` |
+| `$color-monospace` | `hsl(344, 69%, 43%)` |
+| `$color-visited-link` | `hsl(293, 100%, 30%)` |
+| `$color-text-light` | `hsl(0, 0%, 50%)` |
+| `$color-default` | `hsl(0, 0%, 20%)` |
+| `$color-emphasis` | `hsl(0, 0%, 10%)` |
+| `$background-code` | `hsl(0, 0%, 95%)` |
+| `$background-ins` | `hsl(137, 75%, 67%)` |
+| `$background-mark` | `hsl(42, 99%, 70%)` |
+| `$background-table` | `hsl(0, 0%, 100%)` |
+| `$background-table-even` | `hsl(0, 0%, 98%)` |
+| `$background-table-hover` | `hsl(0, 0%, 96%)` |
+| `$border` | `hsl(0, 0%, 90%)` |
+| `$radius` | `3px` |
+| `$text` | `$color-default` |
+| `$text-code` | `$color-monospace` |
+| `$text-strong` | `$color-emphasis` |
+| `$text-light` | `$color-text-light` |
+| `$text-headings` | `$color-emphasis` |
+| `$text-blockquote` | `$color-text-light` |
+| `$link` | `$color-link` |
+| `$link-hover` | `$color-link` |
+| `$link-visited` | `$color-visited-link` |
+| `$table-thead` | `$color-emphasis` |
+| `$line-height` | `1.6` |
+| `$margin` | `1.4rem` |
+| `$family-remarkability` | <pre>-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</pre> |
+| `$family-code` | <pre>"Roboto Mono", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace</pre> |
+| `$weight-strong` | `700` |
+| `$weight-headings` | `700` |
+| `$font-size` | `1rem` |
+| `$text-size-adjust` | `100%` |
+
 ### Options
 
 Options toggle the following features. By **default**, all options are set to `false`.
 
-| Option             | When set to `true`                                                                                                         |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| `$closer-lists`    | Brings **lists** closer to the **paragraph** they *immediately* follow                                                     |
-| `$custom-colors`   | Applies the **color** variables to the content                                                                             |
-| `$custom-fonts`    | Applies the **font-family** variables to the content                                                                       |
-| `$font-smoothing`  | Applies [font smoothing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth) to non-code content                 |
-| `$text-adjusting`  | Applies the [text size adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust) variables to the content |
-| `$heading-borders` | Adds bottom borders to `h1` and `h2`                                                                                       |
-| `$show-underline`  | **Underlines** links                                                                                                       |
-| `$table-hover`     | Adds hover background to **table rows**                                                                                    |
-| `$table-striped`   | Adds striped rows to **tables**                                                                                            |
-| `$visited-links`   | Applies the `$link-visited` color to **visited links**                                                                     |
+| Option | When set to `true` |
+| ------ | ------------------ |
+| `$closer-lists` | Brings **lists** closer to the **paragraph** they *immediately* follow |
+| `$custom-colors` | Applies the **color** variables to the content |
+| `$custom-fonts` | Applies the **font-family** variables to the content |
+| `$font-smoothing` | Applies [font smoothing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth) to non-code content |
+| `$text-adjusting` | Applies the [text size adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust) variables to the content |
+| `$heading-borders` | Adds bottom borders to `h1` and `h2` |
+| `$show-underline` | **Underlines** links |
+| `$table-hover` | Adds hover background to **table rows** |
+| `$table-striped` | Adds striped rows to **tables** |
+| `$visited-links` | Applies the `$link-visited` color to **visited links** |
 
 ## Notes
 
