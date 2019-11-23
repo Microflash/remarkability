@@ -301,10 +301,6 @@
   white-space: pre-wrap;
 }
 
-.remarkability table code {
-  white-space: pre;
-}
-
 .remarkability th,
 .remarkability td {
   font-size: 1em;

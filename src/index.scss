@@ -6,7 +6,7 @@ $family-code: "IBM Plex Mono", "Roboto Mono", "Menlo", "Monaco", "Consolas",
 
 @import "../scss/remarkability.scss";
 
-$padding: 1.5rem;
+$padding: 1rem;
 
 @mixin phone-only {
   @media (max-width: 599px) { @content; }
@@ -66,7 +66,11 @@ header, footer {
 header {
   p {
     padding: $padding;
-    font-size: 1.5rem;
+    font-size: 2rem;
+
+    @include phone-only() {
+      font-size: 1.25rem;
+    }
 
     @include tablet() {
       padding: $padding 4rem $padding;
@@ -113,4 +117,14 @@ main {
 
   border: 1px solid hsl(0, 0%, 75%);
   background-color: hsl(0, 0, 100%);
+}
+
+.remarkability {
+  table {
+    code {
+      @include tablet() {
+        white-space: pre;
+      }
+    }
+  }
 }

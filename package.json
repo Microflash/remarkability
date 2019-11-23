@@ -1,6 +1,6 @@
 {
   "name": "@microflash/remarkability",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "Baseline CSS for Markdown content",
   "main": "dist/remarkability.min.css",
   "scripts": {
