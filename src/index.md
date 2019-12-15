@@ -104,10 +104,8 @@ And even **definition lists**:
 You can also use **figure** and *figcaption* for images.
 
 <figure>
-  <a href="https://mflash.dev">
-    <img src="https://repository-images.githubusercontent.com/194477832/5100bf80-d116-11e9-9cc8-0249620351f3" alt="Microflash" width="1280" height="640">
-  </a>
-  <figcaption>A large image</figcaption>
+  <img src="https://images.unsplash.com/photo-1501622285814-b5071de6f0be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Microflash" width="750">
+  <figcaption>Photo by <a href="https://unsplash.com/@plqml?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">@plqml</a> on <a href="/s/photos/woman-in-red?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
 </figure>
 
 <figure>
