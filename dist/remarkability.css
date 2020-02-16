@@ -1,12 +1,14 @@
-/*! remarkability.css v0.6.7 | MIT License | https://github.com/Microflash/remarkability */
+/*! remarkability.css v0.6.8 | MIT License | https://github.com/Microflash/remarkability */
 .remarkability {
   line-height: 1.6;
   font-size: 1rem;
+  text-rendering: optimizeLegibility;
 }
 .remarkability a {
   text-decoration: none;
+  cursor: pointer;
 }
-.remarkability a:hover {
+.remarkability a:focus, .remarkability a:hover {
   text-decoration: underline;
 }
 .remarkability a:active, .remarkability a:hover {
@@ -118,33 +120,33 @@
   font-size: 2.4em;
   margin-bottom: 0.5833333333rem;
   margin-top: 0.5833333333rem;
-  line-height: 1;
+  line-height: 1.25;
 }
 .remarkability h2 {
   font-size: 1.6em;
   margin-bottom: 0.875rem;
-  margin-top: 1.75rem;
-  line-height: 1.1;
+  margin-top: 2.625rem;
+  line-height: 1.4;
 }
 .remarkability h3 {
   font-size: 1.3em;
   margin-bottom: 1.0769230769rem;
-  margin-top: 1.0769230769rem;
+  margin-top: 3.2307692308rem;
 }
 .remarkability h4 {
   font-size: 1.2em;
   margin-bottom: 1.1666666667rem;
-  margin-top: 1.1666666667rem;
+  margin-top: 3.5rem;
 }
 .remarkability h5 {
   font-size: 1.1em;
   margin-bottom: 1.2727272727rem;
-  margin-top: 1.2727272727rem;
+  margin-top: 3.8181818182rem;
 }
 .remarkability h6 {
   font-size: 1em;
   margin-bottom: 1.4rem;
-  margin-top: 1.4rem;
+  margin-top: 4.2rem;
 }
 .remarkability dd {
   margin-left: 1.4rem;
@@ -192,7 +194,7 @@
 }
 .remarkability blockquote {
   border-left: 2px solid #e6e6e6;
-  padding: 0.6em 1.2em;
+  padding: 0.5em 1em;
 }
 .remarkability code,
 .remarkability kbd,
@@ -208,18 +210,18 @@
 .remarkability code,
 .remarkability kbd,
 .remarkability samp {
-  padding: 0.1em 0.4em 0.2em;
+  padding: 0.2em 0.4em 0.2em;
 }
 .remarkability pre {
-  overflow: auto;
-  padding: 1em 1.2em;
+  overflow: hidden;
 }
 .remarkability pre code {
+  display: block;
   background: none;
+  overflow: auto;
   border: none;
-  padding: 0;
+  padding: 1em 1.2em;
   font-size: 1em;
-  line-height: 1em;
   white-space: pre;
 }
 .remarkability figure {

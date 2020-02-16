@@ -200,11 +200,14 @@ Options toggle the following features. By **default**, all options are set to `f
 | `$custom-fonts` | Applies the **font-family** variables to the content |
 | `$font-smoothing` | Applies [font smoothing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth) to non-code content |
 | `$text-adjusting` | Applies the [text size adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust) variables to the content |
+| `$image-rounding` | Applies a border radius `$radius` to the images |
+| `$codeblock-rounding` | Applies a border radius `$radius` to the codeblocks |
 | `$heading-borders` | Adds bottom borders to `h1` and `h2` |
 | `$show-underline` | **Underlines** links |
 | `$table-hover` | Adds hover background to **table rows** |
 | `$table-striped` | Adds striped rows to **tables** |
 | `$visited-links` | Applies the `$link-visited` color to **visited links** |
+| `$hovered-links` | Applies the `$link-hover` color to **focus** and **hover** link states |
 
 ## Notes
 
