@@ -209,6 +209,8 @@ Options toggle the following features. By **default**, all options are set to `f
 | `$visited-links` | Applies the `$link-visited` color to **visited links** |
 | `$hovered-links` | Applies the `$link-hover` color to **focus** and **hover** link states |
 
+The variable `$base-selector` lets you customize the base selector. By default, it is set to `.remarkability`.
+
 ## Notes
 
 - `remarkability` is based on [wysiwyg.css](https://github.com/jgthms/wysiwyg.css) by [Jeremy Thomas](https://github.com/jgthms) and [github-markdown-css](https://github.com/sindresorhus/github-markdown-css) by [Sindre Sorhus](https://github.com/sindresorhus) with some modifications.

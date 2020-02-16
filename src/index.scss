@@ -63,7 +63,6 @@ header, footer {
 header {
   p {
     padding: $padding;
-    margin-bottom: $padding * 3;
     font-size: 2rem;
 
     @include phone-only {
@@ -86,7 +85,6 @@ header {
 
 footer {
   font-size: 0.75rem;
-  margin-top: $padding * 3;
 
   a {
     font-weight: 500;

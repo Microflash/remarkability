@@ -1,9 +1,9 @@
-/*! remarkability.css v0.6.8 | MIT License | https://github.com/Microflash/remarkability */
+/*! remarkability.css v0.6.9 | MIT License | https://github.com/Microflash/remarkability */
 @import "variables";
 @import "mixins";
 
 // Styles
-.remarkability {
+#{$base-selector} {
   line-height: $line-height;
   font-size: $font-size;
 
