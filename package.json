@@ -1,6 +1,6 @@
 {
   "name": "@microflash/remarkability",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "description": "Baseline CSS for Markdown content",
   "main": "dist/remarkability.min.css",
   "scripts": {
@@ -19,7 +19,7 @@
   "dependencies": {
     "autoprefixer": "^9.7.1",
     "clean-css-cli": "^4.3.0",
-    "postcss-cli": "^6.1.3",
+    "postcss-cli": "^7.1.0",
     "sass": "^1.23.7"
   },
   "devDependencies": {

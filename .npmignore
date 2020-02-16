@@ -5,4 +5,4 @@ src/
 .gitignore
 build.sh
 postcss.config.js
-yarn.lock
+package-lock.json

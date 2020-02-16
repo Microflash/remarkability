@@ -182,8 +182,8 @@ Variables control the values of the properties of elements.
 | `$table-thead` | `$color-emphasis` |
 | `$line-height` | `1.6` |
 | `$margin` | `1.4rem` |
-| `$family-remarkability` | <pre>-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</pre> |
-| `$family-code` | <pre>"Roboto Mono", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace</pre> |
+| `$family-remarkability` | <pre style="padding: 1em 1.2em">-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</pre> |
+| `$family-code` | <pre style="padding: 1em 1.2em">"Roboto Mono", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace</pre> |
 | `$weight-strong` | `700` |
 | `$weight-headings` | `700` |
 | `$font-size` | `1rem` |
@@ -200,11 +200,14 @@ Options toggle the following features. By **default**, all options are set to `f
 | `$custom-fonts` | Applies the **font-family** variables to the content |
 | `$font-smoothing` | Applies [font smoothing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth) to non-code content |
 | `$text-adjusting` | Applies the [text size adjust](https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust) variables to the content |
+| `$image-rounding` | Applies a border radius `$radius` to the images |
+| `$codeblock-rounding` | Applies a border radius `$radius` to the codeblocks |
 | `$heading-borders` | Adds bottom borders to `h1` and `h2` |
 | `$show-underline` | **Underlines** links |
 | `$table-hover` | Adds hover background to **table rows** |
 | `$table-striped` | Adds striped rows to **tables** |
 | `$visited-links` | Applies the `$link-visited` color to **visited links** |
+| `$hovered-links` | Applies the `$link-hover` color to **focus** and **hover** link states |
 
 ## Notes
 

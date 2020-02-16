@@ -1,4 +1,4 @@
-/*! remarkability.css v0.6.7 | MIT License | https://github.com/Microflash/remarkability */
+/*! remarkability.css v0.6.8 | MIT License | https://github.com/Microflash/remarkability */
 @import "variables";
 @import "mixins";
 
@@ -24,12 +24,22 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  text-rendering: optimizeLegibility;
+
   // Inlines
   a {
     text-decoration: none;
+    cursor: pointer;
 
     @if $custom-colors {
       color: $link;
+
+      @if $hovered-links {
+        &:focus, 
+        &:hover {
+          color: $link-hover;
+        }
+      }
 
       @if $visited-links {
         &:visited {
@@ -41,6 +51,7 @@
     @if $show-underline {
       text-decoration: underline;
     } @else {
+      &:focus,
       &:hover {
         text-decoration: underline;
       }
@@ -72,6 +83,10 @@
 
   img {
     vertical-align: text-bottom;
+
+    @if $image-rounding {
+      border-radius: $radius;
+    }
   }
 
   mark,
@@ -179,29 +194,29 @@
   h1 {
     @include heading(2.4, true);
 
-    line-height: 1;
+    line-height: 1.25;
   }
 
   h2 {
-    @include heading(1.6, true, true);
+    @include heading(1.6, false, true);
 
-    line-height: 1.1;
+    line-height: 1.4;
   }
 
   h3 {
-    @include heading(1.3);
+    @include heading(1.3, false, true);
   }
 
   h4 {
-    @include heading(1.2);
+    @include heading(1.2, false, true);
   }
 
   h5 {
-    @include heading(1.1);
+    @include heading(1.1, false, true);
   }
 
   h6 {
-    @include heading(1);
+    @include heading(1, false, true);
   }
 
   // Paragraphs
@@ -277,7 +292,7 @@
   // Blockquote
   blockquote {
     border-left: 2px solid $border;
-    padding: 0.6em 1.2em;
+    padding: 0.5em 1em;
 
     @if $custom-colors {
       color: $text-blockquote;
@@ -304,7 +319,7 @@
   code,
   kbd,
   samp {
-    padding: 0.1em 0.4em 0.2em;
+    padding: 0.2em 0.4em 0.2em;
 
     @if $custom-colors {
       color: $text-code;
@@ -312,15 +327,19 @@
   }
 
   pre {
-    overflow: auto;
-    padding: 1em 1.2em;
+    overflow: hidden;
+
+    @if $codeblock-rounding {
+      border-radius: $radius;
+    }
 
     code {
+      display: block;
       background: none;
+      overflow: auto;
       border: none;
-      padding: 0;
+      padding: 1em 1.2em;
       font-size: 1em;
-      line-height: 1em;
       white-space: pre;
     }
   }

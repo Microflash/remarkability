@@ -9,7 +9,7 @@
   margin-bottom: $margin / $font-size;
 
   @if $top-space {
-    margin-top: $margin * 2 / $font-size;
+    margin-top: $margin * 3 / $font-size;
   } @else {
     margin-top: $margin / $font-size;
   }
