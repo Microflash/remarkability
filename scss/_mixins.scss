@@ -29,10 +29,22 @@
 
 @mixin base-font {
   font-family: variables.$family-default;
+
+  @if variables.$variable-fonts {
+    @supports (font-variation-settings: normal) {
+      font-family: variables.$family-default-var, variables.$family-default;
+    }
+  }
 }
 
 // Set monospace font-family
 
 @mixin code-font {
   font-family: variables.$family-code;
+
+  @if variables.$variable-fonts {
+    @supports (font-variation-settings: normal) {
+      font-family: variables.$family-code-var, variables.$family-code;
+    }
+  }
 }
