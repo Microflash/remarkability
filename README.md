@@ -44,6 +44,9 @@ For more details and to see how it looks, check out the [docs](https://microflas
 
 Licensed under [MIT](./LICENSE.md).
 
-## Notes
+## Acknowledgements
 
-`remarkability` is based on [wysiwyg.css](https://github.com/jgthms/wysiwyg.css) by [Jeremy Thomas](https://github.com/jgthms) and [github-markdown-css](https://github.com/sindresorhus/github-markdown-css) by [Sindre Sorhus](https://github.com/sindresorhus) with some modifications.
+`remarkability` is possible because of the following projects and people:
+
+- [wysiwyg.css](https://github.com/jgthms/wysiwyg.css) by [Jeremy Thomas](https://github.com/jgthms)
+- [github-markdown-css](https://github.com/sindresorhus/github-markdown-css) by [Sindre Sorhus](https://github.com/sindresorhus)
