@@ -11,6 +11,7 @@
   }
 
   @if variables.$custom-colors {
+    background-color: variables.$background-body;
     color: variables.$text;
   }
 
@@ -83,8 +84,8 @@
   img {
     vertical-align: text-bottom;
 
-    @if variables.$image-rounding {
-      border-radius: variables.$radius;
+    @if variables.$round-images {
+      border-radius: variables.$image-radius;
     }
   }
 
@@ -328,8 +329,8 @@
   pre {
     overflow: hidden;
 
-    @if variables.$codeblock-rounding {
-      border-radius: variables.$radius;
+    @if variables.$round-codeblocks {
+      border-radius: variables.$codeblock-radius;
     }
 
     code {
@@ -362,7 +363,7 @@
     margin-top: variables.$margin / 1.6;
 
     @if variables.$custom-colors {
-      color: variables.$text-light;
+      color: variables.$text-muted;
     }
   }
 
