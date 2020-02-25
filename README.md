@@ -31,7 +31,7 @@ You just need to add `.remarkability` class to your container to style the eleme
 </main>
 ```
 
-For more details and to see how it looks, check out the [docs](https://microflash.github.io/remarkability/).
+For more details and to see how it looks, check out the [docs](https://mflash.dev/remarkability/).
 
 ## Development
 

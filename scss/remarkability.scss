@@ -192,31 +192,31 @@
   }
 
   h1 {
-    @include mixins.heading(2.4, true);
+    @include mixins.heading(2.4);
 
     line-height: 1.25;
   }
 
   h2 {
-    @include mixins.heading(1.6, false, true);
+    @include mixins.heading(1.6, $top-space: true);
 
     line-height: 1.4;
   }
 
   h3 {
-    @include mixins.heading(1.3, false, true);
+    @include mixins.heading(1.3, $top-space: true);
   }
 
   h4 {
-    @include mixins.heading(1.2, false, true);
+    @include mixins.heading(1.2, $top-space: true);
   }
 
   h5 {
-    @include mixins.heading(1.1, false, true);
+    @include mixins.heading(1.1, $top-space: true);
   }
 
   h6 {
-    @include mixins.heading(1, false, true);
+    @include mixins.heading(1, $top-space: true);
   }
 
   // Paragraphs
