@@ -4,11 +4,7 @@
 @use '../scss/mixins';
 @use '../scss/remarkability.scss';
 
-$padding: 1rem;
-
-@mixin phone-only {
-  @media (max-width: 599px) { @content; }
-}
+$gap: calc(2vw + 1.5rem) !default;
 
 @mixin tablet {
   @media (min-width: 900px) {
@@ -16,105 +12,58 @@ $padding: 1rem;
   }
 }
 
-@mixin desktop-mdpi {
-  @media (min-width: 1200px) {
-    @content;
-  }
+@mixin vspace($space: $gap) {
+  padding-top: $space;
+  padding-bottom: $space;
 }
 
-@mixin desktop-hdpi {
-  @media (min-width: 1800px) {
-    @content;
+body, .remarkability {
+  @include tablet {
+    max-width: 55vw;
   }
 }
 
 body {
   @include mixins.base-font;
   margin: 0 auto;
-  padding: $padding;
-  color: hsl(0, 0, 100%);
-  background-color: hsl(244, 59%, 15%);
-  background-image: linear-gradient(to top, hsl(344, 69%, 43%) 0%, hsl(244, 59%, 15%) 100%);
-
-  @include phone-only {
-    padding: 0;
-  }
-
-  @include tablet {
-    padding: 5rem;
-    max-width: 90vw;
-  }
-
-  @include desktop-mdpi {
-    padding: 5rem;
-    max-width: 65vw;
-  }
-
-  @include desktop-hdpi {
-    padding: 7rem;
-    max-width: 60vw;
-  }
-}
-
-header, footer {
-  text-align: center;
-  padding: $padding;
+  padding: $gap;
 }
 
 header {
-  p {
-    padding: $padding;
-    font-size: 2rem;
+  h1 {
+    background: linear-gradient(to bottom right, #e9606a, #8d85b6);
+    background-clip: text;
+    color: transparent;
+    font-size: calc(2vw + 2rem);
+    font-weight: 700;
+  }
 
-    @include phone-only {
-      font-size: 1.25rem;
-    }
-
-    @include tablet {
-      padding: $padding 4rem $padding;
-    }
-
-    @include desktop-mdpi {
-      padding: $padding 5rem $padding;
-    }
-
-    @include desktop-hdpi {
-      padding: $padding 7rem $padding;
-    }
+  .subtitle {
+    @include vspace(calc(#{$gap} / 7));
+    font-size: calc(2vw + 0.75rem);
+    font-weight: 300;
+    color: hsl(0, 0%, 33%);
   }
 }
 
 footer {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 33%);
 
   a {
-    font-weight: 500;
     text-decoration: none;
-    color: hsl(42, 99%, 70%);
+    color: hsl(209, 100%, 42%);
 
+    &:focus,
     &:hover {
       text-decoration: underline;
+      color: hsl(209, 99%, 46%);
     }
   }
 }
 
 main {
-  padding: $padding;
-
-  @include tablet {
-    padding: 5rem;
-  }
-
-  @include desktop-mdpi {
-    padding: 5rem;
-  }
-
-  @include desktop-hdpi {
-    padding: 7rem;
-  }
-
-  border: 1px solid hsl(0, 0%, 75%);
-  background-color: hsl(0, 0, 100%);
+  @include vspace;
 }
 
 .remarkability {
