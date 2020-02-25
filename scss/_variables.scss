@@ -1,4 +1,20 @@
-// Colours
+// Typography
+
+$family-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  'Helvetica', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$family-code: 'Roboto Mono', 'Menlo', 'Monaco', 'Consolas',
+  'Liberation Mono', 'Courier New', monospace !default;
+
+$weight-bold: 700 !default;
+$weight-headings: $weight-bold !default;
+
+$font-size: 1rem !default;
+$text-size-adjust: 100% !default;
+
+// Colors
+
 $color-link: hsl(209, 100%, 42%) !default;
 $color-monospace: hsl(344, 69%, 43%) !default;
 $color-visited-link: hsl(293, 100%, 30%) !default;
@@ -33,22 +49,8 @@ $table-thead: $color-emphasis !default;
 $line-height: 1.6 !default;
 $margin: 1.4rem !default;
 
-// Typography
-$family-remarkability: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  "Helvetica", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$family-code: "Roboto Mono", "Menlo", "Monaco", "Consolas",
-  "Liberation Mono", "Courier New", monospace !default;
-
-$weight-strong: 700 !default;
-$weight-headings: 700 !default;
-
-$font-size: 1rem !default;
-$text-size-adjust: 100% !default;
-
 // Options
-$base-selector: ".remarkability" !default;
+$base-selector: '.remarkability' !default;
 $closer-lists: false !default;
 $custom-colors: false !default;
 $custom-fonts: false !default;

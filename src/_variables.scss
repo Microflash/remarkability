@@ -1,8 +1,10 @@
-$closer-lists: true !default;
-$custom-colors: true !default;
-$custom-fonts: true !default;
-$text-adjusting: true !default;
-$image-rounding: true !default;
-$codeblock-rounding: true !default;
-$heading-borders: true !default;
-$hovered-links: true !default;
+@use '../scss/variables' with (
+  $closer-lists: true,
+  $custom-colors: true,
+  $custom-fonts: true,
+  $text-adjusting: true,
+  $image-rounding: true,
+  $codeblock-rounding: true,
+  $heading-borders: true,
+  $hovered-links: true
+);
