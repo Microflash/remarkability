@@ -239,7 +239,7 @@ The variable `$base-selector` lets you customize the base selector. By default, 
 
 #### Renamed variables
 
-| `Previous variable name` | `Current variable name` |
+| `Previous variable name` v0.6.x | `Current variable name` v0.7.x |
 | ------------------- | ------------------- |
 | `$family-remarkability` | `$family-default` |
 | `$weight-strong` | `$weight-bold` |
@@ -263,8 +263,8 @@ $closer-lists: true !default;
 $custom-colors: true !default;
 $custom-fonts: true !default;
 $text-adjusting: true !default;
-$image-rounding: true !default;
-$codeblock-rounding: true !default;
+$round-images: true !default;
+$round-codeblocks: true !default;
 $heading-borders: true !default;
 $hovered-links: true !default;
 ```
