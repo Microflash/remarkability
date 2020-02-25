@@ -289,6 +289,22 @@
     }
   }
 
+  // Input
+  input,
+  textarea {
+    font: inherit;
+    line-height: inherit;
+
+    @if variables.$custom-colors {
+      color: variables.$text;
+    }
+
+    &::placeholder {
+      color: inherit;
+      opacity: variables.$opacity;
+    }
+  }
+
   // Blockquote
   blockquote {
     border-left: 2px solid variables.$border;

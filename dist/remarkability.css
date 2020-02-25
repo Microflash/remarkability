@@ -192,6 +192,28 @@
 .remarkability ul ul ul ul ul ul {
   list-style-type: circle;
 }
+.remarkability input,
+.remarkability textarea {
+  font: inherit;
+  line-height: inherit;
+}
+.remarkability input::-webkit-input-placeholder, .remarkability textarea::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+.remarkability input::-moz-placeholder, .remarkability textarea::-moz-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+.remarkability input::-ms-input-placeholder, .remarkability textarea::-ms-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+.remarkability input::placeholder,
+.remarkability textarea::placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
 .remarkability blockquote {
   border-left: 2px solid #e6e6e6;
   padding: 0.5em 1em;
