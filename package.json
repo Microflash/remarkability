@@ -40,5 +40,16 @@
   },
   "repository": "https://github.com/Microflash/remarkability.git",
   "author": "Naiyer Asif",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Microflash/remarkability/issues"
+  },
+  "homepage": "https://mflash.dev/remarkability",
+  "keywords": [
+    "markdown",
+    "css",
+    "sass",
+    "html",
+    "generated"
+  ]
 }
