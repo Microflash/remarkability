@@ -1,7 +1,10 @@
 .cache/
+.github/
 docs/
 node_modules/
 src/
 .gitignore
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
 postcss.config.js
 package-lock.json
