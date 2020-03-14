@@ -50,10 +50,8 @@ For more details and examples, check out the [docs](https://mflash.dev/remarkabi
 
 ## Development
 
-`bash` is required for development.
-
 1.  Edit the SCSS files in [scss](./scss) directory.
-2.  Execute `source build.sh` to build the assets and docs.
+2.  Execute `yarn dev` to build the assets and docs.
 
 ## License
 

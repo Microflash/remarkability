@@ -3,6 +3,5 @@ docs/
 node_modules/
 src/
 .gitignore
-build.sh
 postcss.config.js
 package-lock.json

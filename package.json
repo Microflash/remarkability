@@ -1,26 +1,27 @@
 {
   "name": "@microflash/remarkability",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Baseline CSS for Markdown content",
   "main": "dist/remarkability.min.css",
   "scripts": {
     "build": "npm-run-all dist:*",
-    "dist:rm": "rimraf dist/*",
-    "dist:build": "sass scss/remarkability.scss dist/remarkability.css",
+    "dist:clean": "shx rm -rf dist",
+    "dist:css": "sass scss/remarkability.scss dist/remarkability.css",
     "dist:prefix": "postcss --config postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
     "dist:minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.min.css dist/remarkability.css",
     "dev": "npm-run-all dev:*",
-    "dev:rm": "rimraf src/markdown.html && rimraf docs/index.min.css",
-    "dev:md": "node src/convert.js < src/index.md > src/markdown.html",
-    "dev:theme": "sass src/index.scss docs/index.css",
+    "dev:clean": "shx rm -rf src/markdown.html && shx rm -rf docs/index.min.css",
+    "dev:docs": "node src/convert.js < src/index.md > src/markdown.html",
+    "dev:css": "sass src/index.scss docs/index.css",
     "dev:prefix": "postcss --config postcss.config.js --replace \"docs/*.css\" \"!docs/*.min.css\"",
-    "dev:minify": "cleancss --level 1 --format breakWith=lf --output docs/index.min.css docs/index.css"
+    "dev:minify": "cleancss --level 1 --format breakWith=lf --output docs/index.min.css docs/index.css",
+    "dev:postprocess": "node src/postprocess.js"
   },
   "dependencies": {
     "autoprefixer": "^9.7.1",
     "clean-css-cli": "^4.3.0",
     "postcss-cli": "^7.1.0",
-    "sass": "^1.23.7"
+    "sass": "^1.26.3"
   },
   "devDependencies": {
     "highlight.js": "^9.18.1",
@@ -29,12 +30,13 @@
     "rehype-highlight": "^3.1.0",
     "rehype-raw": "^4.0.1",
     "rehype-stringify": "^6.0.1",
-    "remark-autolink-headings": "^5.2.1",
+    "remark-autolink-headings": "^5.2.2",
     "remark-external-links": "^5.0.0",
     "remark-parse": "^7.0.2",
     "remark-rehype": "^5.0.0",
     "remark-slug": "^5.1.2",
-    "rimraf": "^3.0.0",
+    "shelljs": "^0.8.3",
+    "shx": "^0.3.2",
     "unified": "^8.4.2",
     "unified-stream": "^1.0.5"
   },
