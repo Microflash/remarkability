@@ -231,9 +231,7 @@ Options toggle the following features. By **default**, all options are set to `f
 | `$hovered-links` | Applies the `$link-hover` color to **focus** and **hover** link states |
 | `$variable-fonts` | Applies the `$family-default-var` and `$family-code-var` variables to the content |
 
-The variable `$base-selector` lets you customize the base selector. By default, it is set to `.remarkability`.
-
-## Migrating to v0.7.0
+## Migrating to v0.7.x
 
 > `remarkability` v0.7.0 contains some breaking changes over previous versions. If you use Sass, follow this section to migrate without hassle.
 
@@ -254,7 +252,7 @@ Instead of using `$family-default` and `$family-code` variables directly to decl
 
 #### Customizing variables
 
-`remarkability` v0.7.0 uses [Sass Module System](https://sass-lang.com/blog/the-module-system-is-launched). Take advantage of the new syntax offered by `with`.
+`remarkability` v0.7.x uses [Sass Module System](https://sass-lang.com/blog/the-module-system-is-launched). Take advantage of the new syntax offered by `with`.
 
 Before v0.7.0, you'd declare variable overrides, in a partial, say `_variables.scss`, as follows:
 

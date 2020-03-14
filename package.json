@@ -6,9 +6,9 @@
   "scripts": {
     "build": "npm-run-all dist:*",
     "dist:clean": "shx rm -rf dist",
-    "dist:css": "sass scss/remarkability.scss dist/remarkability.css",
+    "dist:css": "sass scss/remarkability.scss dist/remarkability.css && sass scss/remarkability.global.scss dist/remarkability.global.css",
     "dist:prefix": "postcss --config postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
-    "dist:minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.min.css dist/remarkability.css",
+    "dist:minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.min.css dist/remarkability.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.global.min.css dist/remarkability.global.css",
     "dev": "npm-run-all dev:*",
     "dev:clean": "shx rm -rf src/markdown.html && shx rm -rf docs/index.min.css",
     "dev:docs": "node src/convert.js < src/index.md > src/markdown.html",
