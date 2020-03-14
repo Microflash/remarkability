@@ -44,6 +44,10 @@ You just need to add `.remarkability` class to your container to style the eleme
 
 By default, `remarkability` inherits colors and typography but you can customize this behavior with [Sass](https://github.com/Microflash/remarkability/tree/master/scss).
 
+### Global variant
+
+If you want to use `remarkability` globally, there's a [global variant](https://github.com/Microflash/remarkability/tree/master/dist/remarkability.global.min.css) available; it doesn't scope the styles under the `.remarkability` class.
+
 ## Example
 
 **This very document** is styled using `remarkability` with a [recommended configuration](https://github.com/Microflash/remarkability/tree/master/src/_variables.scss).
