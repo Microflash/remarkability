@@ -174,8 +174,10 @@ Variables control the values of the properties of elements.
 
 | Variable | Default value |
 | -------- | ------------- |
-| `$family-default` | <pre>-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'</pre> |
-| `$family-code` | <pre>'Roboto Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace</pre> |
+| `$family-sans-native` | <pre>-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'</pre> |
+| `$family-code-native` | <pre>SFMono-Regular, 'Roboto Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace</pre> |
+| `$family-default` | `$family-sans-native` |
+| `$family-code` | `$family-code-native` |
 | `$family-default-var` | `null` |
 | `$family-code-var` | `null` |
 | `$weight-bold` | `700` |

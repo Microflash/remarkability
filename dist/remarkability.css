@@ -1,4 +1,4 @@
-/*! remarkability.css v0.7.1 | MIT License | https://github.com/Microflash/remarkability */
+/*! remarkability.css v0.7.2 | MIT License | https://github.com/Microflash/remarkability */
 .remarkability {
   line-height: 1.6;
   font-size: 1rem;
@@ -224,7 +224,7 @@
 .remarkability pre {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
-  background-color: #f2f2f2;
+  background-color: whitesmoke;
   color: #333333;
   font-size: 0.9em;
   border-radius: 3px;
