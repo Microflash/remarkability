@@ -1,0 +1,14 @@
+// Remarkability extension: selection
+
+// background-color of the selected elements
+$selected: null;
+
+* {
+  &::-moz-selection { 
+    background: $selected;
+  }
+  
+  &::selection { 
+    background: $selected;
+  }
+}
