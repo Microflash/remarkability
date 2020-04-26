@@ -1,8 +1,9 @@
-.cache/
-.github/
-docs/
-node_modules/
-src/
+.cache
+.github
+.sitecache
+docs
+node_modules
+src
 .gitignore
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md

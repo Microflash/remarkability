@@ -1,4 +1,4 @@
-.cache/
-node_modules/
-docs/index.css.map
-docs/index.css
+.cache
+.sitecache
+docs
+node_modules
