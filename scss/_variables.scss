@@ -6,67 +6,73 @@ $family-sans-native: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 $family-code-native: SFMono-Regular, 'Roboto Mono', Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace !default;
 
-$family-default: $family-sans-native !default;
+$family-base: $family-sans-native !default;
 $family-code: $family-code-native !default;
-$family-default-var: null !default;
-$family-code-var: null !default;
+
+$family-base-variable: null !default;
+$family-code-variable: null !default;
 
 $weight-bold: 700 !default;
 $weight-headings: $weight-bold !default;
 
-$font-size: 1rem !default;
+$font-size-base: 1rem !default;
+$font-size-code: 0.9em !default;
 $text-size-adjust: 100% !default;
 
 // Colors
 
-$color-link: hsl(209, 100%, 42%) !default;
-$color-monospace: hsl(344, 69%, 43%) !default;
-$color-visited-link: hsl(293, 100%, 30%) !default;
-$color-hovered-link: hsl(209, 99%, 46%) !default;
+$color-base: hsl(0, 1%, 14%) !default;
+$color-vibrant: hsl(0, 0%, 9%) !default;
+$color-muted: hsl(0, 1%, 38%) !default;
 
-$color-muted: hsl(0, 0%, 45%) !default;
-$color-default: hsl(0, 0%, 20%) !default;
-$color-emphasis: hsl(0, 0%, 10%) !default;
+$color-link: hsl(209, 100%, 42%) !default;
+$color-link-hovered: hsl(209, 99%, 46%) !default;
+$color-link-visited: hsl(293, 100%, 30%) !default;
+$color-code: hsl(0, 58%, 46%) !default;
 
 $background-body: hsl(0, 0%, 100%) !default;
-$background-code: hsl(0, 0%, 96%) !default;
+$background-code: hsl(0, 5%, 96%) !default;
 $background-ins: hsl(137, 75%, 67%) !default;
 $background-mark: hsl(42, 99%, 70%) !default;
 $background-table: hsl(0, 0%, 100%) !default;
-$background-table-even: hsl(0, 0%, 98%) !default;
-$background-table-hover: hsl(0, 0%, 96%) !default;
-$border: hsl(0, 0%, 90%) !default;
+$background-table-even: hsl(0, 3%, 98%) !default;
+$background-table-hover: hsl(0, 5%, 96%) !default;
+
+$border-color: hsl(0, 0%, 91%) !default;
 $opacity: 0.5 !default;
 
 $radius: 3px !default;
-$image-radius: $radius !default;
-$codeblock-radius: $radius !default;
+$media-radius: $radius !default;
+$block-radius: $radius !default;
 
-$text: $color-default !default;
-$text-code: $color-monospace !default;
-$text-strong: $color-emphasis !default;
+$text: $color-base !default;
+$text-code: $color-code !default;
+$text-bold: $color-vibrant !default;
 $text-muted: $color-muted !default;
-$text-headings: $color-emphasis !default;
+$text-headings: $color-vibrant !default;
 $text-blockquote: $color-muted !default;
 
 $link: $color-link !default;
-$link-hover: $color-hovered-link !default;
-$link-visited: $color-visited-link !default;
+$link-hover: $color-link-hovered !default;
+$link-visited: $color-link-visited !default;
 
-$table-thead: $color-emphasis !default;
+$table-thead: $color-vibrant !default;
 
 // Spacing
+
 $line-height: 1.6 !default;
 $margin: 1.4rem !default;
 
 // Options
-$closer-lists: false !default;
+
+$compact-lists: false !default;
+$multiline-wrap: false !default;
 $custom-colors: false !default;
 $custom-fonts: false !default;
-$font-smoothing: false !default;
-$text-adjusting: false !default;
-$round-images: false !default;
-$round-codeblocks: false !default;
+$smooth-fonts: true !default;
+$adjust-text: true !default;
+$round-media: false !default;
+$round-blocks: false !default;
 $heading-borders: false !default;
 $show-underline: false !default;
 $table-hover: false !default;

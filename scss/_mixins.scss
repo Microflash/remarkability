@@ -1,31 +1,33 @@
+@use 'sass:map';
+@use 'sass:list';
 @use 'variables';
 
 // Table cell sizing
 
-@mixin cell($font-size) {
+@mixin cell($font-size, $gap: variables.$margin) {
   font-size: #{$font-size}em;
-  padding: variables.$margin / 2 / $font-size;
+  padding: $gap / 2 / $font-size;
 }
 
-// Headings adjustment
+// Headings gap and font sizing
 
-@mixin heading($font-size, $with-border: false, $top-space: false) {
+@mixin heading($font-size, $gap: variables.$margin, $with-border: false, $top-space: false) {
   font-size: #{$font-size}em;
-  margin-bottom: variables.$margin / $font-size;
+  margin-bottom: $gap / $font-size;
 
   @if $top-space {
-    margin-top: variables.$margin * 3 / $font-size;
+    margin-top: $gap * 3 / $font-size;
   } @else {
-    margin-top: variables.$margin / $font-size;
+    margin-top: $gap / $font-size;
   }
 
   @if variables.$heading-borders and $with-border {
-    border-bottom: 1px solid variables.$border;
-    padding-bottom: variables.$margin / $font-size;
+    border-bottom: 1px solid variables.$border-color;
+    padding-bottom: $gap / $font-size;
   }
 }
 
-// Set font-family
+// Declare a font family
 
 @mixin font-family($default-family, $variable-family) {
   font-family: $default-family;
@@ -37,12 +39,32 @@
   }
 }
 
-// Default font-families
+// Default font families
 
-@mixin base-font {
-  @include font-family(variables.$family-default, variables.$family-default-var);
+$font-families: (
+  'base': variables.$family-base variables.$family-base-variable,
+  'code': variables.$family-code variables.$family-code-variable
+) !default;
+
+// Convenience mixin to set default font families
+
+@mixin font($key) {
+  @if $key == 'base' or $key == 'code' {
+    $family: map.get($font-families, $key);
+    @include font-family(list.nth($family, 1), list.nth($family, 2));
+  } @else {
+    @error "Couldn't find a matching font family.";
+  }
 }
 
-@mixin code-font {
-  @include font-family(variables.$family-code, variables.$family-code-var);
+// Switch selector context
+
+@mixin context($selector) {
+  @if $selector == 'body' {
+    @at-root {
+      @content;
+    }
+  } @else {
+    @content;
+  }
 }

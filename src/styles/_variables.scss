@@ -1,10 +1,10 @@
 @use '../../scss/variables' with (
-  $closer-lists: true,
+  $compact-lists: true,
+  $multiline-wrap: true,
   $custom-colors: true,
   $custom-fonts: true,
-  $text-adjusting: true,
-  $round-images: true,
-  $round-codeblocks: true,
+  $round-media: true,
+  $round-blocks: true,
   $heading-borders: true,
   $hovered-links: true
 );
