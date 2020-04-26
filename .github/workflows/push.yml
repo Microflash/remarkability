@@ -1,0 +1,16 @@
+on:
+  push:
+    branches: 
+      - master
+name: Deploy
+jobs: 
+  deploy:
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@master
+      - uses: JamesIves/github-pages-deploy-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          BUILD_SCRIPT: npm install && npm run dev
+          FOLDER: docs

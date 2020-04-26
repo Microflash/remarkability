@@ -1,8 +1,6 @@
 const shell = require('shelljs')
 
-shell.rm('-rf', 'docs/index.html')
-shell.cp('src/template.html', 'docs/index.html')
-shell.sed('-i', /<!-- markdown -->/, shell.cat('src/markdown.html'), 'docs/index.html')
-shell.rm('-rf', 'src/markdown.html')
-shell.rm('-rf', 'docs/index.css.map')
-shell.rm('-rf', 'docs/index.css')
+shell.cp('src/content/template.html', 'docs/index.html')
+shell.sed('-i', /<!-- markdown -->/, shell.cat('.sitecache/generated.html'), 'docs/index.html')
+shell.cp('.sitecache/index.min.css', 'docs/index.min.css')
+shell.cp('src/assets/favicon.ico', 'docs/favicon.ico')

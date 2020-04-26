@@ -3,26 +3,22 @@
 Thanks for taking the time to contribute to Remarkability!
 
 - [Code of Conduct](#code-of-conduct)
-- [Guidelines](#guidelines)
-  - [Objectives](#objectives)
-  - [Git Commits](#git-commits)
+- [Objectives](#objectives)
+- [Git Commits](#git-commits)
 
 ## Code of Conduct
 
 All the participations for Remarkability are governed by [Contributor Covenant Code of Conduct](./CODE_OF_CONDUCT.md).
 
-## Guidelines
-
-### Objectives
+## Objectives
 
 Remarkability has the following objectives:
 
-1. **Readability**
-2. **Accessibility**
-3. **Simplicity**
-4. **Extensibility**
+- **Readability**: Any change should not compromise on the readability of the HTML document. Additionally, it is desirable if the change improves the readability.
+- **Accessibility**: At the very minimum, Lighthouse should pass with 100% score.
+- **Extensibility**: Remarkability strives to maintain a DRY and immutable codebase. Any change that addresses a very specific aspect of reading experience should accompany an option to enable or disable it. 
 
-### Git Commits
+## Git Commits
 
 - Use the present tense, e.g., `add status badges`, not `added status badges`
 - Use lowercase, except when to emphasize or when a name can't be used in lowercase.
@@ -34,4 +30,4 @@ Remarkability has the following objectives:
 - Use the type `chore` when a commit represents anything else and provide the scope to clarify the context of commit, e.g., `chore(deps)`
 - Provide a description after adding a colon and a space after the type/scope prefix, e.g., `chore(deps): switch to dart-sass`
 - Optionally, provide a long description in the commit body, which begins one blank line after the description.
-- Indicate a breaking change by adding a `!` immediately before the `:`, e.g., `chore!: prepare v0.7.0` 
+- Indicate a breaking change by adding a `!` immediately before the `:`, e.g., `chore!: prepare v0.7.0`
