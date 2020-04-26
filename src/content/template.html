@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Baseline CSS for textual content">
+  <meta name="description" content="Baseline CSS for text-heavy HTML documents">
   <title>Remarkability</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -12,17 +12,20 @@
 </head>
 
 <body>
-  <header>
-    <h1>Remarkability</h1>
-    <p class="subtitle">Stylesheet for textual content</p>
-  </header>
-  <main class="remarkability">
-    <!-- markdown -->
-  </main>
-  <footer>
-    <p>Licensed under <a target="_blank" rel="noopener noreferrer" href="https://github.com/Microflash/remarkability/blob/master/LICENSE.md">MIT</a></p>
-    <p>Fork on <a target="_blank" rel="noopener noreferrer" href="https://github.com/Microflash/remarkability">GitHub</a></p>
-  </footer>
+  <div class="layout">
+    <header class="header">
+      <h1>Remarkability</h1>
+      <p class="subtitle"><mark>Baseline CSS for text-heavy HTML documents.</mark> Geared to be <strong>readable</strong>, <strong>accessible</strong> and <strong>customizable</strong>. Provides a <a href="https://github.com/Microflash/remarkability/tree/master/src/styles/_variables.scss" target="_blank" rel="noopener noreferrer">recommended configuration</a> to get you started.</p>
+    </header>
+    <main class="content">
+      <!-- markdown -->
+    </main>
+    <footer class="footer">
+      <p>Licensed under <a target="_blank" rel="noopener noreferrer" href="https://github.com/Microflash/remarkability/blob/master/LICENSE.md">MIT</a></p>
+      <p>&middot;</p>
+      <p>Fork on <a target="_blank" rel="noopener noreferrer" href="https://github.com/Microflash/remarkability">GitHub</a></p>
+    </footer>
+  </div>
 </body>
 
 </html>

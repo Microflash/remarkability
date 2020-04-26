@@ -1,7 +1,13 @@
-/*! remarkability.css v0.7.2 | MIT License | https://github.com/Microflash/remarkability */
+/*! Remarkability v0.8.0 | MIT License | https://github.com/Microflash/remarkability */
 .remarkability {
   line-height: 1.6;
   font-size: 1rem;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 .remarkability a {
@@ -23,7 +29,7 @@
   font-style: italic;
 }
 .remarkability hr {
-  background: #e6e6e6;
+  background: #e8e8e8;
   border: none;
   display: block;
   height: 1px;
@@ -54,13 +60,6 @@
 }
 .remarkability details summary {
   cursor: pointer;
-}
-.remarkability details p {
-  padding-left: 1.1em;
-}
-.remarkability details p:first-of-type {
-  margin-top: 0.25em;
-  margin-bottom: 0.25em;
 }
 .remarkability small {
   font-size: 0.8em;
@@ -148,13 +147,14 @@
   margin-bottom: 1.4rem;
   margin-top: 4.2rem;
 }
+.remarkability ol,
+.remarkability ul,
 .remarkability dd {
   margin-left: 1.4rem;
 }
 .remarkability ol,
 .remarkability ul {
   list-style-position: outside;
-  margin-left: 1.4rem;
 }
 .remarkability ol {
   list-style-type: decimal;
@@ -215,7 +215,7 @@
   opacity: 0.5;
 }
 .remarkability blockquote {
-  border-left: 2px solid #e6e6e6;
+  border-left: 2px solid #e8e8e8;
   padding: 0.5em 1em;
 }
 .remarkability code,
@@ -224,8 +224,8 @@
 .remarkability pre {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
-  background-color: whitesmoke;
-  color: #333333;
+  background-color: #f5f4f4;
+  color: #242323;
   font-size: 0.9em;
   border-radius: 3px;
 }
@@ -272,12 +272,12 @@
 .remarkability td {
   font-size: 1em;
   padding: 0.7rem;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #e8e8e8;
   line-height: 1.4;
 }
 .remarkability thead tr,
 .remarkability tfoot tr {
-  background-color: whitesmoke;
+  background-color: #f5f4f4;
 }
 .remarkability thead th,
 .remarkability thead td,
