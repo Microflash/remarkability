@@ -43,6 +43,16 @@ $root: '.remarkability' !default;
           scroll-behavior: auto;
         }
       }
+
+      @if variables.$custom-selection {
+        &::-moz-selection { 
+          background: variables.$background-selected;
+        }
+        
+        &::selection { 
+          background: variables.$background-selected;
+        }
+      }
     }
 
     a {

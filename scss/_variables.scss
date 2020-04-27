@@ -37,6 +37,7 @@ $background-mark: hsl(42, 99%, 70%) !default;
 $background-table: hsl(0, 0%, 100%) !default;
 $background-table-even: hsl(0, 3%, 98%) !default;
 $background-table-hover: hsl(0, 5%, 96%) !default;
+$background-selected: hsla(209, 100%, 42%, 0.25) !default;
 
 $border-color: hsl(0, 0%, 91%) !default;
 $opacity: 0.5 !default;
@@ -67,6 +68,7 @@ $margin: 1.4rem !default;
 
 $compact-lists: false !default;
 $multiline-wrap: false !default;
+$custom-selection: false !default;
 $custom-colors: false !default;
 $custom-fonts: false !default;
 $smooth-fonts: true !default;
