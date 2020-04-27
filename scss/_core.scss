@@ -403,6 +403,12 @@ $root: '.remarkability' !default;
       border-collapse: collapse;
       border-spacing: 0;
       width: 100%;
+
+      // scroll tables horizontally on small screens
+      @if variables.$responsive-tables {
+        display: block;
+        overflow-x: auto;
+      }
   
       pre {
         white-space: pre-wrap;
