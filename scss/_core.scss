@@ -36,6 +36,19 @@ $root: '.remarkability' !default;
         box-decoration-break: clone;
       }
 
+      @if variables.$custom-scrollbar {
+        &::-webkit-scrollbar,
+        &::-webkit-scrollbar-track {
+          background-color: variables.$background-scrollbar;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+          background-color: variables.$scrollbar;
+        }
+    
+        scrollbar-color: variables.$scrollbar variables.$background-scrollbar;
+      }
+
       @if variables.$scroll-smoothly {
         scroll-behavior: smooth;
     
