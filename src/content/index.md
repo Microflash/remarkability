@@ -196,6 +196,8 @@ Variables control the values of the properties of elements.
 | `$background-table` | `hsl(0, 0%, 100%)` |
 | `$background-table-even` | `hsl(0, 3%, 98%)` |
 | `$background-table-hover` | `hsl(0, 5%, 96%)` |
+| `$background-selected` | `hsla(209, 100%, 42%, 0.25)` |
+| `$background-scrollbar` | `hsl(0, 5%, 96%)` |
 | `$border-color` | `hsl(0, 0%, 91%)` |
 | `$opacity` | `0.5` |
 | `$radius` | `3px` |
@@ -211,6 +213,7 @@ Variables control the values of the properties of elements.
 | `$link-hover` | `$color-link-hovered` |
 | `$link-visited` | `$color-link-visited` |
 | `$table-thead` | `$color-vibrant` |
+| `$scrollbar` | `hsl(0, 0%, 80%)` |
 | `$line-height` | `1.6` |
 | `$margin` | `1.4rem` |
 
@@ -222,6 +225,8 @@ Options toggle the following features. By **default**, all options are set to `f
 | ------ | ------------------ |
 | `$compact-lists` | Brings **lists** closer to the **paragraph** they *immediately* follow |
 | `$multiline-wrap` | Applies **border**, **padding**, and **margin** of a **list-item** to all its children |
+| `$custom-selection` | Applies `$background-selected` to `::selection` |
+| `$custom-scrollbar` | Applies `$background-scrollbar` and `$scrollbar` to scrollbar |
 | `$custom-colors` | Applies the **color** variables to the content |
 | `$custom-fonts` | Applies the **font-family** variables to the content |
 | `$smooth-fonts` | Applies [font smoothing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth) to non-code content |
@@ -232,9 +237,11 @@ Options toggle the following features. By **default**, all options are set to `f
 | `$show-underline` | **Underlines** links |
 | `$table-hover` | Adds hover background to **table rows** |
 | `$table-striped` | Adds striped rows to **tables** |
+| `$responsive-tables` | Makes overflowing tables horizontally scrollable |
 | `$visited-links` | Applies the `$link-visited` color to **visited links** |
 | `$hovered-links` | Applies the `$link-hover` color to **focus** and **hover** link states |
 | `$variable-fonts` | Applies the `$family-base-variable` and `$family-code-variable` variables to the content |
+| `$scroll-smoothly` | Applies `scroll-behavior: smooth` on all elements |
 
 ## Migrations
 

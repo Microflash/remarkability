@@ -37,6 +37,8 @@ $background-mark: hsl(42, 99%, 70%) !default;
 $background-table: hsl(0, 0%, 100%) !default;
 $background-table-even: hsl(0, 3%, 98%) !default;
 $background-table-hover: hsl(0, 5%, 96%) !default;
+$background-selected: hsla(209, 100%, 42%, 0.25) !default;
+$background-scrollbar: hsl(0, 5%, 96%) !default;
 
 $border-color: hsl(0, 0%, 91%) !default;
 $opacity: 0.5 !default;
@@ -57,6 +59,7 @@ $link-hover: $color-link-hovered !default;
 $link-visited: $color-link-visited !default;
 
 $table-thead: $color-vibrant !default;
+$scrollbar: hsl(0, 0%, 80%) !default;
 
 // Spacing
 
@@ -67,6 +70,8 @@ $margin: 1.4rem !default;
 
 $compact-lists: false !default;
 $multiline-wrap: false !default;
+$custom-selection: false !default;
+$custom-scrollbar: false !default;
 $custom-colors: false !default;
 $custom-fonts: false !default;
 $smooth-fonts: true !default;
@@ -77,6 +82,8 @@ $heading-borders: false !default;
 $show-underline: false !default;
 $table-hover: false !default;
 $table-striped: false !default;
+$responsive-tables: false !default;
 $visited-links: false !default;
 $hovered-links: false !default;
 $variable-fonts: false !default;
+$scroll-smoothly: false !default;
