@@ -39,18 +39,11 @@
   }
 }
 
-// Default font families
-
-$font-families: (
-  'base': variables.$family-base variables.$family-base-variable,
-  'code': variables.$family-code variables.$family-code-variable
-) !default;
-
 // Convenience mixin to set default font families
 
 @mixin font($key) {
   @if $key == 'base' or $key == 'code' {
-    $family: map.get($font-families, $key);
+    $family: map.get(variables.$font-families, $key);
     @include font-family(list.nth($family, 1), list.nth($family, 2));
   } @else {
     @error "Couldn't find a matching font family.";

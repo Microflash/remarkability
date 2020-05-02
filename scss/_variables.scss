@@ -12,6 +12,11 @@ $family-code: $family-code-native !default;
 $family-base-variable: null !default;
 $family-code-variable: null !default;
 
+$font-families: (
+  'base': $family-base $family-base-variable,
+  'code': $family-code $family-code-variable
+) !default;
+
 $weight-bold: 700 !default;
 $weight-headings: $weight-bold !default;
 
