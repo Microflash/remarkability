@@ -1,16 +1,16 @@
 {
   "name": "@microflash/remarkability",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "Baseline CSS for text-heavy HTML documents",
   "main": "dist/remarkability.min.css",
   "scripts": {
     "build": "npm-run-all build:*",
     "build:clean": "shx rm -rf dist",
-    "build:css": "sass scss/remarkability.scss dist/remarkability.css && sass scss/remarkability.global.scss dist/remarkability.global.css",
+    "build:css": "sass scss/remarkability.scss:dist/remarkability.css scss/remarkability.global.scss:dist/remarkability.global.css",
     "build:postcss": "postcss --config postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
     "build:minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.min.css dist/remarkability.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.global.min.css dist/remarkability.global.css",
     "dev": "npm-run-all dev:*",
-    "dev:clean": "shx rm -rf .sitecache && shx mkdir .sitecache && shx rm -rf docs && shx mkdir docs",
+    "dev:clean": "shx rm -rf .sitecache docs && shx mkdir .sitecache docs",
     "dev:css": "sass src/styles/index.scss .sitecache/index.css",
     "dev:postcss": "postcss --config postcss.config.js --replace \".sitecache/*.css\" \"!.sitecache/*.min.css\"",
     "dev:minify": "cleancss --level 1 --format breakWith=lf --output .sitecache/index.min.css .sitecache/index.css",
@@ -19,11 +19,11 @@
   "dependencies": {
     "autoprefixer": "^9.7.6",
     "clean-css-cli": "^4.3.0",
-    "postcss-cli": "^7.1.0",
+    "postcss-cli": "^7.1.1",
     "sass": "^1.26.5"
   },
   "devDependencies": {
-    "highlight.js": "^10.0.0",
+    "highlight.js": "^10.0.3",
     "marked": "^1.0.0",
     "npm-run-all": "^4.1.5",
     "shelljs": "^0.8.3",

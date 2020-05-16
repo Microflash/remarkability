@@ -120,12 +120,12 @@ And even **definition lists**:
 You can use **figure** and *figcaption* for images.
 
 <figure>
-  <img src="https://images.unsplash.com/photo-1501622285814-b5071de6f0be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Microflash" width="750">
-  <figcaption>Photo by <a href="https://unsplash.com/@plqml?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">@plqml</a> on <a href="/s/photos/woman-in-red?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
+  <img src="https://images.unsplash.com/photo-1521075325181-3889e1af7962?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=683&q=80" alt="Microflash" width="750">
+  <figcaption>Photo by <a href="https://unsplash.com/@amichaelbphoto">Michael Baldovinos</a> on <a href="https://unsplash.com/photos/SWssGT_80DE">Unsplash</a></figcaption>
 </figure>
 
 <figure>
-  <img src="https://github.com/Microflash/mflash.dev/raw/release/src/favicon.png" alt="Microflash" width="245" height="245">
+  <img src="https://github.com/Microflash/mflash.dev/raw/release/static/favicon.svg" alt="Microflash" width="245" height="245">
   <figcaption>A small image</figcaption>
 </figure>
 
