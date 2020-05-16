@@ -4,41 +4,37 @@
 @use '../../scss/remarkability.global.scss';
 @use '../../node_modules/highlight.js/scss/github.scss';
 
-$gap: calc(13vw - 2rem);
-$gap-sm: 6vw;
-$expanse: calc(100vh - 12vw);
-
-@mixin vspace($space: $gap) {
-  padding-top: $space;
-  padding-bottom: $space;
-}
-
-@mixin tablet {
+@mixin md {
   @media screen and (min-width: 900px) {
     @content;
   }
 }
 
-.layout {
-  padding: $gap-sm $gap;
+@mixin py($gap) {
+  padding-top: $gap;
+  padding-bottom: $gap;
 }
 
-.content,
-.footer {
-  @include tablet {
-    max-width: 50vw;
+body > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+  padding: calc(10vw - 2rem) 6vw;
+
+  @include md {
+    max-width: 60vw;
   }
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: $gap;
+  align-items: center;
 
-  @include tablet {
-    max-width: 60vw;
-    min-height: $expanse;
+  @include md {
+    @include py(0);
+    min-height: 100vh;
   }
 
   h1 {
@@ -50,26 +46,31 @@ $expanse: calc(100vh - 12vw);
   }
 
   .subtitle {
-    @include vspace(calc((12vw - 0.75rem) / 7));
+    @include py(calc((12vw - 0.75rem) / 7));
     font-size: calc(2vw + 0.75rem);
     color: hsl(0, 0%, 33%);
   }
 }
 
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  color: hsl(0, 0%, 33%);
-  padding-top: $gap-sm;
-
+.header,
+.content {
   > * {
+    flex-basis: 100%;
+  }
+}
+
+.footer {
+  color: hsl(0, 0%, 33%);
+  padding-top: 0;
+
+  > *:not(:last-child) {
     margin-right: 0.5rem;
   }
 }
 
 table {
   code {
-    @include tablet {
+    @include md {
       white-space: pre;
     }
   }

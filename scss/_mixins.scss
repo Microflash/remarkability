@@ -42,7 +42,7 @@
 // Convenience mixin to set default font families
 
 @mixin font($key) {
-  @if $key == 'base' or $key == 'code' {
+  @if map.has-key(variables.$font-families, $key) {
     $family: map.get(variables.$font-families, $key);
     @include font-family(list.nth($family, 1), list.nth($family, 2));
   } @else {
