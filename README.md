@@ -1,6 +1,6 @@
 # Remarkability
 
-> Baseline CSS for text-heavy HTML documents
+> Baseline CSS to improve readability of HTML documents
 
 [![npm (scoped)](https://img.shields.io/npm/v/@microflash/remarkability)](https://www.npmjs.com/package/@microflash/remarkability)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Microflash/remarkability)](https://github.com/Microflash/remarkability/releases/latest)
@@ -8,7 +8,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/Microflash/remarkability)](https://github.com/Microflash/remarkability/commits/master)
 [![GitHub](https://img.shields.io/github/license/Microflash/remarkability)](https://github.com/Microflash/remarkability/blob/master/LICENSE.md)
 
-**Remarkability** is geared to be **readable**, **accessible** and **customizable**. It provides a [recommended configuration](./src/styles/_variables.scss) to get you started.
+**Remarkability** aims to be **readable**, **accessible** and **customizable**. It provides a [recommended configuration](./src/styles/_variables.scss) to get you started.
 
 ## Get started
 
