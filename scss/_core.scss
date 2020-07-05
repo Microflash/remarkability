@@ -1,4 +1,4 @@
-/*! Remarkability v0.8.4 | MIT License | https://github.com/Microflash/remarkability */
+/*! Remarkability v0.8.5 | MIT License | https://github.com/Microflash/remarkability */
 @use 'variables';
 @use 'mixins';
 
@@ -7,6 +7,7 @@ $root: '.remarkability' !default;
 #{$root} {
   line-height: variables.$line-height;
   font-size: variables.$font-size-base;
+  font-weight: variables.$weight-normal;
 
   @if variables.$adjust-text {
     text-size-adjust: variables.$text-size-adjust;
