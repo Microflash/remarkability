@@ -1,6 +1,6 @@
 {
   "name": "@microflash/remarkability",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "description": "Baseline CSS to improve readability of HTML documents",
   "main": "dist/remarkability.min.css",
   "scripts": {

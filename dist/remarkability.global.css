@@ -1,7 +1,8 @@
-/*! Remarkability v0.8.4 | MIT License | https://github.com/Microflash/remarkability */
+/*! Remarkability v0.8.5 | MIT License | https://github.com/Microflash/remarkability */
 body {
   line-height: 1.6;
   font-size: 1rem;
+  font-weight: 400;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;

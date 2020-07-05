@@ -178,6 +178,7 @@ Variables control the values of the properties of elements.
 | `$family-base-variable` | `null` |
 | `$family-code-variable` | `null` |
 | `$font-families` | <pre>( 'base': $family-base $family-base-variable, 'code': $family-code $family-code-variable )</pre> |
+| `$weight-normal` | `400` |
 | `$weight-bold` | `700` |
 | `$weight-headings` | `$weight-bold` |
 | `$font-size-base` | `1rem` |
