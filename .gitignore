@@ -1,3 +1,5 @@
 .*cache
+.temp
+dist
 docs
 node_modules

@@ -1,4 +1,5 @@
-/*! Remarkability v0.8.5 | MIT License | https://github.com/Microflash/remarkability */
+/*! Remarkability v0.9.0 | MIT License | https://github.com/Microflash/remarkability */
+@charset 'UTF-8';
 @use 'variables';
 @use 'mixins';
 
@@ -9,20 +10,20 @@ $root: '.remarkability' !default;
   font-size: variables.$font-size-base;
   font-weight: variables.$weight-normal;
 
-  @if variables.$adjust-text {
+  @if variables.$enable-text-inflation {
     text-size-adjust: variables.$text-size-adjust;
   }
 
-  @if variables.$custom-colors {
+  @if variables.$enable-custom-colors {
     background-color: variables.$background-body;
     color: variables.$text;
   }
 
-  @if variables.$custom-fonts {
+  @if variables.$enable-custom-fonts {
     @include mixins.font('base');
   }
 
-  @if variables.$smooth-fonts {
+  @if variables.$enable-font-smoothing {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
   }
@@ -33,11 +34,11 @@ $root: '.remarkability' !default;
     // Inline
 
     * {
-      @if variables.$multiline-wrap {
+      @if variables.$enable-multiline-wrap {
         box-decoration-break: clone;
       }
 
-      @if variables.$custom-scrollbar {
+      @if variables.$enable-custom-scrollbar {
         &::-webkit-scrollbar,
         &::-webkit-scrollbar-track {
           background-color: variables.$background-scrollbar;
@@ -50,7 +51,7 @@ $root: '.remarkability' !default;
         scrollbar-color: variables.$scrollbar variables.$background-scrollbar;
       }
 
-      @if variables.$scroll-smoothly {
+      @if variables.$enable-smooth-scrolling {
         scroll-behavior: smooth;
     
         @media screen and (prefers-reduced-motion: true) { 
@@ -58,7 +59,7 @@ $root: '.remarkability' !default;
         }
       }
 
-      @if variables.$custom-selection {
+      @if variables.$enable-selection-background {
         &::-moz-selection { 
           background: variables.$background-selected;
         }
@@ -73,24 +74,24 @@ $root: '.remarkability' !default;
       text-decoration: none;
       cursor: pointer;
 
-      @if variables.$custom-colors {
+      @if variables.$enable-custom-colors {
         color: variables.$link;
 
-        @if variables.$hovered-links {
+        @if variables.$enable-active-links {
           &:focus, 
           &:hover {
-            color: variables.$link-hover;
+            color: variables.$link-active;
           }
         }
 
-        @if variables.$visited-links {
+        @if variables.$enable-visited-links {
           &:visited {
             color: variables.$link-visited;
           }
         }
       }
 
-      @if variables.$show-underline {
+      @if variables.$enable-link-underline {
         text-decoration: underline;
       } @else {
         &:focus,
@@ -126,7 +127,7 @@ $root: '.remarkability' !default;
     img {
       vertical-align: text-bottom;
   
-      @if variables.$round-media {
+      @if variables.$enable-media-radius {
         border-radius: variables.$media-radius;
       }
     }
@@ -160,20 +161,20 @@ $root: '.remarkability' !default;
     }
   
     small {
-      font-size: 0.8em;
+      font-size: variables.$font-size-small;
     }
 
     strong {
       font-weight: variables.$weight-bold;
   
-      @if variables.$custom-colors {
+      @if variables.$enable-custom-colors {
         color: variables.$text-bold;
       }
     }
   
     sub,
     sup {
-      font-size: 0.8em;
+      font-size: variables.$font-size-small;
     }
   
     sub {
@@ -221,7 +222,7 @@ $root: '.remarkability' !default;
         margin-top: 0;
       }
 
-      @if variables.$custom-colors {
+      @if variables.$enable-custom-colors {
         color: variables.$text-headings;
       }
     }
@@ -256,7 +257,7 @@ $root: '.remarkability' !default;
 
     // Lists
 
-    @if variables.$compact-lists {
+    @if variables.$enable-compact-lists {
       p {
         & + dl,
         & + ol,
@@ -271,7 +272,7 @@ $root: '.remarkability' !default;
     dd {
       margin-left: variables.$margin;
 
-      @if variables.$multiline-wrap {
+      @if variables.$enable-multiline-wrap {
         & > * {
           box-decoration-break: clone;
         }
@@ -338,7 +339,7 @@ $root: '.remarkability' !default;
       font: inherit;
       line-height: inherit;
 
-      @if variables.$custom-colors {
+      @if variables.$enable-custom-colors {
         color: variables.$text;
       }
 
@@ -354,7 +355,7 @@ $root: '.remarkability' !default;
       border-left: 2px solid variables.$border-color;
       padding: 0.5em 1em;
   
-      @if variables.$custom-colors {
+      @if variables.$enable-custom-colors {
         color: variables.$text-blockquote;
       }
     }
@@ -372,7 +373,7 @@ $root: '.remarkability' !default;
       font-size: variables.$font-size-code;
       border-radius: variables.$radius;
 
-      @if variables.$custom-fonts {
+      @if variables.$enable-custom-fonts {
         @include mixins.font('code');
       }
     }
@@ -382,7 +383,7 @@ $root: '.remarkability' !default;
     samp {
       padding: 0.2em 0.4em 0.2em;
 
-      @if variables.$custom-colors {
+      @if variables.$enable-custom-colors {
         color: variables.$text-code;
       }
     }
@@ -390,7 +391,7 @@ $root: '.remarkability' !default;
     pre {
       overflow: hidden;
 
-      @if variables.$round-blocks {
+      @if variables.$enable-block-radius {
         border-radius: variables.$block-radius;
       }
 
@@ -421,10 +422,10 @@ $root: '.remarkability' !default;
     }
   
     figcaption {
-      font-size: 0.8em;
+      font-size: variables.$font-size-small;
       margin-top: variables.$margin / 1.6;
   
-      @if variables.$custom-colors {
+      @if variables.$enable-custom-colors {
         color: variables.$text-muted;
       }
     }
@@ -437,7 +438,7 @@ $root: '.remarkability' !default;
       width: 100%;
 
       // scroll tables horizontally on small screens
-      @if variables.$responsive-tables {
+      @if variables.$enable-responsive-tables {
         display: block;
         overflow-x: auto;
       }
@@ -458,7 +459,7 @@ $root: '.remarkability' !default;
     thead,
     tfoot {
       tr {
-        @if variables.$table-striped {
+        @if variables.$enable-table-stripes {
           background-color: variables.$border-color;
         } @else {
           background-color: variables.$background-table-hover;
@@ -469,7 +470,7 @@ $root: '.remarkability' !default;
       td {
         @include mixins.cell($font-size: 0.9);
   
-        @if variables.$custom-colors {
+        @if variables.$enable-custom-colors {
           color: variables.$table-thead;
         }
   
@@ -483,18 +484,18 @@ $root: '.remarkability' !default;
       tr {
         background-color: variables.$background-table;
   
-        @if variables.$table-striped {
+        @if variables.$enable-table-stripes {
           &:nth-child(even) {
             background-color: variables.$background-table-even;
           }
   
-          @if variables.$table-hover {
+          @if variables.$enable-table-hover {
             &:hover {
               background-color: variables.$background-table-hover;
             }
           }
         } @else {
-          @if variables.$table-hover {
+          @if variables.$enable-table-hover {
             &:hover {
               background-color: variables.$background-table-even;
             }
