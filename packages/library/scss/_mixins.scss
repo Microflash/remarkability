@@ -16,13 +16,13 @@
   $font-size,
   $gap: variables.$margin,
   $with-border: false,
-  $top-space: false
+  $top-space: true
 ) {
   font-size: #{$font-size}em;
   margin-bottom: $gap / $font-size;
 
   @if $top-space {
-    margin-top: $gap * 3 / $font-size;
+    margin-top: $gap * 2 / $font-size;
   } @else {
     margin-top: $gap / $font-size;
   }
