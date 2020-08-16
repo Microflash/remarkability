@@ -154,9 +154,24 @@ $root: '.remarkability' !default;
 
     details {
       display: block;
+      border: 1px solid variables.$border-color;
+      padding: 0 0.75em 0;
   
       summary {
+        font-weight: variables.$weight-bold;
+        background-color: variables.$background-table-hover;
+        margin: 0 -0.75em 0;
+        padding: 0.5em 0.75em;
         cursor: pointer;
+      }
+
+      &[open] {
+        padding-bottom: 0.5em;
+
+        summary {
+          margin-bottom: 0.5em;
+          border-bottom: 1px solid variables.$border-color;
+        }
       }
     }
   
