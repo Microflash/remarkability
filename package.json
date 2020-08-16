@@ -3,6 +3,9 @@
   "license": "MIT",
   "scripts": {
     "origin": "lerna init",
+    "build": "lerna run build",
+    "docs": "lerna run docs",
+    "dist": "lerna run dist",
     "bootstrap": "lerna bootstrap"
   },
   "devDependencies": {
