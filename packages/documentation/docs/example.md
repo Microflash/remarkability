@@ -1,75 +1,82 @@
-# Example
+# Remarkability in Action
 
-**This very document** is styled using **Remarkability** with a [recommended configuration](https://github.com/Microflash/remarkability/tree/master/packages/documentation/docs/.vuepress/theme/styles/_variables.scss).
+**This very document** is styled using **Remarkability** with the following [recommended configuration](https://github.com/Microflash/remarkability/tree/master/packages/documentation/docs/.vuepress/theme/styles/_variables.scss) &mdash;
 
-You can have a paragraph with some *emphasized* or **important** text, [links](#), `code`, <abbr title="abbreviations">abbr</abbr>, <q>short quote</q>, <cite>citations</cite>, <mark>highlighted text</mark>, <kbd>keyboard inputs</kbd>, <s>strikethrough</s>, ~~deleted~~ or <ins>inserted</ins> elements, <samp>sample text</samp>, <small>small text</small>, <sub>subscript</sub> or <sup>superscript</sup>.
+```scss
+@use '@microflash/remarkability/scss/variables' with (
+  $enable-multiline-wrap: true,
+  $enable-selection-background: true,
+  $enable-custom-colors: true,
+  $enable-custom-fonts: true,
+  $enable-media-radius: true,
+  $enable-block-radius: true,
+  $enable-heading-border: true,
+  $enable-responsive-tables: true,
+  $enable-active-links: true,
+  $enable-smooth-scrolling: true
+);
+```
 
-You can have a horizontal rule.
+Remarkability includes reasonable defaults for *emphasized* or **important** text, [links](#), `code`, <abbr title="abbreviations">abbr</abbr>, <q>short quote</q>, <cite>citations</cite>, <mark>highlighted text</mark>, <kbd>keyboard inputs</kbd>, <s>strikethrough</s>, ~~deleted~~ or <ins>inserted</ins> elements, <samp>sample text</samp>, <small>small text</small>, <sub>subscript</sub> or <sup>superscript</sup>.
+
+It has styles for **unordered lists** with multiple levels of nesting &mdash;
+
+- Such as this list
+  - with a nested item
+    - containing another nested item
+      - and a yet another
+        - until it reaches
+          - the sixth level.
+- A list item can wrap multiple lines.
+- Here's an example of a long list item: The man who entered was young, some two-and-twenty at the outside, well-groomed and trimly clad, with something of refinement and delicacy in his bearing. The streaming umbrella which he held in his hand, and his long shining waterproof told of the fierce weather through which he had come.
+- A list item can also wrap multiple paragraphs.
+  
+  I groaned, for I was newly come back from a weary day.
+
+  We heard the door open, a few hurried words, and then quick steps upon the linoleum. Our own door flew open, and a lady, clad in some dark-coloured stuff, with a black veil, entered the room.
+
+Similarly, you can have **ordered lists** &mdash;
+
+1. There are several layers of earth, including
+   1. the Crust
+      1. the Mantle
+         1. the Gutenburg discontinuity
+            1. the Outer Core, and
+               1. the Inner Core.
+2. Gutenburg discontinuity is a boundary between the core and mantle at ~2891 km.
+3. The seismic activity goes through an abrupt change at the discontinuity.
+
+And finally, you can also have **definition lists** &mdash;
+
+<dl>
+  <dt>Crust</dt>
+  <dd>the outermost layer of Earth, ranging from 5–70 km</dd>
+  <dt>Mantle</dt>
+  <dd>the thickest layer of Earth lying below the crust, extending up to 2890 km</dd>
+  <dt>Outer Core</dt>
+  <dd>a fluid layer about 2400 km thick lying below the mantle</dd>
+  <dt>Inner Core</dt>
+  <dd>the innermost layer of Earth with a radius of 1220 km</dd>
+</dl>
+
+You can put a horizontal rule as a separator.
 
 ---
 
-You can have **unordered lists** with multiple levels of nesting:
-- A simple list
-  - with nested items
-    - with different bullet point
-      - as it goes
-        - deeper and deeper
-          - till six levels
-- with items that can sprawl over multiple lines
-- like this long paragraph on the list: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-And **ordered lists**:
-<ol>
-  <li>Don't pick up the phone
-    <ol>
-      <li>Pay attention to your dinner
-        <ol>
-          <li>And your company
-            <ol>
-              <li>Have some conversation
-                <ol>
-                  <li>In real world
-                    <ol>
-                      <li>And enjoy the moment.</li>
-                    </ol>
-                  </li>
-                </ol>
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-    </ol>
-  </li>
-  <li>Take some time off</li>
-  <li>And do take naps on time.</li>
-</ol>
-
-And even **definition lists**:
-<dl>
-  <dt>Name</dt>
-  <dd>Theresia</dd>
-  <dt>Codename</dt>
-  <dd>Bumblebee of Bohemia</dd>
-  <dt>Organization</dt>
-  <dd>Zeroland</dd>
-  <dt>Location</dt>
-  <dd>Somewhere in Amazon forests</dd>
-</dl>
-
-> You can also put some quotes in a `blockquote`.
+> You can also put an inspirational quotation in a `blockquote`.
 >
-> It can span multiple paragraphs.
-> > Multiple `blockquote`s 
-> > > can be nested as well.
+> Such a quotation can span several lines and even multiple paragraphs.
+> 
+> > You can even nest  
+> > > multiple `blockquote`s.
 >
-> You can add lists
-> - like
-> - this
+> You can also add lists
+> - with one or more
+> - quotation lines
 > 
 > with some footer text at the end.
 
-You can use **figure** and *figcaption* for images.
+Besides text, images should also look pretty. You can use **figure** and *figcaption* to display images.
 
 <!-- <figure>
   <img src="https://images.unsplash.com/photo-1521075325181-3889e1af7962?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=683&q=80" alt="Microflash" width="750">
@@ -81,7 +88,7 @@ You can use **figure** and *figcaption* for images.
   <figcaption>A small image</figcaption>
 </figure> -->
 
-**Tables** are supported with styles for cells, rows, head, body, and foot.
+**Tables** are also supported with styles for cells, rows, head, body, and foot.
 
 | Song                        | Published |           Artist |
 | --------------------------- | :-------: | ---------------: |
