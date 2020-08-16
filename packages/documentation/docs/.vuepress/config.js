@@ -19,8 +19,5 @@ module.exports = {
     [
       '@vuepress/search'
     ]
-  ],
-  themeConfig: {
-    searchPlaceholder: 'Search the docs'
-  }
+  ]
 }
