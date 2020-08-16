@@ -34,7 +34,7 @@ body {
 .layout > * {
   display: inherit;
   width: 100%;
-  padding: $space-rg;
+  padding: $space-rg $space-md;
 }
 
 .header {
