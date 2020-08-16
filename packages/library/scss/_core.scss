@@ -343,6 +343,21 @@ $root: '.remarkability' !default;
       }
     }
 
+    li > p:only-of-type {
+      margin-bottom: 0;
+    }
+
+    dt {
+      font-weight: variables.$weight-bold;
+    }
+    
+    @if not variables.$enable-compact-lists {
+      li,
+      dd {
+        margin-bottom: variables.$margin / 2;
+      }
+    }
+
     // Form
 
     input,
