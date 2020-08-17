@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/Microflash/remarkability/issues"
   },
-  "homepage": "https://microflash.github.io/remarkability",
+  "homepage": "https://remarkability.netlify.app",
   "keywords": [
     "markdown",
     "css",
