@@ -1,0 +1,12 @@
+{
+  "name": "Remarkability",
+  "short_name": "Remarkability",
+  "description": "A compact CSS library for a pleasant reading experience on the web",
+  "icons": [{
+    "src": "google-touch-icon.png",
+    "sizes": "512x512"
+  }],
+  "background_color": "#101015",
+  "theme_color": "#101015",
+  "display": "fullscreen"
+}

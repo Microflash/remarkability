@@ -1,0 +1,20 @@
+@use 'sass:list';
+@use 'variables';
+
+// Prepend a list
+
+@function prepend($list, $values) {
+  @return if($values, list.join($values, $list), $list);
+}
+
+// Resolve native font family
+
+@function native-family($declared-family) {
+  @if $declared-family == 'default-sans' {
+    @return variables.$family-sans-native;
+  } @else if $declared-family == 'default-code' {
+    @return variables.$family-code-native;
+  } @else {
+    @return $declared-family;
+  }
+}

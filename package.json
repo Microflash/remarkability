@@ -1,51 +1,14 @@
 {
-  "name": "@microflash/remarkability",
-  "version": "0.8.5",
-  "description": "Baseline CSS to improve readability of HTML documents",
-  "main": "dist/remarkability.min.css",
+  "name": "remarkability",
+  "license": "MIT",
   "scripts": {
-    "build": "npm-run-all build:*",
-    "build:clean": "shx rm -rf dist",
-    "build:lint": "stylelint \"scss/*.scss\" --cache --cache-location .sitecache/.stylelintcache",
-    "build:css": "sass scss/remarkability.scss:dist/remarkability.css scss/remarkability.global.scss:dist/remarkability.global.css",
-    "build:postcss": "postcss --config postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
-    "build:minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.min.css dist/remarkability.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.global.min.css dist/remarkability.global.css",
-    "dev": "npm-run-all dev:*",
-    "dev:clean": "shx rm -rf .sitecache docs && shx mkdir .sitecache docs",
-    "dev:lint": "stylelint \"src/styles/*.scss\" --cache --cache-location .sitecache/.stylelintcache",
-    "dev:css": "sass src/styles/index.scss .sitecache/index.css",
-    "dev:postcss": "postcss --config postcss.config.js --replace \".sitecache/*.css\" \"!.sitecache/*.min.css\"",
-    "dev:minify": "cleancss --level 1 --format breakWith=lf --output .sitecache/index.min.css .sitecache/index.css",
-    "dev:docs": "node src/main.js"
-  },
-  "dependencies": {
-    "autoprefixer": "^9.8.4",
-    "clean-css-cli": "^4.3.0",
-    "postcss-cli": "^7.1.1",
-    "sass": "^1.26.9"
+    "origin": "lerna init",
+    "build": "lerna run build",
+    "docs": "lerna run docs",
+    "dist": "lerna run dist",
+    "bootstrap": "lerna bootstrap"
   },
   "devDependencies": {
-    "highlight.js": "^10.1.1",
-    "marked": "^1.1.0",
-    "npm-run-all": "^4.1.5",
-    "shelljs": "^0.8.3",
-    "shx": "^0.3.2",
-    "stylelint": "^13.6.1",
-    "stylelint-config-recommended-scss": "^4.2.0",
-    "stylelint-scss": "^3.18.0"
-  },
-  "repository": "https://github.com/Microflash/remarkability.git",
-  "author": "Naiyer Asif",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Microflash/remarkability/issues"
-  },
-  "homepage": "https://mflash.dev/remarkability",
-  "keywords": [
-    "markdown",
-    "css",
-    "sass",
-    "html",
-    "generated"
-  ]
+    "lerna": "^3.22.1"
+  }
 }
