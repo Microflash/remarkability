@@ -16,8 +16,9 @@ module.exports = {
     extractHeaders: [ 'h2', 'h3', 'h4', 'h5', 'h6' ]
   },
   plugins: [
-    [
-      '@vuepress/search'
-    ]
-  ]
+    [ '@vuepress/search' ]
+  ],
+  themeConfig: {
+    logo: 'logo.svg'
+  }
 }
