@@ -1,12 +1,54 @@
-# Migrations
+# Migration
 
 If you're using Sass to customize **Remarkability**, this section can help you migrate from the previous versions.
 
-### Migrating v0.7.x to v0.8.x
+### Migrating from v0.8.x to v0.9.x
 
 #### Renamed variables
 
-| Previous variable name `v0.7.x` | Current variable name `v0.8.x` |
+| Previous variable name `v0.8.x` | New variable name `v0.9.x` |
+| ------------------- | ------------------- |
+| `$family-base` | `$family-sans-custom` |
+| `$family-code` | `$family-code-custom` |
+| `$family-base-variable` | `$family-sans-variable` |
+| `$color-vibrant` | `$color-active` |
+| `$color-muted` | `$color-passive` |
+| `$color-link-hovered` | `$color-link-active` |
+| `$color-link-visited` | `$color-link-passive` |
+| `$link-hover` | `$link-active` |
+| `$compact-lists` | `$enable-compact-lists` |
+| `$multiline-wrap` | `$enable-multiline-wrap` |
+| `$custom-selection` | `$enable-selection-background` |
+| `$custom-scrollbar` | `$enable-custom-scrollbar` |
+| `$custom-colors` | `$enable-custom-colors` |
+| `$custom-fonts` | `$enable-custom-fonts` |
+| `$smooth-fonts` | `$enable-font-smoothing` |
+| `$adjust-text` | `$enable-text-inflation` |
+| `$round-media` | `$enable-media-radius` |
+| `$round-blocks` | `$enable-block-radius` |
+| `$heading-borders` | `$enable-heading-border` |
+| `$show-underline` | `$enable-link-underline` |
+| `$table-hover` | `$enable-table-hover` |
+| `$table-striped` | `$enable-table-stripes` |
+| `$responsive-tables` | `$enable-responsive-tables` |
+| `$visited-links` | `$enable-visited-links` |
+| `$hovered-links` | `$enable-active-links` |
+| `$variable-fonts` | `$enable-variable-fonts` |
+| `$scroll-smoothly` | `$enable-smooth-scrolling` |
+
+#### Font-family declaration
+
+In v0.8.x, Remarkability provided `$family-base`, `$family-code` and `$family-base-variable` which you needed to override with a custom font-family and fallback font-families.
+
+In v0.9.x, you don't have to override the entire font-family. Instead, when a valid value for `$family-sans-custom`, `$family-code-custom`, `$family-sans-variable` or `$family-code-variable` is provided, Remarkability will prepend these values with a list of corresponding fallback font-families. 
+
+Additionally, you can provide a list of custom font-families as the values of the above variables. The `font` mixin will appropriately merge them with the native font stack.
+
+### Migrating from v0.7.x to v0.8.x
+
+#### Renamed variables
+
+| Previous variable name `v0.7.x` | New variable name `v0.8.x` |
 | ------------------- | ------------------- |
 | `$family-default` | `$family-base` |
 | `$family-default-var` | `$family-base-variable` |
@@ -29,7 +71,7 @@ If you're using Sass to customize **Remarkability**, this section can help you m
 
 #### Font-family declaration
 
-**Remarkability** now maintains a map of font-families
+Remarkability now maintains a map of font-families
 
 ```scss
 $font-families: (
@@ -50,7 +92,7 @@ You can extend `$font-families` map by adding custom font-families and include t
 
 #### Renamed variables
 
-| Previous variable name `v0.6.x` | Current variable name `v0.7.x` |
+| Previous variable name `v0.6.x` | New variable name `v0.7.x` |
 | ------------------- | ------------------- |
 | `$family-remarkability` | `$family-default` |
 | `$weight-strong` | `$weight-bold` |
@@ -65,7 +107,7 @@ Instead of using `$family-default` and `$family-code` variables directly to decl
 
 #### Customizing variables
 
-**Remarkability** v0.7.x uses [Sass Module System](https://sass-lang.com/blog/the-module-system-is-launched). Take advantage of the new syntax offered by `with`.
+Remarkability v0.7.x uses [Sass Module System](https://sass-lang.com/blog/the-module-system-is-launched). Take advantage of the new syntax offered by `with`.
 
 Before v0.7.0, you'd declare variable overrides, in a partial, say `_variables.scss`, as follows:
 
