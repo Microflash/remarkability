@@ -280,6 +280,10 @@ $root: '.remarkability' !default;
       margin-top: 0;
     }
 
+    h5 + * {
+      margin-top: 0.25em;
+    }
+
     // Lists
 
     @if variables.$enable-compact-lists {
