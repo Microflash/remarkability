@@ -80,7 +80,7 @@ $margin: 1.4rem !default;
 // Options
 
 $enable-compact-lists: false !default;
-$enable-multiline-wrap: false !default;
+$enable-multiline-wrap: true !default;
 $enable-selection-background: false !default;
 $enable-custom-scrollbar: false !default;
 $enable-custom-colors: false !default;
@@ -93,8 +93,8 @@ $enable-heading-border: false !default;
 $enable-link-underline: false !default;
 $enable-table-hover: false !default;
 $enable-table-stripes: false !default;
-$enable-responsive-tables: false !default;
+$enable-responsive-tables: true !default;
 $enable-visited-links: false !default;
 $enable-active-links: false !default;
 $enable-variable-fonts: false !default;
-$enable-smooth-scrolling: false !default;
+$enable-smooth-scrolling: true !default;
