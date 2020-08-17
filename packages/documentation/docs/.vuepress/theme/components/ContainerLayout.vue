@@ -6,6 +6,7 @@
       </RouterLink>
       <p v-if="data.tagline" class="lead" v-html="data.tagline" />
       <p v-if="data.home && data.intro" v-html="data.intro" />
+      <p v-if="data.home"><a href="https://www.npmjs.com/package/@microflash/remarkability" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/v/@microflash/remarkability" alt="npm (scoped)"></a> <a href="https://github.com/Microflash/remarkability/releases/latest" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/v/release/Microflash/remarkability" alt="GitHub release (latest by date)"></a> <a href="https://bundlephobia.com/result?p=@microflash/remarkability" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/bundlephobia/minzip/@microflash/remarkability" alt="npm bundle size (scoped)"></a> <a href="https://github.com/Microflash/remarkability/commits/master" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/last-commit/Microflash/remarkability" alt="GitHub last commit"></a> <a href="https://github.com/Microflash/remarkability/blob/master/LICENSE.md" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/license/Microflash/remarkability" alt="GitHub"></a></p>
     </header>
     <nav class="navigation">
       <SearchBox v-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
