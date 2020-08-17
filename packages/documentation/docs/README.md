@@ -23,6 +23,8 @@ npm install @microflash/remarkability
 yarn add @microflash/remarkability
 ```
 
+This is the recommended way if you want to customize **Remarkability** using Sass.
+
 ##### Using CDN
 
 Add one of the following `<link>` elements in the `<head>` of your HTML document.
@@ -34,9 +36,9 @@ Add one of the following `<link>` elements in the `<head>` of your HTML document
 
 > By default, these CDNs will serve the latest published version. Refer to the [unpkg](https://unpkg.com/) / [jsDelivr](https://www.jsdelivr.com/features) docs for other possible ways to get **Remarkability**.
 
-#### Download
+##### Download
 
-Download the [latest version](https://github.com/Microflash/remarkability/releases/latest) or [browse the releases](https://github.com/Microflash/remarkability/releases) on GitHub.
+You can also download the [latest version](https://github.com/Microflash/remarkability/releases/latest) or [browse the previous releases](https://github.com/Microflash/remarkability/releases) on GitHub.
 
 ## Usage
 
@@ -48,8 +50,8 @@ Just add `.remarkability` class to your container to style the elements within.
 </article>
 ```
 
-By default, **Remarkability** inherits colors and typography for the parent element but you can customize this behavior with [Sass](https://github.com/Microflash/remarkability/tree/master/scss).
+By default, **Remarkability** inherits colors and typography from the parent element but you can customize this behavior with [Sass](https://github.com/Microflash/remarkability/tree/master/packages/library/scss).
 
 ##### Global variant
 
-If you want to use **Remarkability** globally, a [global variant](https://github.com/Microflash/remarkability/tree/master/dist/remarkability.global.min.css) is also available; it doesn't scope the styles under the `.remarkability` class.
+If you want to use **Remarkability** globally, a [global variant](https://github.com/Microflash/remarkability/blob/master/packages/library/scss/remarkability.global.scss) is also available; it doesn't scope the styles under the `.remarkability` class.
