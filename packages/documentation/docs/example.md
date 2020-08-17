@@ -4,16 +4,13 @@
 
 ```scss
 @use '@microflash/remarkability/scss/variables' with (
-  $enable-multiline-wrap: true,
   $enable-selection-background: true,
   $enable-custom-colors: true,
   $enable-custom-fonts: true,
   $enable-media-radius: true,
   $enable-block-radius: true,
   $enable-heading-border: true,
-  $enable-responsive-tables: true,
-  $enable-active-links: true,
-  $enable-smooth-scrolling: true
+  $enable-active-links: true
 );
 ```
 
