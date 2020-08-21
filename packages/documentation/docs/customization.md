@@ -89,3 +89,46 @@ Options toggle the following features. All the options are prefixed with `$enabl
 - `$enable-text-inflation`
 - `$enable-responsive-tables`
 - `$enable-smooth-scrolling`
+
+### Font-family customizations
+
+You can customize the font-family in multiple ways.
+
+###### Adding a custom font-family
+
+Override `$family-sans-custom` or `$family-code-custom` to add a custom font-family. Remarkability will prepend these values on `$family-sans-native` and `$family-code-native` variables respectively.
+
+###### Adding a variable font-family
+
+Override `$family-sans-variable` or `$family-code-variable` to add a custom font-family. Remarkability will prepend these values on `$family-sans-native` and `$family-code-native` respectively and apply them when `$enable-variable-fonts` is set to `true`. It will also use `font-variation-settings: normal` [feature query](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings) to apply the variable fonts.
+
+###### Overriding the native font stack
+
+You can override the native font stack, by overriding `$family-sans-native` and `$family-code-native`.
+
+#### Custom font-family stack
+
+Remarkability comes with two pre-built font stacks in `$font-families` map.
+
+```scss
+'base': $family-sans-native $family-sans-custom $family-sans-variable,
+'code': $family-code-native $family-code-custom $family-code-variable,
+```
+
+By convention, it provides a fallback font-family, a custom font-family and a variable font-family in the order. If you want to create a custom font stack but still want to use Remarkability's native font stack, you can pass `'default-sans'` or `'default-code'` as the placeholder values for them in the list, e.g.,
+
+```scss
+'custom': 'default-sans' 'Raleway' null,
+```
+
+Then you can use this stack with `font` mixin as follows.
+
+```scss
+// Import the mixin
+@use 'node_modules/@microflash/remarkability/scss/mixins';
+
+// Include it in your definition
+.heading {
+  @include mixins.font('custom');
+}
+```
