@@ -9,7 +9,6 @@
   },
   "devDependencies": {
     "@microflash/remarkability": "0.9.0",
-    "@vuepress/plugin-search": "^1.5.3",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.3",
     "vuepress": "^1.5.3"

@@ -863,6 +863,11 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@microflash/remarkability@0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@microflash/remarkability/-/remarkability-0.9.0.tgz#2711bacd2a4dff80e1fb3946e8f39b59ae3ffa20"
+  integrity sha512-UHCvcoIrqrsquMZyPJPj0bM4cHld5TpkH0qy4bHiBuF3UYUR9yaGtogK6YEQEnqk5Pr+0JUhRunfmQoUwP/Tjg==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"

@@ -131,11 +131,16 @@ body {
         }
       }
 
+      &[aria-current="page"],
       &.focused {
         background-color: #efefff;
       }
     }
   }
+}
+
+.shield {
+  margin-right: 0.25em;
 }
 
 .footer {

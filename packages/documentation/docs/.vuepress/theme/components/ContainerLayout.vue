@@ -6,10 +6,9 @@
       </RouterLink>
       <p v-if="data.tagline" class="lead" v-html="data.tagline" />
       <p v-if="data.home && data.intro" v-html="data.intro" />
-      <p v-if="data.home"><a href="https://www.npmjs.com/package/@microflash/remarkability" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/v/@microflash/remarkability" alt="npm (scoped)"></a> <a href="https://github.com/Microflash/remarkability/releases/latest" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/v/release/Microflash/remarkability" alt="GitHub release (latest by date)"></a> <a href="https://bundlephobia.com/result?p=@microflash/remarkability" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/bundlephobia/minzip/@microflash/remarkability" alt="npm bundle size (scoped)"></a> <a href="https://github.com/Microflash/remarkability/commits/master" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/last-commit/Microflash/remarkability" alt="GitHub last commit"></a> <a href="https://github.com/Microflash/remarkability/blob/master/LICENSE.md" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/license/Microflash/remarkability" alt="GitHub"></a></p>
+      <p v-if="data.home"><a class="shield" v-for="shield in shields" :key="shield.href" :href="shield.href" target="_blank" rel="nofollow noopener noreferrer"><img :src="shield.src" :alt="shield.alt"></a></p>
     </header>
     <nav class="navigation">
-      <SearchBox v-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
       <RouterLink :to="$localePath">Get Started</RouterLink>
       <RouterLink :to="$localePath + 'example.html'">Example</RouterLink>
       <RouterLink :to="$localePath + 'customization.html'">Customization</RouterLink>
@@ -35,14 +34,10 @@
 </template>
 
 <script>
-import SearchBox from '@SearchBox'
 import * as pkg from '../../../../../library/package.json'
 
 export default {
   name: 'Home',
-  components: {
-    SearchBox
-  },
   computed: {
     data() {
       const fm = this.$page.frontmatter
@@ -53,6 +48,9 @@ export default {
         tagline: fm.tagline || `&mdash; ${this.$site.description}`,
         version: pkg.version
       }
+    },
+    shields() {
+      return this.$site.themeConfig.shields
     }
   }
 }
