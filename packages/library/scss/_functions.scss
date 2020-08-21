@@ -3,8 +3,8 @@
 
 // Prepend a list
 
-@function prepend($list, $values) {
-  @return if($values, list.join($values, $list), $list);
+@function prepend($original, $additional) {
+  @return if($additional, list.join($additional, $original), $original);
 }
 
 // Resolve native font family
