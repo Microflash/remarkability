@@ -1,4 +1,4 @@
-/*! Remarkability v0.9.1 | MIT License | https://github.com/Microflash/remarkability */
+/*! Remarkability v0.9.2 | MIT License | https://github.com/Microflash/remarkability */
 @charset 'UTF-8';
 @use 'variables';
 @use 'mixins';
@@ -372,7 +372,7 @@ $root: '.remarkability' !default;
     @if not variables.$enable-compact-lists {
       li,
       dd {
-        margin-bottom: variables.$margin / 2;
+        margin-bottom: variables.$margin * 0.4;
       }
     }
 

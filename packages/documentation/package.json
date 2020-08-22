@@ -8,7 +8,7 @@
     "start": "vuepress dev docs"
   },
   "devDependencies": {
-    "@microflash/remarkability": "0.9.1",
+    "@microflash/remarkability": "0.9.2",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.3",
     "vuepress": "^1.5.3"
