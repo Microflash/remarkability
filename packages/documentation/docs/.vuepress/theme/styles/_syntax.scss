@@ -12,6 +12,14 @@ $khaki: hsl(45, 23%, 39%);
 $emerald: hsl(167, 38%, 29%);
 $coral: hsl(4, 74%, 57%);
 
+div[class*="language-"] {
+  margin-bottom: 1.4rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
   tab-size: 2;
