@@ -46,6 +46,5 @@ Just add `.remarkability` class to your container to style the elements within.
 
 By default, **Remarkability** inherits colors and typography from the parent element but you can customize this behavior with [Sass](https://github.com/Microflash/remarkability/tree/master/packages/library/scss).
 
-##### Global variant
-
-If you want to use **Remarkability** globally, a [global variant](https://github.com/Microflash/remarkability/blob/master/packages/library/scss/remarkability.global.scss) is also available; it doesn't scope the styles under the `.remarkability` class.
+> **Breaking Change in v0.10.0**  
+> From v0.10.0 onward, Remarkability won't publish a global variant.
