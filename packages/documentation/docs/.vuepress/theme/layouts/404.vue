@@ -1,12 +1,14 @@
 <template>
   <ContainerLayout>
-    <h1>404</h1>
+    <div class="remarkability">
+      <h1>404</h1>
 
-    <blockquote>{{ getMsg() }}</blockquote>
+      <blockquote>{{ getMsg() }}</blockquote>
 
-    <RouterLink to="/">
-      Take me home.
-    </RouterLink>
+      <RouterLink to="/">
+        Take me home.
+      </RouterLink>
+    </div>
   </ContainerLayout>
 </template>
 

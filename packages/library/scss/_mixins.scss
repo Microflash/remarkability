@@ -63,3 +63,15 @@
     @error "Couldn't find a matching font family";
   }
 }
+
+// Switch selector context
+
+@mixin context($selector) {
+  @if $selector == 'body' {
+    @at-root {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

@@ -1,6 +1,6 @@
 <template>
   <ContainerLayout>
-    <Content />
+    <Content class="remarkability" />
   </ContainerLayout>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="layout remarkability">
+  <div class="layout">
     <header class="header">
       <RouterLink :to="$localePath">
         <img v-if="data.logo" class="logo" :src="$withBase(data.logo)" :alt="data.title" />
@@ -14,7 +14,9 @@
       <RouterLink :to="$localePath + 'customization.html'">Customization</RouterLink>
       <RouterLink :to="$localePath + 'migration.html'">Migration</RouterLink>
     </nav>
-    <slot/>
+    <main class="content">
+      <slot/>
+    </main>
     <nav class="navigation">
       <RouterLink :to="$localePath">Get Started</RouterLink>
       <RouterLink :to="$localePath + 'example.html'">Example</RouterLink>
