@@ -2,10 +2,6 @@
 
 If you're using Sass to customize **Remarkability**, this section can help you migrate from the previous versions.
 
-### Migrating from v0.9.x to v0.10.x
-
-v0.10.0 deprecated the global variant of Remarkability. Please stop using it and switch to the scoped version.
-
 ### Migrating from v0.8.x to v0.9.x
 
 #### Renamed variables
