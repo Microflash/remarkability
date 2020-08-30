@@ -1,16 +1,16 @@
 {
   "name": "@microflash/remarkability",
   "description": "A compact CSS library for a pleasant reading experience on the web",
-  "version": "0.9.3",
+  "version": "0.10.0",
   "main": "dist/remarkability.min.css",
   "scripts": {
     "dist": "npm-run-all build:*",
     "build": "npm-run-all build:*",
     "build:clean": "shx rm -rf dist",
     "build:lint": "stylelint \"scss/*.scss\" --cache --cache-location .cache/.stylelintcache",
-    "build:css": "sass scss/remarkability.scss:dist/remarkability.css scss/remarkability.global.scss:dist/remarkability.global.css",
+    "build:css": "sass scss/remarkability.scss:dist/remarkability.css",
     "build:postcss": "postcss --config postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
-    "build:minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.min.css dist/remarkability.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.global.min.css dist/remarkability.global.css"
+    "build:minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.min.css dist/remarkability.css"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
