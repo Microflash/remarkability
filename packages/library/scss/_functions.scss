@@ -4,7 +4,11 @@
 // Prepend a list
 
 @function prepend($original, $additional) {
-  @return if($additional, list.append($original, $additional), $original);
+  @if $additional {
+    @return list.append($original, $additional, comma);
+  } @else {
+    @return $original;
+  }
 }
 
 // Resolve native font family

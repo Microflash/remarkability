@@ -10,7 +10,7 @@ module.exports = {
     ['link', { rel: 'mask-icon', href: '/mask-icon.svg', color: '#ffffff' }],
     ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap' }]
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap' }]
   ],
   markdown: {
     extractHeaders: [ 'h2', 'h3', 'h4', 'h5', 'h6' ]

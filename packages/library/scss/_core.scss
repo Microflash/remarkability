@@ -1,4 +1,4 @@
-/*! Remarkability v0.9.3 | MIT License | https://github.com/Microflash/remarkability */
+/*! Remarkability v0.11.0 | MIT License | https://github.com/Microflash/remarkability */
 @charset 'UTF-8';
 @use 'variables';
 @use 'mixins';
@@ -29,6 +29,13 @@ $root: '.remarkability' !default;
   }
 
   text-rendering: optimizeLegibility;
+
+  /* stylelint-disable property-no-unknown */
+  @if variables.$enable-content-visibility {
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
+  }
+  /* stylelint-enable property-no-unknown */
 
   @include mixins.context($selector: $root) {
     // Inline
