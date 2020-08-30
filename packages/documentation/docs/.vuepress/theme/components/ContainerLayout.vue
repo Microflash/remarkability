@@ -14,7 +14,7 @@
       <RouterLink :to="$localePath + 'customization.html'">Customization</RouterLink>
       <RouterLink :to="$localePath + 'migration.html'">Migration</RouterLink>
     </nav>
-    <main class="content">
+    <main class="remarkability">
       <slot/>
     </main>
     <nav class="navigation">

@@ -82,6 +82,7 @@ Options toggle the following features. All the options are prefixed with `$enabl
 | `$enable-active-links` | Applies the `$link-active` color to **focus** and **hover** link states |
 | `$enable-variable-fonts` | Applies the `$family-sans-variable` and `$family-code-variable` variables to the content |
 | `$enable-smooth-scrolling` | Applies `scroll-behavior: smooth` on all elements |
+| `$enable-content-visibility` | Applies automatic content visibility to [improve performance of content rendering](https://web.dev/content-visibility/) |
 
 **Note** that the following options are set to `true` by default
 - `$enable-multiline-wrap`
