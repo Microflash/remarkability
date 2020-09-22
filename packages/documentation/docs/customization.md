@@ -56,6 +56,7 @@ Variables control the values of the properties of elements.
 | `$scrollbar` | `hsl(0, 0%, 80%)` |
 | `$line-height` | `1.6` |
 | `$margin` | `1.4rem` |
+| `$root` | `.remarkability` |
 
 ### Options
 

@@ -1,4 +1,5 @@
 @use '../../../../node_modules/@microflash/remarkability/scss/variables' with (
+  $root: 'body',
   $enable-selection-background: true,
   $enable-custom-colors: true,
   $enable-custom-fonts: true,
