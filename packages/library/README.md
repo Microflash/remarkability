@@ -50,9 +50,9 @@ Just add `.remarkability` class to your container to style the elements within.
 
 By default, **Remarkability** inherits colors and typography from the parent element but you can customize this behavior with [Sass](https://github.com/Microflash/remarkability/tree/master/packages/library/scss).
 
-##### Global variant
-
-If you want to use **Remarkability** globally, a [global variant](https://github.com/Microflash/remarkability/blob/master/packages/library/scss/remarkability.global.scss) is also available; it doesn't scope the styles under the `.remarkability` class.
+> **Deprecation of Global variant**
+> 
+> With v1.0.0, **Remarkability** deprecated the global variant. If needed, you can still build it by setting `$root` variable to `body` using SASS.
 
 ## Documentation
 
@@ -60,10 +60,10 @@ For more details and examples, check out the [docs](https://remarkability.netlif
 
 ## Development
 
-- Execute `yarn dist` to generate the library distribution.
-- Execute `yarn docs` to generate the documentation.
-- Execute `yarn build` to build both the library and documentation.
-- Execute `yarn bootstrap` for [Lerna](https://github.com/lerna/lerna) to bootstrap the local build.
+- Generate a library distribution with `yarn dist`.
+- Build the documentation with `yarn docs`.
+- Build the documentation and library with `yarn build`.
+- Bootstrap the local build using [Lerna](https://github.com/lerna/lerna) with `yarn bootstrap`.
 
 ## License
 
