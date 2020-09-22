@@ -15,9 +15,6 @@ module.exports = {
   markdown: {
     extractHeaders: [ 'h2', 'h3', 'h4', 'h5', 'h6' ]
   },
-  plugins: [
-    [ '@vuepress/search' ]
-  ],
   themeConfig: {
     logo: 'logo.svg',
     shields: [
