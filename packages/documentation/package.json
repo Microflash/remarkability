@@ -1,14 +1,14 @@
 {
   "name": "@microflash/remarkability-documentation",
   "description": "Documentation for Remarkability",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "scripts": {
     "build": "vuepress build docs",
     "docs": "vuepress build docs",
     "start": "vuepress dev docs"
   },
   "devDependencies": {
-    "@microflash/remarkability": "0.11.0",
+    "@microflash/remarkability": "0.12.0",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.3",
     "vuepress": "^1.5.3"
