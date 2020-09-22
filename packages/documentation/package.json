@@ -11,7 +11,7 @@
     "@microflash/remarkability": "0.12.0",
     "sass": "^1.26.11",
     "sass-loader": "^10.0.2",
-    "vuepress": "^1.5.3"
+    "vuepress": "^1.5.4"
   },
   "repository": "https://github.com/Microflash/remarkability.git",
   "author": "Naiyer Asif (https://mflash.dev)",
