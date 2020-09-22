@@ -10,7 +10,7 @@
   "devDependencies": {
     "@microflash/remarkability": "0.12.0",
     "sass": "^1.26.11",
-    "sass-loader": "^9.0.3",
+    "sass-loader": "^10.0.2",
     "vuepress": "^1.5.3"
   },
   "repository": "https://github.com/Microflash/remarkability.git",
