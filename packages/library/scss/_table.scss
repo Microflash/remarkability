@@ -1,0 +1,78 @@
+@use 'variables';
+@use 'mixins';
+
+#{variables.$root} {
+  @include mixins.context($selector: variables.$root) {
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+  
+      // scroll tables horizontally on small screens
+      @if variables.$enable-responsive-tables {
+        display: block;
+        overflow-x: auto;
+      }
+  
+      pre {
+        white-space: pre-wrap;
+      }
+    }
+  
+    th,
+    td {
+      @include mixins.cell($font-size: 1);
+  
+      border: 1px solid variables.$border-color;
+      line-height: 1.4;
+    }
+  
+    thead,
+    tfoot {
+      tr {
+        @if variables.$enable-table-stripes {
+          background-color: variables.$border-color;
+        } @else {
+          background-color: variables.$background-table-hover;
+        }
+      }
+  
+      th,
+      td {
+        @include mixins.cell($font-size: 0.9);
+  
+        @if variables.$enable-custom-colors {
+          color: variables.$table-thead;
+        }
+  
+        code {
+          background-color: variables.$background-table;
+        }
+      }
+    }
+  
+    tbody {
+      tr {
+        background-color: variables.$background-table;
+  
+        @if variables.$enable-table-stripes {
+          &:nth-child(even) {
+            background-color: variables.$background-table-even;
+          }
+  
+          @if variables.$enable-table-hover {
+            &:hover {
+              background-color: variables.$background-table-hover;
+            }
+          }
+        } @else {
+          @if variables.$enable-table-hover {
+            &:hover {
+              background-color: variables.$background-table-even;
+            }
+          }
+        }
+      }
+    }
+  }  
+}

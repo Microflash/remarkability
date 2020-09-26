@@ -92,6 +92,24 @@ Options toggle the following features. All the options are prefixed with `$enabl
 - `$enable-responsive-tables`
 - `$enable-smooth-scrolling`
 
+### Import what you need
+
+With v1.1.0, **Remarkability** provides you the flexibility to import what you need; you may choose to import the entire `remarkability.scss` file or pick the specific parts. The following parts are available for you to import individually.
+
+```scss
+@use 'node_modules/@microflash/remarkability/scss/variables';
+@use 'node_modules/@microflash/remarkability/scss/root';
+@use 'node_modules/@microflash/remarkability/scss/inline';
+@use 'node_modules/@microflash/remarkability/scss/media';
+@use 'node_modules/@microflash/remarkability/scss/block';
+@use 'node_modules/@microflash/remarkability/scss/headings';
+@use 'node_modules/@microflash/remarkability/scss/lists';
+@use 'node_modules/@microflash/remarkability/scss/form';
+@use 'node_modules/@microflash/remarkability/scss/blockquote';
+@use 'node_modules/@microflash/remarkability/scss/code';
+@use 'node_modules/@microflash/remarkability/scss/table';
+```
+
 ### Font-family customizations
 
 You can customize the font-family in multiple ways.
