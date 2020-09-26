@@ -1,0 +1,76 @@
+@use 'variables';
+@use 'mixins';
+
+#{variables.$root} {
+  line-height: variables.$line-height;
+  font-size: variables.$font-size-base;
+  font-weight: variables.$weight-normal;
+
+  @if variables.$enable-text-inflation {
+    text-size-adjust: variables.$text-size-adjust;
+  }
+
+  @if variables.$enable-custom-colors {
+    background-color: variables.$background-body;
+    color: variables.$text;
+  }
+
+  @if variables.$enable-custom-fonts {
+    @include mixins.font('base');
+  }
+
+  @if variables.$enable-font-smoothing {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  text-rendering: optimizeLegibility;
+
+  /* stylelint-disable property-no-unknown */
+  @if variables.$enable-content-visibility {
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
+  }
+  /* stylelint-enable property-no-unknown */
+
+  @include mixins.context($selector: variables.$root) {
+    // Inline
+
+    * {
+      @if variables.$enable-multiline-wrap {
+        box-decoration-break: clone;
+      }
+
+      @if variables.$enable-custom-scrollbar {
+        &::-webkit-scrollbar,
+        &::-webkit-scrollbar-track {
+          background-color: variables.$background-scrollbar;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+          background-color: variables.$scrollbar;
+        }
+    
+        scrollbar-color: variables.$scrollbar variables.$background-scrollbar;
+      }
+
+      @if variables.$enable-smooth-scrolling {
+        scroll-behavior: smooth;
+    
+        @media screen and (prefers-reduced-motion: true) { 
+          scroll-behavior: auto;
+        }
+      }
+
+      @if variables.$enable-selection-background {
+        &::-moz-selection { 
+          background: variables.$background-selected;
+        }
+        
+        &::selection { 
+          background: variables.$background-selected;
+        }
+      }
+    }
+  }
+}
