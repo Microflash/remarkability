@@ -54,6 +54,24 @@ By default, **Remarkability** inherits colors and typography from the parent ele
 > 
 > With v1.0.0, **Remarkability** deprecated the global variant. If needed, you can still build it by setting `$root` variable to `body` using SASS.
 
+### Import what you need
+
+With v1.1.0, **Remarkability** provides you the flexibility to import what you need; you may choose to import the entire `remarkability.scss` file or pick the specific parts. The following parts are available for you to import individually.
+
+```scss
+@use 'node_modules/@microflash/remarkability/scss/variables';
+@use 'node_modules/@microflash/remarkability/scss/root';
+@use 'node_modules/@microflash/remarkability/scss/inline';
+@use 'node_modules/@microflash/remarkability/scss/media';
+@use 'node_modules/@microflash/remarkability/scss/block';
+@use 'node_modules/@microflash/remarkability/scss/headings';
+@use 'node_modules/@microflash/remarkability/scss/lists';
+@use 'node_modules/@microflash/remarkability/scss/form';
+@use 'node_modules/@microflash/remarkability/scss/blockquote';
+@use 'node_modules/@microflash/remarkability/scss/code';
+@use 'node_modules/@microflash/remarkability/scss/table';
+```
+
 ## Documentation
 
 For more details and examples, check out the [docs](https://remarkability.netlify.app).
