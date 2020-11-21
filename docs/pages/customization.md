@@ -41,7 +41,7 @@ Variables control the values of the properties of elements.
 | `$background-table` | `hsl(0, 0%, 98%, 0.25)` |
 | `$background-table-even` | `hsl(0, 3%, 98%)` |
 | `$background-table-hover` | `hsl(0, 5%, 96%)` |
-| `$background-selected` | `hsla(210, 100%, 35%, 0.25)` |
+| `$background-selected` | `hsla(210, 80%, 50%, 0.25)` |
 | `$background-scrollbar` | `hsl(0, 5%, 96%)` |
 | `$border-color` | `hsl(0, 0%, 91%)` |
 | `$opacity` | `0.5` |
