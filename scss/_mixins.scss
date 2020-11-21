@@ -29,7 +29,7 @@
 
   @if variables.$enable-heading-border and $with-border {
     border-bottom: 1px solid variables.$border-color;
-    padding-bottom: $gap / $font-size;
+    padding-bottom: $gap / 2 / $font-size;
   }
 }
 
