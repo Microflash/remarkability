@@ -60,7 +60,7 @@ Variables control the values of the properties of elements.
 | `$table-thead` | `$color-active` |
 | `$scrollbar` | `hsl(0, 0%, 80%)` |
 | `$line-height` | `1.6` |
-| `$margin` | `1.4rem` |
+| `$margin` | `1.5rem` |
 | `$root` | `.remarkability` |
 
 ### Options
