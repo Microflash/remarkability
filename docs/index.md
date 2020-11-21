@@ -7,7 +7,7 @@ shields: true
 
 # Get started
 
-##### Using NPM or Yarn
+### Using NPM or Yarn
 
 Add to your project with NPM or Yarn.
 
@@ -18,7 +18,7 @@ yarn add @microflash/remarkability
 
 This is the recommended way if you want to customize **Remarkability** using Sass.
 
-##### Using CDN
+### Using CDN
 
 Add one of the following `<link>` elements in the `<head>` of your HTML document.
 
@@ -29,7 +29,7 @@ Add one of the following `<link>` elements in the `<head>` of your HTML document
 
 > By default, these CDNs will serve the latest published version. Refer to the [unpkg](https://unpkg.com/) / [jsDelivr](https://www.jsdelivr.com/features) docs for other possible ways to get **Remarkability**.
 
-##### Download
+### Download
 
 You can also download the [latest version](https://github.com/Microflash/remarkability/releases/latest) or [browse the previous releases](https://github.com/Microflash/remarkability/releases) on GitHub.
 

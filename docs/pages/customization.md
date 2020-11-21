@@ -7,7 +7,7 @@ date: 2020-11-20
 
 You can easily customize **Remarkability** with [Sass](https://github.com/Microflash/remarkability/tree/master/packages/library/scss), using **variables** and **options**.
 
-### Variables
+## Variables
 
 Variables control the values of the properties of elements.
 
@@ -63,7 +63,7 @@ Variables control the values of the properties of elements.
 | `$margin` | `1.5rem` |
 | `$root` | `.remarkability` |
 
-### Options
+## Options
 
 Options toggle the following features. All the options are prefixed with `$enable-`.
 
@@ -97,7 +97,7 @@ Options toggle the following features. All the options are prefixed with `$enabl
 - `$enable-responsive-tables`
 - `$enable-smooth-scrolling`
 
-### Import what you need
+## Import what you need
 
 With v1.1.0, **Remarkability** provides you the flexibility to import what you need; you may choose to import the entire `remarkability.scss` file or pick the specific parts. The following parts are available for you to import individually.
 
@@ -116,23 +116,23 @@ With v1.1.0, **Remarkability** provides you the flexibility to import what you n
 @use 'node_modules/@microflash/remarkability/scss/table';
 ```
 
-### Font-family customizations
+## Font-family customizations
 
 You can customize the font-family in multiple ways.
 
-###### Adding a custom font-family
+### Adding a custom font-family
 
 Override `$family-sans-custom` or `$family-code-custom` to add a custom font-family. Remarkability will prepend these values on `$family-sans-native` and `$family-code-native` variables respectively.
 
-###### Adding a variable font-family
+### Adding a variable font-family
 
 Override `$family-sans-variable` or `$family-code-variable` to add a custom font-family. Remarkability will prepend these values on `$family-sans-native` and `$family-code-native` respectively and apply them when `$enable-variable-fonts` is set to `true`. It will also use `font-variation-settings: normal` [feature query](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings) to apply the variable fonts.
 
-###### Overriding the native font stack
+### Overriding the native font stack
 
 You can override the native font stack, by overriding `$family-sans-native` and `$family-code-native`.
 
-#### Custom font-family stack
+### Custom font-family stack
 
 Remarkability comes with two pre-built font stacks in `$font-families` map.
 

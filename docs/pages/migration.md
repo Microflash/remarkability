@@ -7,13 +7,13 @@ date: 2020-11-19
 
 If you're using Sass to customize **Remarkability**, this section can help you migrate from the previous versions.
 
-### Migrating from v0.x.x to v1.0.0
+## Migrating from v0.x.x to v1.0.0
 
 In v1.0.0, **Remarkability** deprecated its global variant. If needed, you can still build it by setting `$root` variable to `body` using Sass.
 
-### Migrating from v0.8.x to v0.9.x
+## Migrating from v0.8.x to v0.9.x
 
-#### Renamed variables
+### Renamed variables
 
 | Previous variable name `v0.8.x` | New variable name `v0.9.x` |
 | ------------------- | ------------------- |
@@ -45,7 +45,7 @@ In v1.0.0, **Remarkability** deprecated its global variant. If needed, you can s
 | `$variable-fonts` | `$enable-variable-fonts` |
 | `$scroll-smoothly` | `$enable-smooth-scrolling` |
 
-#### Font-family declaration
+### Font-family declaration
 
 In v0.8.x, Remarkability provided `$family-base`, `$family-code` and `$family-base-variable` which you needed to override with a custom font-family and fallback font-families.
 
@@ -53,9 +53,9 @@ In v0.9.x, you don't have to override the entire font-family. Instead, when a va
 
 Additionally, you can provide a list of custom font-families as the values of the above variables. The `font` mixin will appropriately merge them with the native font stack.
 
-### Migrating from v0.7.x to v0.8.x
+## Migrating from v0.7.x to v0.8.x
 
-#### Renamed variables
+### Renamed variables
 
 | Previous variable name `v0.7.x` | New variable name `v0.8.x` |
 | ------------------- | ------------------- |
@@ -78,7 +78,7 @@ Additionally, you can provide a list of custom font-families as the values of th
 | `$round-images` | `$round-media` |
 | `$round-codeblocks` | `$round-blocks` |
 
-#### Font-family declaration
+### Font-family declaration
 
 Remarkability now maintains a map of font-families
 
@@ -97,9 +97,9 @@ which is used by a mixin `font`. To apply a font-family, pass the corresponding 
 
 You can extend `$font-families` map by adding custom font-families and include them using `font` mixin as shown above.
 
-### Migrating from v0.6.x to v0.7.x
+## Migrating from v0.6.x to v0.7.x
 
-#### Renamed variables
+### Renamed variables
 
 | Previous variable name `v0.6.x` | New variable name `v0.7.x` |
 | ------------------- | ------------------- |
@@ -110,11 +110,11 @@ You can extend `$font-families` map by adding custom font-families and include t
 | `$image-rounding` | `$round-images` |
 | `$codeblock-rounding` | `$round-codeblocks` |
 
-#### Font-family declaration
+### Font-family declaration
 
 Instead of using `$family-default` and `$family-code` variables directly to declare `font-family` on a selector, use `base-font` and `code-font` mixins.
 
-#### Customizing variables
+### Customizing variables
 
 Remarkability v0.7.x uses [Sass Module System](https://sass-lang.com/blog/the-module-system-is-launched). Take advantage of the new syntax offered by `with`.
 
