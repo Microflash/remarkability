@@ -4,7 +4,6 @@
 #{variables.$root} {
   line-height: variables.$line-height;
   font-size: variables.$font-size-base;
-  font-weight: variables.$weight-normal;
 
   @if variables.$enable-text-inflation {
     text-size-adjust: variables.$text-size-adjust;
