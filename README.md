@@ -1,6 +1,6 @@
 # Remarkability
 
-> &mdash; A compact CSS library for a pleasant reading experience on the web
+&mdash; A compact CSS library for a pleasant reading experience on the web
 
 [![npm (scoped)](https://img.shields.io/npm/v/@microflash/remarkability)](https://www.npmjs.com/package/@microflash/remarkability)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Microflash/remarkability)](https://github.com/Microflash/remarkability/releases/latest)
@@ -52,7 +52,7 @@ By default, **Remarkability** inherits colors and typography from the parent ele
 
 > **Deprecation of Global variant**
 > 
-> With v1.0.0, **Remarkability** deprecated the global variant. If needed, you can still build it by setting `$root` variable to `body` using SASS.
+> With v1.0.0, **Remarkability** deprecated the global variant. If needed, you can still build it by setting `$root` variable to `body` using Sass.
 
 ### Import what you need
 
@@ -74,14 +74,13 @@ With v1.1.0, **Remarkability** provides you the flexibility to import what you n
 
 ## Documentation
 
-For more details and examples, check out the [docs](https://remarkability.netlify.app).
+For more details and examples, check out the [docs](https://r11y.mflash.dev).
 
 ## Development
 
-- Generate a library distribution with `yarn dist`.
-- Build the documentation with `yarn docs`.
-- Build the documentation and library with `yarn build`.
-- Bootstrap the local build using [Lerna](https://github.com/lerna/lerna) with `yarn bootstrap`.
+- Execute `yarn start` to bring up the documentation site which contains an example page.
+- Use `yarn dist` to generate a CSS build.
+- Use `yarn docs` to generate the static version of the documentation.
 
 ## License
 

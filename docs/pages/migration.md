@@ -1,10 +1,15 @@
+---
+title: Migration
+date: 2020-11-19
+---
+
 # Migration
 
 If you're using Sass to customize **Remarkability**, this section can help you migrate from the previous versions.
 
 ### Migrating from v0.x.x to v1.0.0
 
-In v1.0.0, **Remarkability** deprecated its global variant. If needed, you can still build it by setting `$root` variable to `body` using SASS.
+In v1.0.0, **Remarkability** deprecated its global variant. If needed, you can still build it by setting `$root` variable to `body` using Sass.
 
 ### Migrating from v0.8.x to v0.9.x
 

@@ -78,63 +78,16 @@ body {
     letter-spacing: 1px;
     margin-right: 1em;
     border-radius: 10px;
+    border: 1px solid #e0e0ff;
 
     &:focus,
     &:hover {
       background-color: #efefff;
     }
-  }
 
-  .router-link-exact-active {
-    font-weight: 500;
-    background-color: #e0e0ff;
-  }
-
-  .search-box {
-    display: block;
-    margin-bottom: 2rem;
-    margin-right: 0;
-    width: 100%;
-
-    > * {
-      width: 100%;
-    }
-
-    input {
-      border-color: #cfd4db;
-      border-radius: 6px;
-      @include py(1.25rem);
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='15' height='15' fill='%2388a'%3E%3Cpath fill-rule='evenodd' d='M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z'%3E%3C/path%3E%3C/svg%3E");
-      background-position-y: 0.75rem;
-      left: auto;
-
-      &:focus,
-      &:hover {
-        border-color: $color-link;
-        width: 100% !important;
-      }
-    }
-
-    .suggestions {
-      top: 3rem;
-      width: 100%;
-    }
-
-    .suggestion {
-      a {
-        text-transform: none;
-        color: $color-link;
-        padding: 0;
-
-        .header {
-          margin-left: -0.25em !important;
-        }
-      }
-
-      &[aria-current="page"],
-      &.focused {
-        background-color: #efefff;
-      }
+    &[aria-current] {
+      font-weight: 500;
+      background-color: #e0e0ff;
     }
   }
 }
@@ -165,8 +118,8 @@ table {
   }
 }
 
-.header-anchor {
-  margin-left: -1.5ch;
+.citation {
+  margin-left: 0.5ch;
   display: none;
   visibility: hidden;
 }
@@ -177,8 +130,8 @@ h3,
 h4, 
 h5, 
 h6 {
-  &:focus .header-anchor,
-  &:hover .header-anchor {
+  &:focus .citation,
+  &:hover .citation {
     display: inline-block;
     visibility: visible;
   }

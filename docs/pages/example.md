@@ -1,3 +1,8 @@
+---
+title: Example
+date: 2020-11-21
+---
+
 # Remarkability in Action
 
 **This very document** is styled using **Remarkability** with the following [configuration](https://github.com/Microflash/remarkability/tree/master/packages/documentation/docs/.vuepress/theme/styles/_variables.scss) &mdash;
@@ -81,7 +86,7 @@ Besides text, images should also look pretty. Remarkability provides styles for 
 </figure>
 
 <figure>
-  <img src="https://github.com/Microflash/mflash.dev/raw/release/static/favicon.svg" alt="Microflash" width="245" height="245">
+  <img src="https://github.com/Microflash/mflash.dev/raw/main/static/favicon.svg" alt="Microflash" width="245" height="245">
   <figcaption>A small image</figcaption>
 </figure>
 

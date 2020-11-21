@@ -1,14 +1,48 @@
 {
-  "name": "remarkability",
-  "license": "MIT",
+  "name": "@microflash/remarkability",
+  "description": "A compact CSS library for a pleasant reading experience on the web",
+  "version": "2.0.0",
+  "main": "dist/remarkability.min.css",
   "scripts": {
-    "origin": "lerna init",
-    "build": "lerna run build",
-    "docs": "lerna run docs",
-    "dist": "lerna run dist",
-    "bootstrap": "lerna bootstrap"
+    "start": "npm-run-all docs --parallel watch:*",
+    "watch:sass": "sass --no-source-map --watch docs/scss:public/css",
+    "watch:eleventy": "eleventy --serve",
+    "docs": "npm-run-all docs:*",
+    "docs:generate": "sass --no-source-map docs/scss:public/css",
+    "docs:postcss": "postcss --config postcss.config.js --replace \"public/css/*.css\" \"!public/css/*.min.css\"",
+    "docs:minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output public/css/style.min.css public/css/style.css",
+    "dist": "npm-run-all dist:*",
+    "dist:clean": "shx rm -rf dist",
+    "dist:generate": "sass scss/remarkability.scss:dist/remarkability.css",
+    "dist:postcss": "postcss --config postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
+    "dist:minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.min.css dist/remarkability.css"
   },
   "devDependencies": {
-    "lerna": "^3.22.1"
-  }
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "autoprefixer": "^10.0.2",
+    "clean-css-cli": "^4.3.0",
+    "markdown-it": "^12.0.2",
+    "markdown-it-anchor": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.8",
+    "postcss-cli": "^8.3.0",
+    "sass": "^1.29.0",
+    "shx": "^0.3.3",
+    "slugify": "^1.4.6"
+  },
+  "repository": "https://github.com/Microflash/remarkability.git",
+  "author": "Naiyer Asif (https://mflash.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Microflash/remarkability/issues"
+  },
+  "homepage": "https://r11y.mflash.dev",
+  "keywords": [
+    "markdown",
+    "css",
+    "sass",
+    "html",
+    "generated"
+  ]
 }

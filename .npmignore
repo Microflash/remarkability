@@ -1,0 +1,8 @@
+.github
+docs
+node_modules
+public
+.editorconfig
+.eleventy.js
+postcss.config.js
+*.lock*

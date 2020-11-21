@@ -1,3 +1,8 @@
+---
+title: Customization
+date: 2020-11-20
+---
+
 # Customization
 
 You can easily customize **Remarkability** with [Sass](https://github.com/Microflash/remarkability/tree/master/packages/library/scss), using **variables** and **options**.
