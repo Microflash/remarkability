@@ -20,8 +20,9 @@ Variables control the values of the properties of elements.
 | `$family-sans-variable` | `null` |
 | `$family-code-variable` | `null` |
 | `$font-families` | <pre>(&NewLine;  'base': (&NewLine;    $family-sans-native,&NewLine;    $family-sans-custom,&NewLine;    $family-sans-variable&NewLine;  ),&NewLine;  'code': (&NewLine;    $family-code-native,&NewLine;    $family-code-custom,&NewLine;    $family-code-variable&NewLine;  )&NewLine;)</pre> |
-| `$weight-bold` | `600` |
-| `$weight-headings` | `$weight-bold` |
+| `$weight-semibold` | `600` |
+| `$weight-bold` | `700` |
+| `$weight-headings` | `$weight-semibold` |
 | `$font-size-base` | `calc(0.9rem + 0.3vw)` |
 | `$font-size-code` | `0.9em` |
 | `$font-size-small` | `0.8em` |
