@@ -14,6 +14,11 @@
   padding-bottom: $py;
 }
 
+@mixin my($my) {
+  margin-top: $my;
+  margin-bottom: $my;
+}
+
 $color-link: hsl(210, 100%, 40%) !default;
 
 $space-rg: calc(1rem + 2vw) !default;
@@ -24,28 +29,20 @@ body {
   display: block;
   margin: 0 auto;
   position: relative;
-  width: 100%;
-
-  @include md {
-    max-width: calc(600px + 24vw);
+  max-width: calc(720px + 20vw);
+  
+  & > * {
+    @include px($space-md);
   }
-}
-
-.layout > * {
-  display: inherit;
-  width: 100%;
-  padding: $space-rg $space-md;
 }
 
 .header {
-  @include md {
-    padding-top: $space-lg;
-    padding-bottom: $space-rg;
-  }
+  padding-top: $space-rg;
+  padding-bottom: $space-md;
 
   .logo {
     padding-top: $space-lg;
-    width: 50rem;
+    width: calc(25rem + 20vw);
   }
 
   .lead {
@@ -73,10 +70,11 @@ body {
   a {
     display: inline-block;
     font-size: medium;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     letter-spacing: 1px;
     margin-right: 1em;
+    margin-bottom: 1em;
     border-radius: 10px;
     border: 1px solid #e0e0ff;
 
@@ -92,16 +90,17 @@ body {
   }
 }
 
+main.remarkability {
+  @include my($space-md);
+}
+
 .shield {
   margin-right: 0.25em;
 }
 
 .footer {
-  font-size: medium;
-
-  @include md {
-    @include py($space-md);
-  }
+  font-size: 0.8em;
+  @include py($space-md);
 }
 
 $space-code: 1em 1.2em !default;
