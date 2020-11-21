@@ -22,7 +22,7 @@ $families: map.merge($font-families, (
   'code': $family-code-native $family-code-custom $family-code-variable,
 )) !default;
 
-$weight-bold: 700 !default;
+$weight-bold: 600 !default;
 $weight-headings: $weight-bold !default;
 
 $font-size-base: calc(1rem + 0.25vw) !default;

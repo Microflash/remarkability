@@ -18,6 +18,10 @@
     }
   }
 
+  th {
+    font-weight: variables.$weight-bold;
+  }
+
   th,
   td {
     @include mixins.cell($font-size: 1);
