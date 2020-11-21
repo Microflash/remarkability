@@ -1,36 +1,34 @@
 @use 'variables';
 @use 'mixins';
 
-#{variables.$root} {
-  @include mixins.context($selector: variables.$root) {
-    img {
-      vertical-align: text-bottom;
-  
-      @if variables.$enable-media-radius {
-        border-radius: variables.$media-radius;
-      }
+@include mixins.parent {
+  img {
+    vertical-align: text-bottom;
+
+    @if variables.$enable-media-radius {
+      border-radius: variables.$media-radius;
     }
-  
-    figure {
-      margin-bottom: variables.$margin * 2;
-      text-align: center;
-  
-      &:first-child {
-        margin-top: 0;
-      }
-  
-      &:last-child {
-        margin-bottom: 0;
-      }
+  }
+
+  figure {
+    margin-bottom: variables.$margin * 2;
+    text-align: center;
+
+    &:first-child {
+      margin-top: 0;
     }
-  
-    figcaption {
-      font-size: variables.$font-size-small;
-      margin-top: variables.$margin / 1.6;
-  
-      @if variables.$enable-custom-colors {
-        color: variables.$text-muted;
-      }
+
+    &:last-child {
+      margin-bottom: 0;
     }
-  }  
+  }
+
+  figcaption {
+    font-size: variables.$font-size-small;
+    margin-top: variables.$margin / 1.6;
+
+    @if variables.$enable-custom-colors {
+      color: variables.$text-muted;
+    }
+  }
 }

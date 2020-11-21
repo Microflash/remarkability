@@ -61,6 +61,7 @@ With v1.1.0, **Remarkability** provides you the flexibility to import what you n
 ```scss
 @use 'node_modules/@microflash/remarkability/scss/variables';
 @use 'node_modules/@microflash/remarkability/scss/root';
+@use 'node_modules/@microflash/remarkability/scss/all';
 @use 'node_modules/@microflash/remarkability/scss/inline';
 @use 'node_modules/@microflash/remarkability/scss/media';
 @use 'node_modules/@microflash/remarkability/scss/block';

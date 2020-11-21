@@ -64,14 +64,16 @@
   }
 }
 
-// Switch selector context
+// Parent resolver
 
-@mixin context($selector) {
-  @if $selector == 'body' {
-    @at-root {
+@mixin parent($selector: variables.$root) {
+  @if $selector != 'body' {
+    #{$selector} {
       @content;
     }
   } @else {
-    @content;
+    @at-root {
+      @content;
+    }
   }
 }

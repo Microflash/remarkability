@@ -1,26 +1,24 @@
 @use 'variables';
 @use 'mixins';
 
-#{variables.$root} {
-  @include mixins.context($selector: variables.$root) {
-    p,
-    dl,
-    ol,
-    ul,
-    blockquote,
-    pre,
-    table {
-      margin-bottom: variables.$margin;
-  
-      &:last-child {
-        margin-bottom: 0;
-      }
+@include mixins.parent {
+  p,
+  dl,
+  ol,
+  ul,
+  blockquote,
+  pre,
+  table {
+    margin-bottom: variables.$margin;
+
+    &:last-child {
+      margin-bottom: 0;
     }
-  
-    p {
-      &:empty {
-        display: none;
-      }
+  }
+
+  p {
+    &:empty {
+      display: none;
     }
   }
 }
