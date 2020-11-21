@@ -50,8 +50,6 @@ Just add `.remarkability` class to your container to style the elements within.
 
 By default, **Remarkability** inherits colors and typography from the parent element but you can customize this behavior with [Sass](https://github.com/Microflash/remarkability/tree/master/packages/library/scss).
 
-> **Deprecation of Global variant**
-> 
 > With v1.0.0, **Remarkability** deprecated the global variant. If needed, you can still build it by setting `$root` variable to `body` using Sass.
 
 ### Import what you need
