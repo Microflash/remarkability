@@ -122,4 +122,9 @@
   sup {
     vertical-align: super;
   }
+
+  var {
+    font-style: italic;
+    font-weight: variables.$weight-semibold;
+  }
 }

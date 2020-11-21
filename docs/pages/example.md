@@ -19,7 +19,7 @@ date: 2020-11-21
 );
 ```
 
-Remarkability includes reasonable defaults for *emphasized* or **important** text, [links](#), `code`, <abbr title="abbreviations">abbr</abbr>, <q>short quote</q>, <cite>citations</cite>, <mark>highlighted text</mark>, <kbd>keyboard inputs</kbd>, <s>strikethrough</s>, ~~deleted~~ or <ins>inserted</ins> elements, <samp>sample text</samp>, <small>small text</small>, <sub>subscript</sub> or <sup>superscript</sup>.
+Remarkability includes reasonable defaults for *emphasized* or **important** text, [links](#), `code`, <var>variables</var>, <abbr title="abbreviations">abbr</abbr>, <q>short quote</q>, <cite>citations</cite>, <mark>highlighted text</mark>, <kbd>keyboard inputs</kbd>, <s>strikethrough</s>, ~~deleted~~ or <ins>inserted</ins> elements, <samp>sample text</samp>, <small>small text</small>, <sub>subscript</sub> or <sup>superscript</sup>.
 
 You can have **unordered lists** with multiple levels of nesting &mdash;
 
