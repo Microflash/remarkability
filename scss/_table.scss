@@ -42,8 +42,6 @@
 
     th,
     td {
-      @include mixins.cell($font-size: 0.9);
-
       @if variables.$enable-custom-colors {
         color: variables.$table-thead;
       }

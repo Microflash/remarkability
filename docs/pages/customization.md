@@ -22,7 +22,7 @@ Variables control the values of the properties of elements.
 | `$font-families` | <pre>(&NewLine;  'base': (&NewLine;    $family-sans-native,&NewLine;    $family-sans-custom,&NewLine;    $family-sans-variable&NewLine;  ),&NewLine;  'code': (&NewLine;    $family-code-native,&NewLine;    $family-code-custom,&NewLine;    $family-code-variable&NewLine;  )&NewLine;)</pre> |
 | `$weight-bold` | `600` |
 | `$weight-headings` | `$weight-bold` |
-| `$font-size-base` | `calc(1rem + 0.25vw)` |
+| `$font-size-base` | `calc(0.9rem + 0.3vw)` |
 | `$font-size-code` | `0.9em` |
 | `$font-size-small` | `0.8em` |
 | `$text-size-adjust` | `100%` |
