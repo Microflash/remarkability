@@ -35,15 +35,15 @@
   }
 
   h4 {
-    @include mixins.heading($font-size: 1.2);
+    @include mixins.heading($font-size: 1.125);
   }
 
   h5 {
-    @include mixins.heading($font-size: 1.1);
+    @include mixins.heading($font-size: 1);
   }
 
   h6 {
-    @include mixins.heading($font-size: 1);
+    @include mixins.heading($font-size: 0.9);
   }
 
   h1 + * {
