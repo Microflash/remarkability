@@ -3,10 +3,10 @@
 
 // Typography
 
-$family-sans-native: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+$family-sans-native: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
   Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
   'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
-$family-code-native: SFMono-Regular, 'Roboto Mono', Menlo, Monaco, Consolas,
+$family-code-native: ui-monospace, SFMono-Regular, 'Roboto Mono', Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace !default;
 
 $family-sans-custom: null !default;
