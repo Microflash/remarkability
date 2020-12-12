@@ -39,18 +39,20 @@ module.exports = eleventyConfig => {
 
   eleventyConfig.setLibrary('md', markdownLibrary)
 
-  eleventyConfig.setBrowserSyncConfig({
-    callbacks: {
-      ready: function(err, bs) {
-        bs.addMiddleware('*', (req, res) => {
-          const content_404 = fs.readFileSync('404.html')
-          res.write(content_404)
-          res.writeHead(404)
-          res.end()
-        })
+  if (process.env.NODE_ENV == 'production') {
+    eleventyConfig.setBrowserSyncConfig({
+      callbacks: {
+        ready: function(err, bs) {
+          bs.addMiddleware('*', (req, res) => {
+            const content_404 = fs.readFileSync('404.html')
+            res.write(content_404)
+            res.writeHead(404)
+            res.end()
+          })
+        }
       }
-    }
-  })
+    })
+  }
 
   return {
     passthroughFileCopy: true,
