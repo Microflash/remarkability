@@ -31,4 +31,10 @@
     contain-intrinsic-size: 1000px;
   }
   /* stylelint-enable property-no-unknown */
+
+  @if variables.$enable-lead-paragraph and variables.$lead {
+    #{variables.$lead} {
+      font-size: 1.25em;
+    }
+  }
 }

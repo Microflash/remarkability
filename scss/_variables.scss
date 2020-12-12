@@ -81,10 +81,12 @@ $margin: 1.5rem !default;
 // Root element
 
 $root: '.remarkability' !default;
+$lead: '.lead' !default;
 
 // Options
 
 $enable-compact-lists: false !default;
+$enable-lead-paragraph: false !default;
 $enable-multiline-wrap: true !default;
 $enable-selection-background: false !default;
 $enable-custom-scrollbar: false !default;
