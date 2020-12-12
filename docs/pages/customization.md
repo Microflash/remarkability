@@ -5,7 +5,7 @@ date: 2020-11-20
 
 # Customization
 
-You can easily customize **Remarkability** with [Sass](https://github.com/Microflash/remarkability/tree/master/packages/library/scss), using **variables** and **options**.
+You can customize **Remarkability** with [Sass](https://github.com/Microflash/remarkability/tree/master/packages/library/scss), using **variables** and **options**.
 
 ## Variables
 
@@ -13,8 +13,8 @@ Variables control the values of the properties of elements.
 
 | Variable | Default value |
 | --------- | -------------- |
-| `$family-sans-native` | <pre>system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'</pre> |
-| `$family-code-native` | <pre>SFMono-Regular, 'Roboto Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace</pre> |
+| `$family-sans-native` | <pre>ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'</pre> |
+| `$family-code-native` | <pre>ui-monospace, SFMono-Regular, 'Roboto Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace</pre> |
 | `$family-sans-custom` | `null` |
 | `$family-code-custom` | `null` |
 | `$family-sans-variable` | `null` |
@@ -36,6 +36,7 @@ Variables control the values of the properties of elements.
 | `$color-code` | `hsl(0, 58%, 46%)` |
 | `$background-body` | `hsl(0, 0%, 100%)` |
 | `$background-code` | `hsl(0, 5%, 96%)` |
+| `$background-del` | `hsl(0, 58%, 80%)` |
 | `$background-ins` | `hsl(125, 50%, 75%)` |
 | `$background-mark` | `hsl(45, 75%, 75%)` |
 | `$background-table` | `hsl(0, 0%, 98%, 0.25)` |
@@ -62,6 +63,7 @@ Variables control the values of the properties of elements.
 | `$line-height` | `1.6` |
 | `$margin` | `1.5rem` |
 | `$root` | `.remarkability` |
+| `$lead` | `.lead` |
 
 ## Options
 
@@ -70,6 +72,7 @@ Options toggle the following features. All the options are prefixed with `$enabl
 | Option | When set to `true` |
 | ------ | ------------------ |
 | `$enable-compact-lists` | Brings **lists** closer to the **paragraph** they *immediately* follow |
+| `$enable-lead-paragraph` | Increases the font-size of the *opening* **paragraph** |
 | `$enable-multiline-wrap` | Applies **border**, **padding**, and **margin** of a **list-item** to all its children |
 | `$enable-selection-background` | Applies `$background-selected` to `::selection` |
 | `$enable-custom-scrollbar` | Applies `$background-scrollbar` and `$scrollbar` to scrollbar |
@@ -90,7 +93,7 @@ Options toggle the following features. All the options are prefixed with `$enabl
 | `$enable-smooth-scrolling` | Applies `scroll-behavior: smooth` on all elements |
 | `$enable-content-visibility` | Applies automatic content visibility to [improve performance of content rendering](https://web.dev/content-visibility/) |
 
-**Note** that the following options are set to `true` by default
+**Note** The following options are set to `true` by default
 - `$enable-multiline-wrap`
 - `$enable-font-smoothing`
 - `$enable-text-inflation`
@@ -99,7 +102,7 @@ Options toggle the following features. All the options are prefixed with `$enabl
 
 ## Import what you need
 
-With v1.1.0, **Remarkability** provides you the flexibility to import what you need; you may choose to import the entire `remarkability.scss` file or pick the specific parts. The following parts are available for you to import individually.
+**Remarkability** provides you the flexibility to import what you need; you may choose to import the entire `remarkability.scss` file or pick the specific parts. The following parts are available for you to import individually.
 
 ```scss
 @use 'node_modules/@microflash/remarkability/scss/variables';
