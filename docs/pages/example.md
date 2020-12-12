@@ -3,80 +3,26 @@ title: Example
 date: 2020-11-21
 ---
 
-# Remarkability in Action
+Imagine writing a beautifully written blog post in markdown or through a content management system (CMS). Once you have proof-read it and polished it, you run it through a generator (like [marked](https://github.com/markedjs/marked), [remark](https://github.com/remarkjs/remark), etc) or export it through the CMS options and you get an HTML. Imagine this HTML being rendered through the default browser styles, looking drab and lackluster.
 
-**This very document** is styled using **Remarkability** with the following [configuration](https://github.com/Microflash/remarkability/tree/master/packages/documentation/docs/.vuepress/theme/styles/_variables.scss) &mdash;
+That's where **Remarkability** comes into picture. It provides sensible opinions on how an HTML document should look like for a pleasant reading experience in the browser. It adds just-enough character to make your posts look awesome. The document that you're *reading right now* is how it'd look like when you use **Remarkability** with the following options [configured with Sass](https://github.com/Microflash/remarkability/blob/master/docs/scss/_variables.scss) &mdash;
 
 ```scss
 @use '@microflash/remarkability/scss/variables' with (
+  $lead: '.remarkability > p:first-of-type',
   $enable-selection-background: true,
   $enable-custom-colors: true,
   $enable-custom-fonts: true,
   $enable-media-radius: true,
   $enable-block-radius: true,
-  $enable-heading-border: true,
-  $enable-active-links: true
+  $enable-active-links: true,
+  $enable-lead-paragraph: true
 );
 ```
 
-Remarkability includes reasonable defaults for *emphasized* or **important** text, [links](#), `code`, <var>variables</var>, <abbr title="abbreviations">abbr</abbr>, <q>short quote</q>, <cite>citations</cite>, <mark>highlighted text</mark>, <kbd>keyboard inputs</kbd>, <s>strikethrough</s>, ~~deleted~~ or <ins>inserted</ins> elements, <samp>sample text</samp>, <small>small text</small>, <sub>subscript</sub> or <sup>superscript</sup>.
+# Considerations
 
-You can have **unordered lists** with multiple levels of nesting &mdash;
-
-- Such as this list
-  - with a nested item
-    - containing another nested item
-      - and a yet another
-        - until it reaches
-          - the sixth level.
-- A list item can wrap multiple lines.
-- Here's an example of a long list item: The man who entered was young, some two-and-twenty at the outside, well-groomed and trimly clad, with something of refinement and delicacy in his bearing. The streaming umbrella which he held in his hand, and his long shining waterproof told of the fierce weather through which he had come.
-- A list item can also wrap multiple paragraphs, like this:
-  
-  I groaned, for I was newly come back from a weary day.
-
-  We heard the door open, a few hurried words, and then quick steps upon the linoleum. Our own door flew open, and a lady, clad in some dark-coloured stuff, with a black veil, entered the room.
-
-Similarly, you can have **ordered lists** &mdash;
-
-1. There are several layers of earth, including
-   1. the Crust
-      1. the Mantle
-         1. the Gutenburg discontinuity
-            1. the Outer Core, and
-               1. the Inner Core.
-2. Gutenburg discontinuity is a boundary between the core and mantle at ~2891 km.
-3. The seismic activity goes through an abrupt change at the discontinuity.
-
-And finally, you can also have **definition lists** &mdash;
-
-<dl>
-  <dt>Crust</dt>
-  <dd>the outermost layer of Earth, ranging from 5–70 km</dd>
-  <dt>Mantle</dt>
-  <dd>the thickest layer of Earth lying below the crust, extending up to 2890 km</dd>
-  <dt>Outer Core</dt>
-  <dd>a fluid layer about 2400 km thick lying below the mantle</dd>
-  <dt>Inner Core</dt>
-  <dd>the innermost layer of Earth with a radius of 1220 km</dd>
-</dl>
-
-You can put a horizontal rule as a separator.
-
----
-
-> You can also put an inspirational quotation in a `blockquote`.
->
-> Such a quotation can span several lines and even multiple paragraphs.
-> 
-> > You can nest  
-> > > multiple `blockquote`s.
->
-> And add lists
-> - with one or more
-> - quotation lines
-> 
-> ending with some footer text.
+To begin with, **Remarkability** includes reasonable defaults for common inline elements, such as *emphasized* or **important** text, [links](#), `code`, <var>variables</var>, <abbr title="abbreviations">abbr</abbr>, <q>short quote</q>, <cite>citations</cite>, <mark>highlighted text</mark>, <kbd>keyboard inputs</kbd>, ~~strikethrough~~, <del>deleted</del> or <ins>inserted</ins> elements, <samp>sample text</samp>, <samp><kbd>sample keyboard input</kbd></samp>, <small>small text</small>, <sub>subscript</sub> or <sup>superscript</sup>.
 
 Besides text, images should also look pretty. Remarkability provides styles for **figure** and *figcaption* to display images.
 
@@ -90,7 +36,95 @@ Besides text, images should also look pretty. Remarkability provides styles for 
   <figcaption>A small image</figcaption>
 </figure>
 
-**Tables** are also supported with styles for cells, rows, head, body, and foot elements.
+It covers other common elements, like an **unordered list** with multiple levels of nesting &mdash;
+
+- It is reasonable to have a list of items.
+  - These items can be nested in a list.
+    - This depicts hierarchy nicely.
+      - However, if the nesting is too deep, it affects readability.
+        - Use nested lists with reasonable level of nesting.
+          - Else, it may backfire.
+- **A list item may start with a paragraph.**  
+  
+  And can be followed by another paragraph like this one: The man who entered was young, some two-and-twenty at the outside, well-groomed and trimly clad, with something of refinement and delicacy in his bearing. The streaming umbrella which he held in his hand, and his long shining waterproof told of the fierce weather through which he had come.
+
+  And then maybe another paragraph: We heard the door open, a few hurried words, and then quick steps upon the linoleum. Our own door flew open, and a lady, clad in some dark-coloured stuff, with a black veil, entered the room.
+- **In technical or statistical texts, your list item can start with an statement** followed by a table containing data to support that statement.  
+
+  | # | Property    | Statistics |
+  | - | ----------- | ---------- |
+  | 1 | Circulation | 20,000     |
+  | 2 | Records     | 14,030     |
+- **Or you list item may mention a technical detail** followed by a code sample.  
+
+  ```js
+  console.log('Hello, world!')
+  ```
+
+  Followed by another paragraph explaining the code sample.
+- Finally, your list may contain some items which start with a paragraph, like this one.
+
+  With another paragraph that may be followed by a nested list,
+  - Such as this list
+  - With mutiple items.
+
+**Remarability** tackles the above usecases with **ordered** lists as well so that
+
+1. Everything looks good by default.
+2. A reasonable amount of usecases are handled so you won't have to do a lot of tweaking.
+3. If needed, you can customize the look of your document.
+4. If needed, you can select or discard the components.
+
+You can have nice looking definition lists as well, like this one &mdash;
+
+<dl>
+  <dt>Crust</dt>
+  <dd>the outermost layer of Earth, ranging from 5–70 km</dd>
+  <dt>Mantle</dt>
+  <dd>the thickest layer of Earth lying below the crust, extending up to 2890 km</dd>
+  <dt>Outer Core</dt>
+  <dd>a fluid layer about 2400 km thick lying below the mantle</dd>
+  <dt>Inner Core</dt>
+  <dd>the innermost layer of Earth with a radius of 1220 km</dd>
+</dl>
+
+You can separate sections of your document using a horizontal rule.
+
+---
+
+Or you can put a delicious quote using a `blockquote`.
+
+> Make it easy to read.  
+> *&mdash; Roger Black*
+
+> Your quotation can span multiple paragraphs.
+> 
+> > You can nest  
+> > > multiple `blockquote`s.
+> 
+> You can even embed code samples in the block quotes.
+> 
+> ```shell
+> echo "Hello, world!"
+> ```
+> 
+> And add lists
+> - with one or more
+> - quotation lines
+> 
+> ending with some footer text.
+
+## What about headings stacked together?
+
+### Remarkability ensures that stacked headings look good.
+
+#### It takes care of the spacing between them.
+
+##### You can even put some `code` in a heading and that should also look fine.
+
+###### And this works for all levels of headings.
+
+For **tables**, **Remarkability** provides the styles for cells, rows, head, body, and foot elements.
 
 | Song                        | Published |           Artist |
 | --------------------------- | :-------: | ---------------: |
@@ -99,20 +133,16 @@ Besides text, images should also look pretty. Remarkability provides styles for 
 | Unique                      |   2014    |            Lenka |
 | Every Time the Sun Comes Up |   2014    | Sharon Van Etten |
 
-**Code Blocks** are displayed in a `pre` element.
+You may have code samples in **code blocks**. They are displayed in a `pre` element.
 
 ```java
-import java.math.BigDecimal;
-import java.util.Optional;
-import java.util.stream.LongStream;
-
 public class Factorial {
-
-  public static Optional<BigDecimal> getFactorial(final int num) {
-    return LongStream.rangeClosed(2, num)
-      .parallel()
-      .mapToObj(BigDecimal::new)
-      .reduce(BigDecimal::multiply);
+  public static int calculate(int n) {
+    return switch (n) {
+        case 0, 1 -> 1;
+        case 2    -> 2;
+        default   -> calculate(n - 1) * n;
+    };
   }
 }
 ```
