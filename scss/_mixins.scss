@@ -7,7 +7,7 @@
 
 @mixin cell($font-size, $gap: variables.$margin) {
   font-size: #{$font-size}em;
-  padding: $gap / 2 / $font-size;
+  padding: ($gap / 2.5 / $font-size) ($gap / 2 / $font-size);
 }
 
 // Heading gap, border and font sizing
