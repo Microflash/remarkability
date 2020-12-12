@@ -12,6 +12,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy('./docs/css/')
   eleventyConfig.addPassthroughCopy('./docs/assets/')
   eleventyConfig.addPassthroughCopy('./docs/favicon.ico')
+  eleventyConfig.addPassthroughCopy('./docs/_redirects')
 
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`)
   eleventyConfig.addShortcode('pkgVersion', () => `${pkgVersion}`)

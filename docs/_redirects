@@ -1,0 +1,4 @@
+# Redirects from legacy routes
+/example.html         /example/
+/customization.html   /customization/
+/migration.html       /changelog/
