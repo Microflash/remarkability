@@ -77,8 +77,26 @@
     }
   }
 
-  li > p:only-of-type {
-    margin-bottom: 0;
+  li {
+    p,
+    dl,
+    ol,
+    ul,
+    blockquote,
+    pre,
+    table {
+      margin-bottom: variables.$margin * 0.4;
+    }
+
+    & > p:only-of-type {
+      margin-bottom: 0;
+    }
+
+    & > ul,
+    & > ol,
+    & > dl {
+      margin-top: variables.$margin * 0.4;
+    }
   }
 
   dt {
