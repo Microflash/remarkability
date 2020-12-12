@@ -1,7 +1,7 @@
 {
   "name": "@microflash/remarkability",
   "description": "A compact CSS library for a pleasant reading experience on the web",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "dist/remarkability.min.css",
   "scripts": {
     "start": "npm-run-all site --parallel watch:*",

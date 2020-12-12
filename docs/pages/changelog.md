@@ -5,6 +5,11 @@ date: 2020-11-19
 
 # Changelog
 
+## [v2.0.1](https://github.com/Microflash/remarkability/releases/tag/v2.0.1)
+
+- **Changed** padding and font-size of some inline elements
+- **Removed** bold sample keyboard input styles
+
 ## [v2.0.0](https://github.com/Microflash/remarkability/releases/tag/v2.0.0)
 
 - **Added** simpler parent resolver mixin
