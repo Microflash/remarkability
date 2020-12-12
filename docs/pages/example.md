@@ -27,7 +27,7 @@ To begin with, **Remarkability** includes reasonable defaults for common inline 
 Besides text, images should also look pretty. Remarkability provides styles for **figure** and *figcaption* to display images.
 
 <figure>
-  <img src="https://images.unsplash.com/photo-1521075325181-3889e1af7962?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=683&q=80" alt="Microflash" width="750">
+  <img src="https://images.unsplash.com/photo-1521075325181-3889e1af7962?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=683&q=80" alt="Airflow" width="750">
   <figcaption>Photo by <a href="https://unsplash.com/@amichaelbphoto">Michael Baldovinos</a> on <a href="https://unsplash.com/photos/SWssGT_80DE">Unsplash</a></figcaption>
 </figure>
 
