@@ -57,10 +57,15 @@
   }
 
   mark,
+  del,
   ins {
     border-radius: variables.$radius;
     padding: 0em 0.4em 0.2em;
     vertical-align: baseline;
+  }
+
+  del {
+    background-color: variables.$background-del;
   }
 
   ins {
