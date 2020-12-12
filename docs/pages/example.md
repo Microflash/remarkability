@@ -22,7 +22,7 @@ That's where **Remarkability** comes into picture. It provides sensible opinions
 
 # Considerations
 
-To begin with, **Remarkability** includes reasonable defaults for common inline elements, such as *emphasized* or **important** text, [links](#), `code`, <var>variables</var>, <abbr title="abbreviations">abbr</abbr>, <q>short quote</q>, <cite>citations</cite>, <mark>highlighted text</mark>, <kbd>keyboard inputs</kbd>, ~~strikethrough~~, <del>deleted</del> or <ins>inserted</ins> elements, <samp>sample text</samp>, <samp><kbd>sample keyboard input</kbd></samp>, <small>small text</small>, <sub>subscript</sub> or <sup>superscript</sup>.
+To begin with, **Remarkability** includes reasonable defaults for common inline elements, such as *emphasized* or **important** text, [links](#), `code`, <var>variables</var>, <abbr title="abbreviations">abbr</abbr>, <q>short quote</q>, <cite>citations</cite>, <mark>highlighted text</mark>, <kbd>keyboard inputs</kbd>, ~~strikethrough~~, <del>deleted</del> or <ins>inserted</ins> elements, <samp>sample text</samp>, <small>small text</small>, <sub>subscript</sub> or <sup>superscript</sup>.
 
 Besides text, images should also look pretty. Remarkability provides styles for **figure** and *figcaption* to display images.
 
