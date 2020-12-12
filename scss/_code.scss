@@ -29,6 +29,10 @@
     }
   }
 
+  samp > kbd {
+    font-weight: variables.$weight-bold;
+  }
+
   pre {
     overflow: hidden;
 
