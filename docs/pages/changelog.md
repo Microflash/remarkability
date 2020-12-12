@@ -9,19 +9,25 @@ date: 2020-11-19
 
 - **Added** simpler parent resolver mixin
 - **Added** bold table head elements
+- **Added** lead paragraph styles with the `$lead` selector variable and `$enable-lead-paragraph` flag
 - **Added** the semibold font-weight with the `$weight-semibold` variable
 - **Added** the styles for the `var` element
+- **Added** the semantic background for the `del` element with the `$background-del` variable
 - **Added** proper `overflow-wrap` to inline code elements
-- **Changed** larger font-size for the `h1` and `h2` elements
-- **Changed** smaller font-size for the `h4`, `h5` and `h6` elements
+- **Changed** native font-stack with the addition of `ui-sans-serif` and `ui-monospace`
+- **Changed** the font-size for the heading elements
 - **Changed** reduce the font-weight to semibold for the headings 
 - **Changed** reduce the bottom padding of the headings
+- **Changed** more contextual spacing between block elements nested in a list
+- **Changed** tweak to the padding of table cells
+- **Changed** bold keyboard input element in the sample text
 - **Changed** slightly increase the default margin
 - **Changed** more compact and prominent blockquote
 - **Changed** slightly smaller default font size
 - **Changed** the font size of the table cells to inherit from parent
 - **Changed** lighter selection background
 - **Removed** the normal font-weight alongwith the `$weight-normal` variable
+- **Removed** the bottom-border from `h3` element
 
 ## [v1.1.0](https://github.com/Microflash/remarkability/releases/tag/v1.1.0)
 
