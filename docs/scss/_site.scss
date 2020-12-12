@@ -1,0 +1,142 @@
+@mixin md {
+  @media screen and (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin px($px) {
+  padding-right: $px;
+  padding-left: $px;
+}
+
+@mixin py($py) {
+  padding-top: $py;
+  padding-bottom: $py;
+}
+
+@mixin my($my) {
+  margin-top: $my;
+  margin-bottom: $my;
+}
+
+$color-link: hsl(210, 100%, 40%) !default;
+
+$space-rg: calc(1rem + 2vw) !default;
+$space-md: calc(1.5rem + 3vw) !default;
+$space-lg: calc(2rem + 4vw) !default;
+
+body {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  max-width: calc(720px + 20vw);
+  
+  & > * {
+    @include px($space-md);
+  }
+}
+
+.header {
+  padding-top: $space-rg;
+  padding-bottom: $space-md;
+
+  .logo {
+    padding-top: $space-lg;
+    width: calc(25rem + 20vw);
+  }
+
+  .lead {
+    font-size: calc(2vw + 0.75rem);
+    color: hsl(0, 0%, 33%);
+    @include py($space-rg);
+
+    + p {
+      font-size: calc(1.25vw + 0.75rem);
+    }
+  }
+}
+
+.icon {
+  fill: #88a;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.navigation {
+  text-transform: uppercase;
+
+  a {
+    display: inline-block;
+    font-size: medium;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    border: 1px solid #e0e0ff;
+
+    &:focus,
+    &:hover {
+      background-color: #efefff;
+    }
+
+    &[aria-current] {
+      font-weight: 500;
+      background-color: #e0e0ff;
+    }
+  }
+}
+
+main.remarkability {
+  @include my($space-md);
+}
+
+.shield {
+  margin-right: 0.25em;
+}
+
+.footer {
+  font-size: 0.85em;
+  @include py($space-md);
+}
+
+$space-code: 1em 1.2em !default;
+
+li table {
+  margin-top: 0.5em;
+}
+
+table {
+  code {
+    @include md {
+      white-space: pre;
+    }
+  }
+
+  pre {
+    padding: $space-code;
+  }
+}
+
+.citation {
+  display: none;
+  visibility: hidden;
+  margin-left: -1em;
+  padding-right: 0.25em;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  &:focus .citation,
+  &:hover .citation {
+    display: inline-block;
+    visibility: visible;
+  }
+}

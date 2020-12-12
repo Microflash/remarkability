@@ -1,0 +1,11 @@
+@use '../../scss/variables' with (
+  $root: 'body',
+  $lead: '.remarkability > p:first-of-type',
+  $enable-selection-background: true,
+  $enable-custom-colors: true,
+  $enable-custom-fonts: true,
+  $enable-media-radius: true,
+  $enable-block-radius: true,
+  $enable-active-links: true,
+  $enable-lead-paragraph: true
+);

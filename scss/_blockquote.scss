@@ -1,0 +1,13 @@
+@use 'variables';
+@use 'mixins';
+
+@include mixins.parent {
+  blockquote {
+    border-left: 0.25em solid variables.$border-color;
+    padding: 0 1em;
+
+    @if variables.$enable-custom-colors {
+      color: variables.$text-blockquote;
+    }
+  }
+}

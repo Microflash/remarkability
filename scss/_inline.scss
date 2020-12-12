@@ -1,0 +1,135 @@
+@use 'variables';
+@use 'mixins';
+
+@include mixins.parent {
+  a {
+    text-decoration: none;
+    cursor: pointer;
+
+    @if variables.$enable-custom-colors {
+      color: variables.$link;
+
+      @if variables.$enable-active-links {
+        &:focus, 
+        &:hover {
+          color: variables.$link-active;
+        }
+      }
+
+      @if variables.$enable-visited-links {
+        &:visited {
+          color: variables.$link-visited;
+        }
+      }
+    }
+
+    @if variables.$enable-link-underline {
+      text-decoration: underline;
+    } @else {
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:active,
+    &:hover {
+      outline-width: 0;
+    }
+  }
+
+  abbr {
+    text-decoration: underline dotted;
+    cursor: help;
+  }
+
+  cite {
+    font-style: italic;
+  }
+
+  hr {
+    background: variables.$border-color;
+    border: none;
+    display: block;
+    height: 1px;
+    margin-bottom: variables.$margin;
+    margin-top: variables.$margin;
+  }
+
+  mark,
+  del,
+  ins {
+    border-radius: variables.$radius;
+    padding: 0em 0.4em 0.2em;
+    vertical-align: baseline;
+  }
+
+  del {
+    background-color: variables.$background-del;
+  }
+
+  ins {
+    background-color: variables.$background-ins;
+    text-decoration: none;
+  }
+
+  mark {
+    background-color: variables.$background-mark;
+  }
+
+  summary {
+    display: list-item;
+  }
+
+  details {
+    display: block;
+    border: 1px solid variables.$border-color;
+    padding: 0 0.75em 0;
+
+    summary {
+      background-color: variables.$background-table-hover;
+      margin: 0 -0.75em 0;
+      padding: 0.5em 0.75em;
+      cursor: pointer;
+    }
+
+    &[open] {
+      padding-bottom: 0.5em;
+
+      summary {
+        margin-bottom: 0.5em;
+        border-bottom: 1px solid variables.$border-color;
+      }
+    }
+  }
+
+  small {
+    font-size: variables.$font-size-small;
+  }
+
+  strong {
+    font-weight: variables.$weight-bold;
+
+    @if variables.$enable-custom-colors {
+      color: variables.$text-bold;
+    }
+  }
+
+  sub,
+  sup {
+    font-size: variables.$font-size-small;
+  }
+
+  sub {
+    vertical-align: sub;
+  }
+
+  sup {
+    vertical-align: super;
+  }
+
+  var {
+    font-style: italic;
+    font-weight: variables.$weight-semibold;
+  }
+}

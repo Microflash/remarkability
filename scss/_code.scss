@@ -1,0 +1,53 @@
+@use 'variables';
+@use 'mixins';
+
+@include mixins.parent {
+  code,
+  kbd,
+  samp,
+  pre {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    background-color: variables.$background-code;
+    color: variables.$text;
+    font-size: variables.$font-size-code;
+    border-radius: variables.$radius;
+
+    @if variables.$enable-custom-fonts {
+      @include mixins.font('code');
+    }
+  }
+
+  code,
+  kbd,
+  samp {
+    padding: 0.2em 0.4em 0.2em;
+    overflow-wrap: break-word;
+
+    @if variables.$enable-custom-colors {
+      color: variables.$text-code;
+    }
+  }
+
+  samp > kbd {
+    font-weight: variables.$weight-bold;
+  }
+
+  pre {
+    overflow: hidden;
+
+    @if variables.$enable-block-radius {
+      border-radius: variables.$block-radius;
+    }
+
+    code {
+      display: block;
+      background: none;
+      overflow: auto;
+      border: none;
+      padding: 1em 1.2em;
+      font-size: 1em;
+      white-space: pre;
+    }
+  }
+}

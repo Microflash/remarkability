@@ -1,0 +1,19 @@
+@use 'variables';
+@use 'mixins';
+
+@include mixins.parent {
+  input,
+  textarea {
+    font: inherit;
+    line-height: inherit;
+
+    @if variables.$enable-custom-colors {
+      color: variables.$text;
+    }
+
+    &::placeholder {
+      color: inherit;
+      opacity: variables.$opacity;
+    }
+  }
+}
