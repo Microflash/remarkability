@@ -5,6 +5,9 @@ date: 2020-11-19
 
 # Changelog
 
+## [v2.0.2](https://github.com/Microflash/remarkability/releases/tag/v2.0.2)
+- **Changed** more tweaks to the padding of code and inline elements
+
 ## [v2.0.1](https://github.com/Microflash/remarkability/releases/tag/v2.0.1)
 
 - **Changed** padding and font-size of some inline elements
