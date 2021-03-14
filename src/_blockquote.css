@@ -1,0 +1,4 @@
+.r11y blockquote {
+  border-left: 0.25em solid var(--r11y-border-color);
+  padding: 0 1em;
+}

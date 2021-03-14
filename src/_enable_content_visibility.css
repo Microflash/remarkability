@@ -1,0 +1,4 @@
+.r11y {
+  content-visibility: auto;
+  contain-intrinsic-size: var(--r11y-intrinsic-size);
+}

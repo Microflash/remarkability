@@ -1,7 +1,25 @@
 @charset 'UTF-8';
 
 @use 'reset';
-@use 'variables';
-@use '../../scss/remarkability.scss';
+@use '../../src/_properties.css';
+@use '../../src/_root.css';
+@use '../../src/_inline.css';
+@use '../../src/_media.css';
+@use '../../src/_block.css';
+@use '../../src/_headings.css';
+@use '../../src/_lists.css';
+@use '../../src/_form.css';
+@use '../../src/_blockquote.css';
+@use '../../src/_code.css';
+@use '../../src/_table.css';
+@use '../../src/_enable_multiline_wrap.css';
+@use '../../src/_enable_font_smoothing.css';
+@use '../../src/_enable_responsive_tables.css';
+@use '../../src/_enable_smooth_scrolling.css';
+@use '../../src/_enable_selection_background.css';
+@use '../../src/_enable_custom_colors.css';
+@use '../../src/_enable_custom_fonts.css';
+@use '../../src/_enable_media_radius.css';
+@use '../../src/_enable_block_radius.css';
 @use 'syntax';
 @use 'site';

@@ -1,0 +1,6 @@
+.r11y {
+  line-height: var(--r11y-line-height);
+  font-size: var(--r11y-font-size-base);
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}

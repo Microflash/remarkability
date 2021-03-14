@@ -1,0 +1,66 @@
+/*! Remarkability v3.0.0 | MIT License | https://github.com/Microflash/remarkability */
+:root {
+  --r11y-family-sans-native: ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --r11y-family-code-native: ui-monospace, SFMono-Regular, "Roboto Mono", Menlo,
+    Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --r11y-family-body: var(--r11y-family-sans-native);
+  --r11y-family-code: var(--r11y-family-code-native);
+
+  --r11y-weight-semibold: 600;
+  --r11y-weight-bold: 700;
+  --r11y-weight-headings: var(--r11y-weight-semibold);
+
+  --r11y-font-size-base: calc(0.9rem + 0.3vw);
+  --r11y-font-size-code: 0.9em;
+  --r11y-font-size-small: 0.8em;
+
+  --r11y-color-base: hsl(0, 1%, 14%);
+  --r11y-color-active: hsl(0, 0%, 9%);
+  --r11y-color-passive: hsl(0, 1%, 38%);
+
+  --r11y-color-link: hsl(210, 100%, 40%);
+  --r11y-color-link-focus: hsl(210, 80%, 50%);
+  --r11y-color-link-hover: hsl(210, 80%, 60%);
+  --r11y-color-link-passive: hsl(325, 60%, 40%);
+  --r11y-color-code: hsl(0, 58%, 46%);
+
+  --r11y-background-body: hsl(0, 0%, 100%);
+  --r11y-background-code: hsl(0, 5%, 96%);
+  --r11y-background-del: hsl(0, 58%, 80%);
+  --r11y-background-ins: hsl(125, 50%, 75%);
+  --r11y-background-mark: hsl(45, 75%, 75%);
+  --r11y-background-table: hsl(0, 0%, 98%, 0.25);
+  --r11y-background-table-even: hsl(0, 3%, 98%);
+  --r11y-background-table-hover: hsl(0, 5%, 96%);
+  --r11y-background-selected: hsla(210, 80%, 50%, 0.25);
+  --r11y-background-scrollbar: hsl(0, 5%, 96%);
+
+  --r11y-border-color: hsl(0, 0%, 91%);
+
+  --r11y-text: var(--r11y-color-base);
+  --r11y-text-code: var(--r11y-color-code);
+  --r11y-text-muted: var(--r11y-color-passive);
+  --r11y-text-headings: var(--r11y-color-active);
+  --r11y-text-blockquote: var(--r11y-color-passive);
+
+  --r11y-link: var(--r11y-color-link);
+  --r11y-link-focus: var(--r11y-color-link-focus);
+  --r11y-link-hover: var(--r11y-color-link-hover);
+  --r11y-link-visited: var(--r11y-color-link-passive);
+
+  --r11y-table-thead: var(--r11y-color-active);
+  --r11y-scrollbar: hsl(0, 0%, 80%);
+
+  --r11y-radius: 5px;
+  --r11y-media-radius: var(--r11y-radius);
+  --r11y-block-radius: var(--r11y-radius);
+
+  --r11y-opacity: 0.5;
+  --r11y-line-height: 1.6;
+  --r11y-margin: 1.5rem;
+  --r11y-intrinsic-size: 1000px;
+}

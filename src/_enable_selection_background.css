@@ -1,0 +1,7 @@
+.r11y *::-moz-selection {
+  background: var(--r11y-background-selected);
+}
+
+.r11y *::selection {
+  background: var(--r11y-background-selected);
+}

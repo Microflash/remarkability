@@ -1,0 +1,11 @@
+.r11y input,
+.r11y textarea {
+  font: inherit;
+  line-height: inherit;
+}
+
+.r11y input::placeholder,
+.r11y textarea::placeholder {
+  color: inherit;
+  opacity: var(--r11y-opacity);
+}

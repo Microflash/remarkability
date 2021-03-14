@@ -1,0 +1,21 @@
+.r11y img {
+  vertical-align: text-bottom;
+}
+
+.r11y figure {
+  margin-bottom: calc(var(--r11y-margin) * 2);
+  text-align: center;
+}
+
+.r11y figure:first-child {
+  margin-top: 0;
+}
+
+.r11y figure:last-child {
+  margin-bottom: 0;
+}
+
+.r11y figcaption {
+  font-size: var(--r11y-font-size-small);
+  margin-top: calc(var(--r11y-margin) / 1.6);
+}

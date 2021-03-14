@@ -1,0 +1,12 @@
+.r11y h1,
+.r11y h2 {
+  border-bottom: 1px solid var(--r11y-border-color);
+}
+
+.r11y h1 {
+  padding-bottom: calc(var(--r11y-margin) / 2 / 2.5);
+}
+
+.r11y h2 {
+  padding-bottom: calc(var(--r11y-margin) / 2 / 2);
+}

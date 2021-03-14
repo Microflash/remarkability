@@ -1,0 +1,84 @@
+.r11y ol,
+.r11y ul,
+.r11y dd {
+  margin-left: var(--r11y-margin);
+}
+
+.r11y ol,
+.r11y ul {
+  list-style-position: outside;
+}
+
+.r11y ol {
+  list-style-type: decimal;
+}
+
+.r11y ol ol {
+  list-style-type: lower-alpha;
+}
+
+.r11y ol ol ol {
+  list-style-type: lower-roman;
+}
+
+.r11y ol ol ol ol {
+  list-style-type: lower-greek;
+}
+
+.r11y ol ol ol ol ol {
+  list-style-type: decimal;
+}
+
+.r11y ol ol ol ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.r11y ul {
+  list-style-type: disc;
+}
+
+.r11y ul ul {
+  list-style-type: circle;
+}
+
+.r11y ul ul ul {
+  list-style-type: square;
+}
+
+.r11y ul ul ul ul {
+  list-style-type: circle;
+}
+
+.r11y ul ul ul ul ul {
+  list-style-type: disc;
+}
+
+.r11y ul ul ul ul ul ul {
+  list-style-type: circle;
+}
+
+.r11y li p,
+.r11y li dl,
+.r11y li ol,
+.r11y li ul,
+.r11y li blockquote,
+.r11y li pre,
+.r11y li table,
+.r11y li,
+.r11y dd {
+  margin-bottom: calc(var(--r11y-margin) * 0.4);
+}
+
+.r11y li > p:only-of-type {
+  margin-bottom: 0;
+}
+
+.r11y li > ul, 
+.r11y li > ol, 
+.r11y li > dl {
+  margin-top: calc(var(--r11y-margin) * 0.4);
+}
+
+.r11y dt {
+  font-weight: var(--r11y-weight-bold);
+}

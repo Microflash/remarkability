@@ -17,7 +17,7 @@
     "site:minify": "cleancss --format breakWith=lf --source-map --source-map-inline-sources --output public/css/style.min.css public/css/style.css",
     "dist": "npm-run-all dist:*",
     "dist:clean": "shx rm -rf dist",
-    "dist:generate": "sass scss/remarkability.scss:dist/remarkability.css",
+    "dist:generate": "sass src/remarkability.scss:dist/remarkability.css",
     "dist:postcss": "postcss --config postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
     "dist:minify": "cleancss --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.min.css dist/remarkability.css"
   },

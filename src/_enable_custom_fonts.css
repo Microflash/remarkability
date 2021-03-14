@@ -1,0 +1,10 @@
+.r11y {
+  font-family: var(--r11y-family-body);
+}
+
+.r11y code,
+.r11y kbd,
+.r11y samp,
+.r11y pre {
+  font-family: var(--r11y-family-code);
+}
