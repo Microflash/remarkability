@@ -1,0 +1,16 @@
+@charset "utf-8";
+@use "core/properties.scss";
+@use "core/root.scss";
+@use "core/inline.scss";
+@use "core/media.scss";
+@use "core/block.scss";
+@use "core/headings.scss";
+@use "core/lists.scss";
+@use "core/form.scss";
+@use "core/blockquote.scss";
+@use "core/code.scss";
+@use "core/table.scss";
+@use "extension/enable_multiline_wrap.scss";
+@use "extension/enable_font_smoothing.scss";
+@use "extension/enable_responsive_tables.scss";
+@use "extension/enable_smooth_scrolling.scss";

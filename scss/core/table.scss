@@ -1,0 +1,43 @@
+@mixin cell($font-size) {
+  font-size: #{$font-size}em;
+  padding: calc(var(--r11y-margin) / 2.5 / #{$font-size}) calc(var(--r11y-margin) / 2 / #{$font-size});
+}
+
+.r11y {
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+
+    pre {
+      white-space: pre-wrap;
+    }
+  }
+
+  th {
+    font-weight: var(--r11y-weight-bold);
+  }
+
+  th,
+  td {
+    @include cell(1);
+    border: 1px solid var(--r11y-border-color);
+    line-height: 1.4;
+  }
+
+  thead,
+  tfoot {
+    tr {
+      background-color: var(--r11y-background-table-hover);
+    }
+
+    th code,
+    td code {
+      background-color: var(--r11y-background-table);
+    }
+  }
+
+  tbody tr {
+    background-color: var(--r11y-background-table);
+  }
+}

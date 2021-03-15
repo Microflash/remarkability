@@ -16,10 +16,9 @@
     "site:postcss": "postcss --config postcss.config.js --replace \"public/css/*.css\" \"!public/css/*.min.css\"",
     "site:minify": "cleancss --format breakWith=lf --source-map --source-map-inline-sources --output public/css/style.min.css public/css/style.css",
     "dist": "npm-run-all dist:*",
-    "dist:clean": "shx rm -rf dist",
-    "dist:generate": "sass src/remarkability.scss:dist/remarkability.css",
+    "dist:precss": "node build.js",
     "dist:postcss": "postcss --config postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
-    "dist:minify": "cleancss --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.min.css dist/remarkability.css"
+    "dist:minify": "cleancss --format breakWith=lf --source-map --source-map-inline-sources --output dist/remarkability.min.css dist/remarkability.mod.css dist/remarkability.css"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",

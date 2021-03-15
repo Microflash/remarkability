@@ -1,0 +1,61 @@
+@mixin heading($font-size) {
+  font-size: #{$font-size}em;
+  margin-top: calc(var(--r11y-margin) * 2 / #{$font-size});
+  margin-bottom: calc(var(--r11y-margin) / #{$font-size});
+}
+
+.r11y {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: var(--r11y-weight-headings);
+    line-height: 1.2;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h1 {
+    @include heading(2.5);
+    line-height: 1.5;
+  }
+
+  h2 {
+    @include heading(2);
+    line-height: 1.4;
+  }
+
+  h3 {
+    @include heading(1.5);
+  }
+
+  h4 {
+    @include heading(1.25);
+  }
+
+  h5 {
+    @include heading(1.125);
+  }
+
+  h6 {
+    @include heading(0.95);
+  }
+
+  h1 + * {
+    margin-top: 1.5rem;
+  }
+
+  h2 + *,
+  h3 + *,
+  h4 + * {
+    margin-top: 0;
+  }
+
+  h5 + * {
+    margin-top: 0.25em;
+  }
+}

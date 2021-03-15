@@ -1,0 +1,52 @@
+.r11y {
+  background-color: var(--r11y-background-body);
+  color: var(--r11y-text);
+
+  a {
+    color: var(--r11y-link);
+
+    &:focus {
+      color: var(--r11y-link-focus);
+    }
+
+    &:hover {
+      color: var(--r11y-link-hover);
+    }
+  }
+
+  figcaption {
+    color: var(--r11y-text-muted);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--r11y-text-headings);
+  }
+
+  input,
+  textarea {
+    color: var(--r11y-text);
+  }
+
+  blockquote {
+    color: var(--r11y-text-blockquote);
+  }
+
+  code,
+  kbd,
+  samp {
+    color: var(--r11y-text-code);
+  }
+
+  thead,
+  tfoot {
+    th,
+    td {
+      color: var(--r11y-table-thead);
+    }
+  }
+}

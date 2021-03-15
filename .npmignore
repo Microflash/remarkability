@@ -4,5 +4,6 @@ node_modules
 public
 .editorconfig
 .eleventy.js
+build.js
 postcss.config.js
 *.lock*

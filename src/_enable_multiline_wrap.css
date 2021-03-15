@@ -1,9 +1,0 @@
-.r11y * {
-  box-decoration-break: clone;
-}
-
-.r11y ol > *,
-.r11y ul > *,
-.r11y dd > * {
-  box-decoration-break: clone;
-}

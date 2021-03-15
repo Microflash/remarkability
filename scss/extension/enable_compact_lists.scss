@@ -1,0 +1,14 @@
+.r11y {
+  p + {
+    dl,
+    ol,
+    ul {
+      margin-top: calc(var(--r11y-margin) * -1);
+    }
+  }
+
+  li,
+  dd {
+    margin-bottom: 0;
+  }
+}

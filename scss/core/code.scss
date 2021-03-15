@@ -1,0 +1,34 @@
+.r11y {
+  code,
+  kbd,
+  samp,
+  pre {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    background-color: var(--r11y-background-code);
+    color: var(--r11y-text);
+    font-size: var(--r11y-font-size-code);
+    border-radius: var(--r11y-radius);
+  }
+
+  code,
+  kbd,
+  samp {
+    padding: 0.2ch 0.6ch;
+    overflow-wrap: break-word;
+  }
+
+  pre {
+    overflow: hidden;
+
+    code {
+      display: block;
+      background: none;
+      overflow: auto;
+      border: none;
+      padding: 1em 1.2em;
+      font-size: 1em;
+      white-space: pre;
+    }
+  }
+}

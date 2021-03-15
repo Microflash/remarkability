@@ -1,0 +1,19 @@
+.r11y {
+  p,
+  dl,
+  ol,
+  ul,
+  blockquote,
+  pre,
+  table {
+    margin-bottom: var(--r11y-margin);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p:empty {
+    display: none;
+  }
+}
