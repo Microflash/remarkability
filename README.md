@@ -1,5 +1,8 @@
 # Remarkability
 
+> **RETIRED**  
+> Remarkability has been retired and no longer maintained. You can continue to use the latest version or switch to [wysiwyg.css](https://github.com/jgthms/wysiwyg.css/) or [github-markdown-css](https://github.com/sindresorhus/github-markdown-css) for similar functionality. Please feel free to fork this repo for further development.
+
 &mdash; A compact CSS library for a pleasant reading experience on the web
 
 [![npm (scoped)](https://img.shields.io/npm/v/@microflash/remarkability)](https://www.npmjs.com/package/@microflash/remarkability)
